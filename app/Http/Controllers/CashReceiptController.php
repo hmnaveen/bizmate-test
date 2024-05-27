@@ -132,11 +132,8 @@ class CashReceiptController extends Controller
 
             $validator = Validator::make($request->all(),[
                 'client_name' => 'bail|required|max:255',
-                // 'client_email' =>'required_if:transaction_type,invoice|max:255',
                 'invoice_issue_date' => 'bail|required',
                 'transaction_type' => 'bail|required',
-                // 'invoice_id' => 'bail|required|exists:reconciled_transactions,transaction_collection_id,user_id,'.$userinfo[0].',is_active,1,is_active,1',
-                // 'user_total' => "bail|required|same:invoice_total_amount"
                 'user_total' => [
                     'required',
                     Rule::in($request->invoice_total_amount),
