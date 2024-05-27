@@ -1,0 +1,7576 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800;900&display=swap');
+
+body, html {
+    font-family: 'Montserrat', sans-serif !important;
+    background: #28282a url('../img/random-grey-variations.png');
+}
+
+a {
+    outline: none !important;
+    text-decoration: none !important;
+}
+
+.status-obj{
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+}
+
+.green-txt{
+    color: #4BB543;
+}
+
+.red-txt{
+    color:#DC3545;
+}
+
+.toggle-pass{
+    position: relative;
+    float: right;
+    bottom: 30px;
+    right: 10px;
+
+}
+
+.sumb--dashboardAnn ul li a,
+.sumb--dashboardRequest ul li a,
+.sumb--recentlogdements table tbody td a {
+    color: #28282a;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.sumb--dashboardAnn ul li a:hover,
+.sumb--dashboardRequest ul li a:hover,
+.sumb--recentlogdements table tbody td a:hover {
+    text-decoration: underline;
+    transition: all 0.3s ease;
+}
+
+.btn,
+.btn:focus,
+.btn:active,
+button {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.btn:disabled,
+button:disabled,
+.form--inputbox input:disabled,
+.form--inputbox.readOnly input:disabled,
+select.form-input--dropdown:disabled,
+.date--picker input:disabled {
+    cursor: not-allowed;
+    pointer-events: all !important;
+}
+
+a:hover {
+    color: #012f9d;
+}
+
+.fade {
+    transition: opacity 0.15s linear !important;
+}
+
+.sumb-text--black {
+    color: #28282a;
+}
+
+.sumb-btn--yellow {
+    background: #fdb917;
+    color: #28282a;
+}
+
+.sumb--putShadowbox {
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.1);
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.1);
+}
+
+button.sumb-btn--yellow:hover {
+    background: #28282a;
+    color: #fff;
+}
+
+.au-btn,
+.au-input {
+    border-radius: 5px;
+}
+
+a.dropdown-item:focus {
+    background: #f5c85b;
+    color: #28282a;
+}
+
+/** Login Wrapper Start **/
+
+.login-wrapper {
+    margin: 0px auto;
+    margin-top: 15vh;
+}
+
+.login-content {
+    padding: 0px;
+    border-radius: 10px;
+    background: linear-gradient(-45deg, #f5c85b, #fdb917, #f9ab30, #ffa423);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.login-content-left {
+    position: relative;
+    padding: 30px;
+    text-align: center;
+}
+
+.login-content-right {
+    position: relative;
+    background: #fafafa;
+    padding: 50px 30px;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+/** Login Wrapper Start End **/
+/** Login Content Left Side Start **/
+
+.login--logo {
+    width: 90%;
+}
+
+.bizmate--logo {
+    width: 85%;
+    margin-top: 30px;
+}
+
+.register-link {
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    left: 0px;
+    padding: 30px;
+    line-height: 145%;
+    color: #333;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.register-link a {
+    color: #28282a;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+/** Login Content Left Side End **/
+/** Login Content Right Side Start **/
+
+.login-content-right .nav {
+    text-align: center !important;
+    display: block;
+}
+
+.login-content-right nav .nav-tabs {
+    border: 0px;
+}
+
+.login-content-right nav .nav-tabs a {
+    color: #28282a;
+    border: 0px;
+    background: #fff;
+    margin-right: 5px;
+    border-radius: 100px;
+    padding: 7px 30px;
+    font-weight: 500;
+    border: 1px solid #fdb917;
+    font-size: 14px;
+    display: inline-block;
+}
+
+.login-content-right nav .nav-tabs a.active {
+    background: #fdb917;
+    border: 1px solid #fdb917;
+    color: #28282a;
+}
+
+.login-content-right .tab-content {
+    z-index: 1;
+    padding: 20px 20px 0px 20px;
+}
+
+.login-checkbox label {
+    position: relative;
+}
+
+.login-checkbox input[type=checkbox] {
+    position: absolute;
+    display: inline-block;
+    top: 5px;
+}
+
+.login-checkbox label span {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.social-login-content {
+    position: relative;
+    border-top: 1px solid #28282a;
+    border-bottom: 0px;
+    text-align: center;
+    padding-bottom: 0px;
+}
+
+.social-login-content span {
+    position: relative;
+    background: #fafafa;
+    top: -42px;
+    padding: 10px;
+    display: inline-block;
+    font-weight: 700;
+}
+
+.social-login-content label {
+    position: relative;
+    display: block;
+    margin-top: -40px;
+    font-weight: 500;
+}
+
+.social-button {
+    position: relative;
+    width: 100%;
+    top: -30px;
+}
+
+.social-button .row a {
+    position: relative;
+    display: block;
+    background: #fff;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    padding: 10px 20px;
+    font-size: 12px;
+}
+
+.g_id_signin {
+    display: block;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.social-button .row a.facebook {
+    background: rgb(24, 119, 242);
+    border-color: rgb(24, 119, 242);
+    color: #fafafa;
+    font-weight: 600;
+    margin-bottom: 15px;
+    z-index: 1;
+}
+
+.social-button .row a.facebook::before {
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background-image: url('../img/socmed-icons.png');
+    background-size: cover;
+    background-position: 0px 0px;
+}
+
+
+
+/** Login Content Right Side End **/
+
+.show-mobile--tablet {
+    display: none;
+}
+
+.show-mobile--tablet .register-link {
+    position: relative !important;
+    padding: 12px;
+}
+
+/** Toogle Password **/
+
+#togglePassword--wrap {
+    position: relative;
+}
+
+.toggle-password--login,
+.toggle-password--signup1,
+.toggle-password--signup2,
+.toggle-password--reset1,
+.toggle-password--reset2 {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    padding: 16px 15px 15px;
+    cursor: pointer;
+}
+
+.toggle-password--login.fa-eye-slash,
+.toggle-password--signup1.fa-eye-slash,
+.toggle-password--signup2.fa-eye-slash,
+.toggle-password--reset1.fa-eye-slash,
+.toggle-password--reset2.fa-eye-slash {
+    padding: 16px 14px 15px;
+}
+
+
+.toggle-password--update1,
+.toggle-password--update2 {
+    position: absolute;
+    bottom: 0px;
+    right: 1em;
+    padding: 11px 13px 13px 12px;
+    cursor: pointer;
+}
+
+.toggle-password--update1.fa-eye-slash,
+.toggle-password--update2.fa-eye-slash {
+    padding: 11px 12px 13px 13px;
+}
+
+
+/** Password Reset Page **/
+
+.reset--password-container {
+    background: #fafafa;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+.reset--password-container h4 {
+    margin-bottom: 20px;
+}
+
+/** Footer Login Page **/
+
+.footer--login {
+    margin-top: 20px;
+    color: #fafafa;
+    text-align: center;
+    font-size: 11px;
+}
+
+.footer--login .copyright--login a {
+    color: #fdb917;
+    font-weight: 600;
+}
+
+.footer--login .copyright--login span::after {
+    content: "|";
+}
+
+.footer--login .socials--login {
+    margin-top: 15px;
+    padding-bottom: 30px;
+}
+
+.footer--login .socials--login a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+    border-radius: 100px;
+    border: 1px solid #fafafa;
+    background: transparent url('../img/socmed-icons--login.png') no-repeat top left;
+    background-size: cover;
+}
+
+.footer--login .socials--login a:last-child {
+    margin-right: 0px;
+}
+
+.footer--login .socials--login a.instagram {
+    background-position: -28px 0px;
+}
+
+.footer--login .socials--login a.linkedin {
+    background-position: -56px 0px;
+}
+
+.footer--login .socials--login a.youtube {
+    background-position: -84px 0px;
+}
+
+/** Footer Dashboard **/
+
+.footer--dashboard {
+    background: #fafafa;
+    text-align: center;
+    padding: 10px 10px 30px;
+}
+
+.footer--dashboard .copyright--dashboard {
+    font-size: 12px;
+}
+
+.footer--dashboard .copyright--dashboard span::after {
+    content: "|";
+} 
+
+.footer--dashboard .copyright--dashboard a {
+    color: #28282a;
+    cursor: pointer;
+}
+
+.footer--dashboard .socials--login {
+    margin-top: 10px;
+    padding-bottom: 20px;
+}
+
+.footer--dashboard .socials--login a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+    border-radius: 100px;
+    border: 1px solid #fafafa;
+    background: #28282a url('../img/socmed-icons--login.png') no-repeat top left;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.footer--dashboard .socials--login a:last-child {
+    margin-right: 0px;
+}
+
+.footer--dashboard .socials--login a.instagram {
+    background-position: -28px 0px;
+}
+
+.footer--dashboard .socials--login a.linkedin {
+    background-position: -56px 0px;
+}
+
+.footer--dashboard .socials--login a.youtube {
+    background-position: -84px 0px;
+}
+
+.footer--dashboard .socials--login a:hover {
+    background-color: #fdb917;
+}
+
+/** First Time Logging In **/
+
+.required--first {
+    position: relative;
+}
+
+.required--first::after {
+    position: absolute;
+    content: "Required";
+    top: 18.5%;
+    right: 23px;
+    background: #e87883;
+    font-size: 9px;
+    padding: 5px 6px 3px;
+    color: #fff;
+    border: 1px solid #dc3545;
+    border-radius: 3px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/** Welcome Message **/
+
+.welcome--message {
+    position: relative;
+    font-size: 14px;
+    color: #28282a;
+}
+
+.welcome--message h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.welcome--message h3 span {
+    position: relative;
+    background: #fdb917;
+    padding: 3px 5px;
+    font-size: 11px;
+    top: -10px;
+    border-radius: 3px;
+    margin-right: 5px;
+}
+
+
+/** Main Page Start **/
+
+.page-container {
+    background: #fafafa;
+}
+
+/** Sidebar Menu Start **/
+
+/** Desktop View **/
+
+ul.navbar--desktop {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 190px;
+}
+
+ul.navbar--desktop li {
+    position: relative;
+    display: inline-block;
+    height: 100%;
+}
+
+ul.navbar--desktop li a {
+    display: table;
+    height: 100%;
+    padding: 0px 15px;
+}
+
+ul.navbar--desktop li a span {
+    display: table-cell;
+    vertical-align: middle;
+    color: #fafafa;
+    font-size: 14px;
+}
+
+ul.navbar--desktop li a span i {
+    margin-right: 7px;
+}
+
+ul.navbar--desktop li.current--page::after {
+    content: "";
+    position: absolute;
+    background: #fdb917;
+    width: 100%;
+    height: 3px;
+    left: 0px;
+    bottom: 0px;
+}
+
+ul.navbar--desktop li a.dropdown-toggle::after {
+    border: 0px !important;
+}
+
+ul.navbar--desktop .dropdown-menu a {
+    font-size: 14px;
+    padding: 7px 20px !important;
+}
+
+ul.navbar--desktop .dropdown-menu a:hover {
+    background: #f5c85b;
+}
+
+
+.menu-sidebar {
+    background: #fafafa;
+}
+
+.menu-sidebar .sumb--logo {
+    background: #fafafa;
+    margin: 30px;
+}
+
+.menu-sidebar__content {
+    position: relative;
+    background: #28282a url('../img/random-grey-variations.png');
+    height: -webkit-calc(100vh - 135px);
+    height: -moz-calc(100vh - 135px);
+    height: calc(100vh - 135px);
+    border-top-right-radius: 20px;
+}
+
+.navbar-sidebar .navbar__list li a {
+    color: #fafafa;
+    font-size: 15px;
+} 
+
+.navbar-sidebar .navbar__list li a:hover {
+    color: #fdb917;
+}
+
+/** Mobile View **/
+
+.header-mobile .navbar-mobile {
+    left: 0px;
+}
+
+.header-mobile {
+    background: #28282a url('../img/random-grey-variations.png');
+    display: none;
+    border-bottom: 8px solid #fdb917;
+}
+
+.header-mobile .logo {
+    padding: 10px;
+}
+
+.header-mobile .navbar-mobile .navbar-mobile__list {
+    -webkit-box-shadow: 0px 20px 20px 3px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 20px 20px 3px rgba(0,0,0,0.15);
+    box-shadow: 0px 20px 20px 3px rgba(0,0,0,0.15);
+}
+
+.header-mobile .navbar-mobile .navbar-mobile__list li a {
+    background: #fafafa;
+    font-size: 15px;
+    padding-left: 53px;
+    text-transform: none;
+}
+
+.header-mobile .navbar-mobile .navbar-mobile__list .navbar__sub-list.with--icons li a {
+    padding-left: 43px;
+}
+
+.header-mobile .navbar-mobile .navbar-mobile__list li a i {
+    margin: 0px;
+}
+
+.hamburger.hamburger--slider {
+    border-radius: 5px;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+}
+
+.hamburger.hamburger--slider.is-active span {
+    top: -1px;
+}
+
+.navbar-mobile li.account--type {
+    font-size: 14px;
+    padding: 15px 25px 10px;
+    border-bottom: 1px solid #e6e6e6;
+    color: #28282a;
+    font-weight: 500;
+}
+
+.navbar-mobile li.account--type span {
+    position: relative;
+    background: #fdb917;
+    padding: 2px 4px 1px;
+    font-weight: 600;
+    font-size: 9px;
+    border-radius: 3px;
+    top: -5px;
+    left: 1px;
+}
+
+/** Sidebar Menu End **/
+
+
+.main-content {
+    background: #fafafa;
+    padding-top: 128px;
+}
+
+.header-desktop_ltst {
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    background: #28282a url('../img/random-grey-variations.png');
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1);
+    left: 0px;
+    border-bottom: 8px solid #fdb917;
+
+}
+
+.header-desktop_ltst .logo {
+    padding: 20px;
+}
+
+
+.sumb--userheader {
+    position: absolute;
+    background: #28282a url('../img/random-grey-variations.png');
+    width: 60%;
+    right: 0px;
+    border-bottom-left-radius: 20px;
+    padding: 5px 20px 5px 25px;
+}
+
+.noti__item {
+    margin-right: 25px !important;
+}
+
+.noti__item i {
+    color: #fafafa;
+    font-size: 25px;
+}
+
+.account-wrap {
+    position: absolute;
+    background: #fdb917;
+    right: 40px;
+    top: 19px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.tax-bas--button {
+    position: absolute;
+    right: 173px;
+    display: inline-block;
+    text-align: left;
+    top: 19px;
+    font-size: 13px;
+    white-space: nowrap;
+}
+
+.tax-bas--button a {
+    position: relative;
+    padding: 10px 15px 8px 43px;
+    border: 1px solid #fdb917;
+    background: #fdb917;
+    border-radius: 5px;
+    font-weight: 600;
+    color: #28282a;
+    line-height: 100%;
+}
+
+.tax-bas--button a span {
+    display: block;
+}
+
+.tax-bas--button a::before {
+    position: absolute;
+    content: "";
+    background: transparent url('https://set-up-my-business.com.au/wp-content/uploads/2023/07/tax-agent.png') center center no-repeat;
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    top: 2px;
+    left: 3px;
+}
+
+.tax-bas--button a:hover {
+    background: #fafafa;
+}
+
+.tax-bas--mobile_button a {
+    position: relative;
+    color: #28282a;
+}
+
+.header-mobile .navbar-mobile .navbar-mobile__list li.tax-bas--mobile_button a {
+    padding-left: 52px !important;
+}
+
+.tax-bas--mobile_button a::before {
+    position: absolute;
+    content: "";
+    background: transparent url('https://set-up-my-business.com.au/wp-content/uploads/2023/07/tax-agent.png') center center no-repeat;
+    background-size: contain;
+    width: 30px;
+    height: 30px;
+    top: 7px;
+    left: 15px;
+}
+
+.application-wrap {
+    position: absolute;
+    background: #fafafa;
+    height: 45px;
+    width: 45px;
+    right: 105px;
+    top: 19px;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #fdb917;
+    transition: all 0.3s ease;
+}
+
+.application-wrap:hover {
+    background: #fdb917;
+    transition: all 0.3s ease;
+}
+
+.application-item i {
+    font-size: 30px;
+    margin-top: 2px;
+    padding: 5px 10px 3px 10px;
+    color: #28282a;
+}
+
+ul.application-lists {
+    width: 100%;
+    padding: 5px 0px;
+}
+
+ul.application-lists li {
+    position: relative;
+    display: block;
+    text-align: left !important;
+}
+
+ul.application-lists li a {
+    font-size: 14px;
+    padding: 10px;
+    display: block;
+    color: #28282a;
+}
+
+.header-mobile .navbar-mobile .navbar-mobile__list li a span,
+ul.application-lists li a span {
+    display: inline-block;
+    width: 32px;
+    text-align: center;
+    margin-right: 5px;
+}
+
+ul.application-lists li a i {
+    font-size: 14px;
+    padding: 0px;
+}
+
+ul.application-lists li a:hover {
+    background: #f5c85b;
+}
+
+
+.account-dropdown__item a:hover,
+.account-dropdown__footer a:hover {
+    background: #f5c85b;
+    color: #28282a;
+}
+
+.account-dropdown .info {
+    padding-bottom: 0px;
+}
+
+.account-dropdown .info .image {
+    border-radius: 5px;
+}
+
+.account-item .image {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    border-radius: 4px;
+}
+
+.account-item > .content {
+    padding-left: 4px;
+}
+
+.account-item > .content > a {
+    color: #28282a;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.account-dropdown .account--type {
+    font-size: 12px;
+    color: #28282a;
+    padding: 12px 0px 5px;
+    margin-top: 5px;
+    border-top: 1px dotted #e5e5e5;
+}
+
+.account-dropdown .account--type span {
+    position: relative;
+    display: inline-block;
+    background: #fdb917;
+    padding: 2px 5px 1px;
+    border-radius: 3px;
+    font-size: 9px;
+    font-weight: 600;
+    top: -7px;
+    left: 2px;
+}
+
+.account-item > .content > a:hover {
+    color: #323234;
+}
+
+.header-desktop .notifi-dropdown,
+.header-desktop .email-dropdown,
+.header-desktop .mess-dropdown {
+    top: 41px;
+}
+
+.header-desktop .account-dropdown {
+    top: 50px;
+}
+
+.sumb--title {
+    position: relative;
+    font-weight: 600;
+}
+
+.sumb--title2 {
+    font-weight: 600;
+    color: #666;
+}
+
+.sumb--statistics,
+.sumb--addtl1 {
+    position: relative;
+    padding: 20px 0px;
+}
+
+.sumb--accountantProfiles {
+    position: relative;
+    margin: 20px 0px;
+    background: #fff;
+    border-radius: 12px;
+}
+
+#sumb--sliderContainer {
+    position: relative;
+    display: block;
+    overflow-x: hidden;
+    white-space: nowrap;
+    width: 100%;
+    padding: 20px 35px 20px 55px;
+}
+
+#sumb--sliderContainer a {
+    width: 70px;
+    height: 70px;
+    background: #fafafa;
+    border-radius: 100px;
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+    border: 2px solid #28282a;
+    margin-right: 25px;
+}
+
+#sumb--sliderContainer a img {
+    border-radius: 100px;
+}
+
+.sumb--sliderContainer__nav a {
+    position: absolute;
+    border-radius: 0px;
+    vertical-align: middle;
+    display: table;
+    border: 0px;
+    width: 50px;
+    height: 100%;
+    cursor: pointer;
+    text-align: center;
+}
+
+.sumb--sliderContainer__nav a.rightArrow {
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+    top: 0px;
+    right: 0px;
+    border-radius: 0px 13px 13px 0px;
+}
+
+.sumb--sliderContainer__nav a.leftArrow {
+    background: rgb(255,255,255);
+    background: linear-gradient(270deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+    top: 0px;
+    left: 0px;
+    border-radius: 13px 0px 0px 13px;
+}
+
+.sumb--sliderContainer__nav a i{
+    vertical-align: middle;
+    display: table-cell;
+    font-size: 25px;
+    color: #28282a;
+}
+
+.sumb--dashboardAnn,
+.sumb--dashboardRequest,
+.sumb--dashboardServices,
+.sumb--dashboardCal,
+.sumb--dashboardRequests,
+.sumb--dashboardFileVault,
+.sumb--dashboardAcctUsers {
+    position: relative;
+    padding: 20px;
+    background: #fff;
+    border-radius: 12px;
+    margin: 20px 0px;
+}
+
+
+.sumb--dashlinkbox,
+.sumb--dashstatbox {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    padding: 20px;
+    font-size: 14px;
+    line-height: 120%;
+    overflow: hidden;
+    color: #28282a;
+}
+
+.sumb--dashstatbox {
+    padding-bottom: 30px;
+}
+
+.statbox__item--uncomplete {
+    background: #dbdbdb;
+    color: #28282a;
+}
+
+.statbox__item--uncomplete .sumb-statistic__item h2 {
+    color: #28282a;
+}
+
+.statbox__item--bprocessed {
+    background: #666;
+}
+
+.statbox__item--accepted {
+    background: #8fc72c;
+}
+
+.statbox__item--manualrev {
+    background: #e8a578;
+}
+
+.statbox__item--rejected {
+    /**background: #e87883;**/
+    background: #fdb917;
+}
+
+.sumb-statistic__item h2 {
+    color: #28282a;
+    font-size: 50px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.sumb--dashlinkbox:hover {
+    background: #e5e5e5;
+    color: #666;
+}
+
+.sumb--dashlinkbox:hover h2,
+.sumb--dashlinkbox:hover .icon {
+    color: #666;
+}
+
+
+.sumb--dashlinkbox span,
+.sumb--dashstatbox span {
+    display: block;
+    z-index: 4;
+    font-weight: 600;
+}
+
+.sumb--dashlinkbox .icon,
+.sumb--dashstatbox .icon {
+    position: absolute;
+    font-size: 100px;
+    right: 0px;
+    bottom: -20px;
+    z-index: 1;
+    opacity: 0.09;
+    color: #28282a;
+    transition: all 0.3s ease;
+}
+
+.sumb-statistic__item.invoce-expenses__stats span:nth-child(2) {
+    border-bottom: 1px dotted #28282a;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.sumb-statistic__item.invoce-expenses__stats span {
+    margin-bottom: 5px;
+}
+
+/** Graphs **/
+
+.sumb--graphs {
+    margin-top: 15px;
+}
+
+.sumb--graphbox {
+    background: #fff;
+    padding-bottom: 20px;
+}
+
+.invoices-block h5 {
+    color: #28282a;
+}
+
+.sumb--graphbox h5 span {
+    font-size: 12px;
+    margin-top: 4px;
+    color: #8c8c8c;
+}
+
+.block-deets ul {
+    list-style: none;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.block-deets ul li {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+
+.block-deets ul li:last-child {
+    margin-bottom: 0px;
+}
+
+.block-deets ul li.Unpaid,
+.block-deets ul li.overdue {
+    color: #e87883;
+}
+
+.block-deets ul li.Paid {
+    color: #4BB543;
+}
+
+.block-deets ul li.PartlyPaid {
+    color: #e1a321;
+}
+
+.block-deets ul li.Recalled,
+.block-deets ul li.Voided {
+    color: #8c8c8c;
+}
+
+.block-deets ul li span {
+    display: inline;
+}
+
+.block-deets ul li u {
+    float: right;
+    text-decoration: none;
+}
+
+.block-deets .add--btn {
+    margin-top: 15px;
+    background: #fdb917;
+    padding: 10px 15px;
+    font-size: 13px;
+    color: #28282a;
+    font-weight: 600;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.block-deets .add--btn:hover {
+    background: #666;
+    color: #fafafa;
+    transition: all 0.3s ease;
+}
+
+.block-deets .add--btn::before {
+    font-family: "Font Awesome 6 Free";
+    content: "\f055";
+    margin-right: 5px;
+}
+
+
+/** Line Graph **/
+
+#SummaryChart {
+    margin-top: 20px;
+}
+#ExpensesChart,
+#InvoicesChart {
+    margin-top: 10px;
+}
+
+.SummaryChart-wrap {
+    width: 100%;
+    height: 430px;
+}
+
+.sumb--graphs [class*="col-"]:nth-child(3) {
+    margin-top: 30px;
+}
+
+.SummaryChart-wrap.inv-exp--page {
+    height: 380px !important;
+}
+
+.Expenses-wrap,
+.Invoices-wrap {
+    width: 100%;
+    height: 320px;
+}
+
+.ytdlegend {
+    display: block;
+    margin-top: 10px;
+}
+
+.ytdlegend span {
+    position: relative;
+    display: inline-block;
+    font-weight: 400;
+    font-size: 12px;
+    margin: 4px 3px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.ytdlegend span u {
+    display: block;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 1px;
+}
+
+.ytdlegend.for-dashboard span:first-child,
+.ytdlegend.for-invoice--expense span:nth-child(2) {
+    background: #fdc53e;
+}
+
+.ytdlegend.for-dashboard span:nth-child(2) {
+    background: #f9e0a3;
+}
+
+.ytdlegend.for-dashboard span:nth-child(3) {
+    background: #7e7e84;
+    color: #fafafa;
+}
+
+.ytdlegend.for-dashboard span:nth-child(4),
+.ytdlegend.for-invoice--expense span:first-child {
+    background: #ccc;
+}
+
+/** Dashboard Dropdown **/
+
+.ytdlegend--dropdown-wrap {
+    padding-top: 10px;
+}
+
+/** Calendar style on Dashboard ONLY start **/
+
+.sumb--dashboardCal .fc-center {
+    margin-top: 1.3em;
+}
+
+
+/** Calendar style on Dashboard ONLY end **/
+
+.table-responsive {
+    min-height: 130px;
+}
+
+.sumb--recentlogdements,
+.sumb--reportingTable,
+.sumb--transactionsTable,
+.reconcileTransactions--logs {
+    position: relative;
+    background: #fff;
+    border-radius: 12px;
+    padding: 15px 14px;
+    margin: 20px 0px;
+}
+
+.sumb--recentlogdements table,
+.sumb--reportingTable table,
+.sumb--transactionsTable table,
+.transactionsByTaxRate--table table,
+.reconcileTransactions--logs table {
+    position: relative;
+    width: 100%;
+    font-size: 14px;
+}
+
+.sumb--recentlogdements table thead th,
+.activity--statement table thead th {
+    position: relative;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: capitalize;
+    padding: 10px 15px;
+    white-space: nowrap;
+    background: #e5e5e5;
+    color: #28282a;
+}
+
+.sumb--recentlogdements table thead th i.fa-sort-down {
+    position: absolute;
+    top: 12px;
+}
+
+.sumb--recentlogdements table thead th i.fa-sort-up {
+    position: absolute;
+    top: 18px;
+}
+
+.sumb--recentlogdements table tbody tr:nth-child(even),
+.activity--statement table tbody tr:nth-child(even){
+    background: rgb(255,255,255);
+    background: linear-gradient(-90deg, rgba(255,255,255,1) 0%, rgba(244,244,244,1) 50%, rgba(255,255,255,1) 100%);
+}
+
+.sumb--recentlogdements table tbody td,
+.activity--statement table tbody td,
+table#adjustments td {
+    padding: 10px 15px;
+    white-space: nowrap;
+    border-bottom: 1px solid #e5e5e5;
+    font-size: 13px;
+    vertical-align: middle;
+}
+
+.sumb--recentlogdements table tbody tr:last-child td,
+.activity--statement table tbody tr:last-child td {
+    border-bottom: 0px !important;
+}
+
+.sumb--recentlogdements table tbody tr td:nth-child(3) {
+    text-transform: uppercase;
+}
+
+.sumb--recentlogdements__actions,
+.activity--statement__actions,
+.bankTransaction_list_actions {
+    text-align: center;
+}
+
+.sumb--recentlogdements table tbody td.sumb--recentlogdements__actions a,
+.activity--statement__actions a:not([href]) {
+    font-weight: 500;
+    background: #fdb917;
+    border-radius: 5px;
+    padding: 4px 15px;
+    margin: 0px 2px;
+    color: #28282a;
+}
+.sumb--recentlogdements table tbody td.sumb--recentlogdements__actions a:hover,
+.activity--statement__actions a:not([href]):hover {
+    background: #666;
+    color: #fafafa;
+}
+
+/** Void Transactions **/
+
+td.sumb--recentlogdements__actions .sumb--fileSharebtn.Voided a,
+td.sumb--recentlogdements__actions .sumb--fileSharebtn.expenses--void a.fileSharebtn {
+    display: none !important;
+}
+
+
+td.sumb--recentlogdements__actions .sumb--fileSharebtn.Voided::after,
+td.sumb--recentlogdements__actions .sumb--fileSharebtn.expenses--void::after {
+    font-family: "FontAwesome";
+    font-size: 14px;
+    content: "\f05e";
+    font-weight: 500;
+    background: #d5d5d5;
+    border-radius: 5px;
+    padding: 7px 15px 8px;
+    margin: 0px 2px;
+    color: #838383;
+}
+
+
+/** Void Transactions End **/
+
+.sumb--recentlogdements__status_proc {
+    color: #666;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.sumb--recentlogdements__status_rev {
+    color: #e8a578;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.sumb--recentlogdements__status_acc {
+    color: #8fc72c;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.sumb--recentlogdements__status_rej {
+    color: #e87883;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.sumb--recentlogdements__status_notsub {
+    color: #666;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.sumb--recentlogdements__status_partly_paid {
+    color: #e1a321;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.sumb--recentlogdements__tableender {
+    text-align: center;
+    line-height: 130%;
+    border-radius: 0px 0px 7px 7px;
+    border-bottom: 0px;
+}
+
+.sumb--recentlogdements table tbody td.sumb--recentlogdements__progbar {
+    padding: 5px 15px 10px 15px !important;
+    line-height: 25px;
+}
+
+.__progbarWrap {
+    position: relative;
+    background: #e5e5e5;
+    border: 1px solid #dbdbdb;
+    width: auto;
+    min-width: 110px;
+    max-width: 140px;
+    height: 5px;
+}
+
+.__progbarWrap--status {
+    position: absolute;
+    background: #8fc72c;
+    top: 0px;
+    left: 0px;
+    height: 3px;
+}
+
+tr.sumb--recentlogdements__pagination {
+    background: none !important;
+}
+
+tr.sumb--recentlogdements__pagination td {
+    padding: 17px 0px 5px 0px !important;
+    position: relative;
+    text-align: center;
+}
+
+tr.sumb--recentlogdements__pagination td .btn-group a,
+tr.sumb--recentlogdements__pagination a.dropdown-item {
+    color: #28282a;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+tr.sumb--recentlogdements__pagination td .btn {
+    font-size: 12px;
+    background: #fafafa;
+    color: #28282a;
+    border: 1px solid #e5e5e5;
+}
+
+tr.sumb--recentlogdements__pagination .dropdown-menu,
+.addnewSvc .dropdown-menu,
+.sumb--fileAddbtn .dropdown-menu,
+.sumb--dashboardDropdown .dropdown-menu.show a.dropdown-item {
+    font-size: 13px;
+}
+
+.sumb--dashboardAnn ul,
+.sumb--dashboardRequest ul {
+    list-style: none;
+    font-size: 14px;
+    margin-left: 23px;
+}
+
+.sumb--dashboardAnn ul li,
+.sumb--dashboardRequest ul li {
+    margin-bottom: 6px;
+}
+
+.sumb--dashboardAnn ul li:last-child,
+.sumb--dashboardRequest ul li:last-child {
+    margin-bottom: 0px;
+}
+
+.sumb--dashboardAnn ul li:before {
+    content: "\f0a1"; /* FontAwesome Unicode */
+    font-family: "FontAwesome";
+    display: inline-block;
+    margin-left: -1.3em; /* same as padding-left set on li */
+    width: 1.5em; /* same as padding-left set on li */
+    color: #e8a578;
+}
+
+.sumb--dashboardRequest ul li:before {
+    content: "\e4be"; /* FontAwesome Unicode */
+    font-family: "FontAwesome";
+    display: inline-block;
+    margin-left: -1.3em; /* same as padding-left set on li */
+    width: 1.5em; /* same as padding-left set on li */
+    color: #e87883;
+}
+
+
+.addnewSvc a.dropdown-toggle {
+    text-transform: capitalize;
+    background: #fdb917;
+    color: #28282a;
+    border: 1px solid #fdb917;
+    padding: 11px 20px 10px;
+}
+
+.addnewSvc a.dropdown-toggle i {
+    margin-right: 7px;
+}
+
+.sumb--searchBox {
+    position: relative;
+    border: 1px solid #e5e5e5;
+    border-radius: 5px;
+    padding: 10px 7px;
+}
+
+.sumb--searchBox input {
+    width: 100%;
+    margin-left: 8px;
+    font-size: 14px;
+}
+
+.sumb--searchBox button {
+    position: absolute;
+    right: -1px;
+    top: -1px;
+    height: 105%;
+    padding: 8px 20px 5px 18px;
+    background: #fdb917;
+    border-radius: 0px 4px 4px 0px;
+    color: #28282a;
+}
+
+/** Dashboard Dropdown **/
+
+.sumb--dashboardDropdown {
+    background: #fff;
+    width: 100%;
+    position: relative;
+    border: 1px solid #666;
+    border-radius: 5px;
+    padding: 6px 12px;
+    transition: all 0.3s ease;
+    font-size: 13px;
+    color: #28282a;
+}
+
+.sumb--dashboardDropdown button {
+    width: 100%;
+    display: block;
+    text-align: left;
+    font-weight: 500;
+    color: #666;
+}
+
+.sumb--dashboardDropdown.show {
+    background: #6c757d;
+    transition: all 0.3s ease;
+}
+
+.sumb--dashboardDropdown.show,
+.sumb--dashboardDropdown.show button {
+    color: #fafafa;
+    transition: all 0.3s ease;
+}
+
+.sumb--dashboardDropdown::after {
+    font-family: FontAwesome;
+    content: '\f0b0';
+    color: #666;
+}
+
+.sumb--dashboardDropdown.invoice-expenses--dropdown::after {
+    font-family: FontAwesome;
+    content: '\f0d7';
+    color: #666;
+}
+
+.sumb--dashboardDropdown .dropdown-menu.show {
+    left: -13px !important;
+    top: 10px !important;
+    width: 100% !important;
+}
+
+
+.addNewEmpDoc a,
+.sumb--accountant .addNewUser {
+    padding: 11px 20px 10px;
+    background: #fdb917;
+    width: 100%;
+    border-radius: 5px;
+    color: #28282a;
+    text-align: center;
+}
+
+.addNewEmpDoc a:hover,
+.sumb--accountant .addNewUser:hover {
+    background: #f5c85b;
+}
+
+.addNewEmpDoc a i {
+    margin-right: 7px;
+}
+
+.statbox__item--getDocument {
+    /**background: #fff4d9;**/
+    background: #00acee;
+    color: #fafafa;
+    font-size: 18px;
+    text-align: center;
+}
+
+.statbox__item--getDocument .icon {
+    opacity: 0.12;
+}
+
+.docu--summaryLodgeWrap [class*="col-"] {
+    padding: 8px;
+}
+
+.docu--summaryLodge {
+    background: #fafafa;
+    border: 1px solid #e5e5e5;
+    border-radius: 9px;
+    padding: 15px;
+    width: 100%;
+}
+
+ul.docu--stats {
+    margin-top: 10px;
+    list-style: none;
+    font-size: 14px;
+}
+
+ul.docu--stats li {
+    padding: 3px;
+    font-size: 12px;
+}
+
+ul.docu--stats li span {
+    font-weight: 600;
+}
+
+li.stats--header {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+li.stats--header::before {
+    font-family: FontAwesome;
+    content: "\f15c";
+    margin-right: 7px;
+}
+
+.docu-item {
+    background: #fff;
+    border-radius: 5px;
+    border: 1px solid #e5e5e5;
+    margin: 10px 0px;
+}
+
+.docu-item .card-body {
+    font-size: 14px;
+    color: #28282a;
+    padding: 14px 15px 20px;
+}
+
+.docu-item .card-text {
+    font-size: 13px;
+}
+
+.docu-item .card-add-item {
+    padding: 10px 15px 0px 15px !important;
+
+}
+
+.docu-item .card-status ul {
+    list-style: none;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    padding-top: 10px;
+    border-top: 1px dotted #ccc;
+}
+
+.docu-item .card-status ul li {
+    font-size: 12.5px;
+}
+
+.docu-item .card-status ul li span {
+    font-weight: 600;
+}
+
+.docu-item .card-add-item .qty-item {
+    border: 1px solid #e5e5e5;
+    border-radius: 5px 0px 0px 5px;
+    border-right: 0px;
+    padding: 10px;
+    font-size: 12px;
+}
+
+.docu-item .card-add-item .btn-item {
+    background: #fdb917;
+    padding: 10px 0px;
+    border-radius: 0px 5px 5px 0px;
+    border: 1px solid #fdb917;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 120%;
+    white-space: nowrap;
+    width: 100% !important;
+    transition: all 0.3s ease;
+}
+
+.docu-item .card-add-item .btn-item:hover {
+    background: #f5c85b;
+    border: 1px solid #f5c85b;
+    color: #666;
+    transition: all 0.3s ease;
+}
+
+.docu-item-fixed-proceed {
+    position: fixed;
+    background: #fafafa;
+    border-top: 1px solid #e5e5e5;
+    bottom: 0px;
+    width: calc(100% - 300px);
+    left: 0px;
+    margin-left: 300px;
+    padding: 15px 15px 20px 20px;
+    vertical-align: bottom;
+}
+
+.docu-item-fixed-proceed button {
+    position: relative;
+    padding: 10px 20px;
+    margin-top: auto;
+}
+
+.docu-item-fixed-proceed button i,
+.modal-title i {
+    font-size: 13px;
+    top: -1px;
+    margin-right: 7px;
+    position: relative;
+}
+
+.modal-title i {
+    font-size: 14px;
+}
+
+.cart-summary {
+    position: relative;
+    width: 100%;
+    font-size: 14px;
+}
+
+.cart-summary thead th {
+    color: #28282a;
+    font-weight: 600;
+    text-align: center;
+}
+
+.cart-summary tbody td {
+    text-align: center;
+    padding: 3px 5px;
+}
+
+.cart-summary tbody tr:nth-child(even) {
+    background: #fafafa;
+}
+   
+.cart-summary thead th:nth-child(1),
+.cart-summary tbody td:nth-child(1) {
+    text-align: left;
+}
+
+.cart-summary tbody .tree-branch {
+    font-weight: 600;
+}
+
+.cart-summary tbody .tree-item td:nth-child(1)::before {
+    padding-left: 5px;
+    content: "> ";
+    font-weight: 600;
+}
+
+.cart-summary tbody .cart-sum-total td {
+    font-size: 18px;
+    font-weight: 600;
+    padding-top: 20px;
+}
+
+.cart-summary tbody .cart-sum-total td:nth-child(1) {
+    text-align: right;
+}
+
+.docu-item-forms {
+    position: relative;
+    background: #fff;
+    padding: 15px;
+    border-radius: 12px;
+}
+
+ul.docu-item-forms--list {
+    list-style: none; 
+    border: 1px solid #e5e5e5;
+    border-right: 0px;
+    border-radius: 9px 0px 0px 9px;
+    height: 100%;
+}
+
+ul.docu-item-forms--list li {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+ul.docu-item-forms--list li:first-child {
+    border-top-left-radius: 8px;
+}
+
+ul.docu-item-forms--list li:last-child,
+li.tree--branch:last-child a {
+    border-bottom-left-radius: 8px;
+    background: #fafafa;
+    border-bottom: 0px;
+}
+
+li.main--tree {
+    position: relative;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 15px;
+    line-height: 130%;
+    background: #f5c85b;
+    color: #28282a;
+}
+
+li.main--tree span {
+    font-size: 13px;
+    display: block;
+}
+
+li.tree--branch a {
+    font-size: 12px;
+    display: block;
+    padding: 8px 10px 12px 30px;
+    color: #28282a;
+    background: #fafafa;
+}
+
+li.tree--branch a:hover {
+    background: #dbdbdb;
+}
+
+li.tree--branch a span {
+    display: block;
+    font-size: 11px;
+}
+
+li.tree--branch.active {
+    position: relative;
+    border-right: 0px;
+}
+
+li.tree--branch.active a {
+    /**background: #fff4d9;**/
+    background: rgb(255,244,217);
+    background: linear-gradient(90deg, rgba(255,244,217,1) 30%, rgba(255,255,255,1) 100%);
+    font-weight: 600;
+    padding-left: 35px;
+}
+
+li.tree--branch.active::before {
+    position: absolute;
+    font-family: FontAwesome;
+    content: "\f303";
+    color: #28282a;
+    font-size: 16px;
+    height: 20px;
+    width: 20px;
+    margin-left: 10px;
+    margin-top: 16px;
+
+}
+
+li.tree--branch.active::after{
+    position: absolute;
+    width: 5px;
+    height: 100%;
+    content: " ";
+    background: #fff;
+    top: 0px;
+    right: -3px;
+    z-index: 8;
+}
+
+.docu-item-forms-nav {
+    padding-right: 0px;
+}
+
+.docu-item-forms-panel {
+    padding-left: 0px;
+}
+
+.mobile--nav {
+    position: relative;
+    display: none;
+}
+
+.docu-item-nav {
+    position: relative;
+    width: 100%;
+    padding: 15px 20px;
+    border-radius: 9px;
+    margin-bottom: 15px;
+    border: 1px solid #e5e5e5;
+    cursor: pointer;
+    outline: none;
+    -webkit-appearance: none;
+    appearance: none;
+    font-size: 13px;
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23666666%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E');
+    background-repeat: no-repeat, repeat;
+    background-position: right 1.09em top 50%, 0 0;
+    background-size: 1em auto, 100%;
+    color: #28282a;
+}
+
+.form--side {
+    border: 1px solid #e5e5e5;
+    padding: 20px;
+    height: 100%;
+    border-radius: 0px 9px 9px 0px;
+    font-size: 14px;
+}
+
+
+/** sumb--progressButtons Back/Save/Next Start **/
+
+.sumb--progressButtons [class*="col-"] a {
+    font-weight: 500;
+    text-transform: capitalize;
+    font-size: 15px;
+}
+
+.sumb--progressButtons [class*="col-"] a:hover {
+    background: #f5c85b;
+    color: #28282a;
+}
+
+.right--buttons {
+    text-align: right;
+}
+
+/** sumb--progressButtons Back/Save/Next End **/
+
+
+/** Calendar Skin Start **/
+
+.fc button {
+    font-size: 14px;
+    padding: 0px 15px;
+}
+
+.fc-state-default {
+    background: #fff;
+    text-transform: capitalize;
+    border: 1px solid #e5e5e5;
+    color: #28282a;
+    box-shadow: none;
+}
+
+.fc-today-button {
+    background: #28282a;
+    text-shadow: none;
+    border: 1px solid #28282a;
+    color: #fafafa;
+}
+
+.fc-state-active {
+    box-shadow: none;
+    background: #fdb917;
+    text-shadow: none;
+}
+
+.fc-center h2 {
+    font-weight: 600;
+}
+
+.fc-event-dot {
+    background: #fdb917;
+}
+
+.fc-event {
+    background: #28282a;
+    border: 1px solid #28282a;
+    font-size: 12px;
+    padding: 2px 5px;
+}
+
+
+/** Requests / Linked Accounts Start **/
+
+.scrollable--wrapper {
+    min-height: 442px;
+    max-height: 442px;
+    overflow-y: auto;
+    padding-right: 10px;
+    margin-bottom: 15px;
+}
+
+.linked--accounts_wrap {
+    font-size: 14px;
+    border-radius: 8px;
+}
+
+.linked--accounts_item {
+    position: relative;
+    background: #fafafa;
+    padding: 15px 15px 0px 15px;
+    margin-bottom: 10px;
+    border: 1px solid #e5e5e5;
+    border-radius: 7px;
+}
+
+.linked--accounts_item h5 {
+    font-weight: 600;
+    color: #28282a;
+    border-bottom: 1px solid #e5e5e5;
+    padding-bottom: 7px;
+    margin-bottom: 5px;
+}
+
+.linked--accounts_item h5 span {
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    padding: 5px 10px;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 0px 6px 0px 3px;
+}
+
+.linked--accounts_item h5 span.stat__linked {
+    background: #8fc72c;
+    color: #fafafa;
+}
+
+.linked--accounts_item h5 span.stat__requesting {
+    background: #f5c85b;
+    color: #666
+}
+
+.linked--accounts_item ul {
+    list-style: none;
+    font-size: 13px;
+    margin: 10px 0px;
+    font-weight: 500;
+}
+
+.linked--accounts_item a.linked--accounts_itemDetails {
+    margin-top: 5px;
+    display: block;
+    font-size: 13px;
+    border-top: 1px solid #e5e5e5;
+    padding: 5px 0px 10px;
+}
+
+.viewall_btn {
+    display: block;
+    background: #fdb917;
+    padding: 10px 20px;
+    color: #28282a;
+    text-transform: capitalize;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 13px;
+    text-align: center;
+}
+
+.viewall_btn:hover {
+    background: #f5c85b;
+    color: #666;
+}
+
+.sumb--alert {
+    font-size: 14px;
+    background: #fafafa;
+    font-weight: 500;
+    color: #666;
+    line-height: 130%;
+    border-radius: 7px !important;
+    padding: 15px 40px 15px 15px;
+}
+
+.sumb--alert.noti--filereq,
+.sumb--alert.noti--linkreq,
+.sumb--alert.noti--svcreq {
+    background: #f3f9ff;
+    border: 1px solid #b8dbff;
+}
+
+.sumb--alert .noti--type {
+    padding: 4px 10px;
+    font-size: 12px;
+    border-radius: 3px;
+    font-weight: 500;
+    display: inline-block;
+    line-height: 120%;
+}
+
+.sumb--alert.noti--filereq .noti--type {
+    background: #f9ab30;
+    color: #28282a;
+}
+
+.sumb--alert.noti--linkreq .noti--type {
+    background: #175bfd;
+    color: #fafafa;
+}
+
+.sumb--alert.noti--svcreq .noti--type {
+    background: #3b5998;
+    color: #fafafa;
+}
+
+
+.noti--actions a {
+    font-size: 13px;
+    background: #fdb917;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #28282a;
+    font-weight: 500;
+}
+
+.noti--actions a:hover {
+    background: #f5c85b;
+    color: #666;
+}
+
+.noti--actions [class*="col-"]:nth-child(2) {
+    text-align: right;
+}
+
+/** File Vault Skin  Start **/
+.sumb--fileAddbtn .fileAddbtn {
+    display: block;
+    text-transform: capitalize;
+    background: #fdb917;
+    border: 0px;
+    border-style: none;
+    color: #28282a;
+    padding: 10px 17px;
+    border-radius: 7px;
+    font-weight: 500;
+}
+
+.sumb--fileAddbtn .fileAddbtn:hover {
+    background: #f5c85b;
+    color: #666;
+    border: 0px;
+    border-color: #28282a;
+}
+
+.sumb--fileAddbtn.show>.fileAddbtn,
+.sumb--fileSharebtn.show>.fileSharebtn {
+    background: #6c757d;
+    color: #fafafa;
+}
+
+.sumb--fileAddbtn .fileAddbtn i {
+    font-size: 14px;
+    margin-right: 7px;
+}
+
+.sumb--fileAddbtn .dropdown-menu {
+    width: 100%;
+}
+
+.sumb--fileSharebtn {
+    display: inline;
+}
+
+.sumb--fileSharebtn .dropdown-menu a.dropdown-item {
+    margin: 0px;
+    background: none;
+    font-size: 13px;
+    border-radius: 0px;
+    font-weight: 400;
+    color: #212529;
+    display: block;
+    width: 100%;
+    padding: 0.25rem 1.5rem;
+    clear: both;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+    text-decoration: none;
+}
+
+.sumb--fileSharebtn .dropdown-menu a.dropdown-item.sentemail--btn::before {
+    font-family: "FontAwesome";
+    content: "\e4e8";
+    margin-right: 7px;
+}
+
+.sumb--fileSharebtn .dropdown-menu a.dropdown-item:hover {
+    background: #fafafa;
+    color: #28282a;
+}
+
+.sumb--fileSharebtn .dropdown-menu a.dropdown-item:focus {
+    background: #f5c85b;
+}
+
+.folder--tree {
+    list-style: none;
+    font-size: 13px;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+}
+
+.folder--tree li:nth-child(1) {
+    background: #fdb917;
+    color: #28282a;
+    padding: 11px 11px 9px;
+    border-radius: 9px 9px 0px 0px;
+    font-weight: 500;
+}
+
+.folder--tree li:nth-child(1) i,
+.folder--tree li:nth-child(2) i {
+    margin-right: 6px;
+}
+
+.folder--tree li:last-child {
+    border-bottom: 0px;
+    border-radius: 0px 0px 9px 9px;
+}
+
+.folder--tree li {
+    border-bottom: 1px dotted #e5e5e5;
+    padding-left: 12px;
+    line-height: 130%;
+    transition: all 0.3s ease;
+}
+
+.folder--tree li a {
+    display: block;
+    padding: 10px;
+    font-size: 12px;
+    color: #666;
+}
+
+.folder--tree li:hover {
+    background: #fafafa;
+    transition: all 0.3s ease;
+}
+
+.folder--tree li a::before {
+    font-family: FontAwesome;
+    content: "\f07b";
+    margin-right: 7px;
+}
+
+.folder--tree li:nth-child(2) {
+    padding-left: 0px;
+}
+
+.folder--tree li:nth-child(2) a {
+    padding-left: 5px;
+}
+
+.folder--tree li:nth-child(2) a::before {
+    content: "";
+}
+
+.folder--tree li.next--level {
+    padding-left: 25px;
+}
+
+.folder--tree li.active--foldr a::before {
+    content: "\f07c";
+}
+
+.folder--tree li.active--foldr.currently--selected {
+    background: #e5e5e5;
+    font-weight: 600;
+}
+
+.path--bar {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+.path--bar p {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0px 5px;
+    font-size: 14px;
+}
+
+.path--bar p span {
+    font-weight: 600;
+}
+
+.path--bar p i {
+    font-size: 13px;
+    margin: 0px 5px;
+}
+
+
+/** Accountant Specific Colors **/
+
+.sumb--accountant,
+.sumb--accountant .menu-sidebar__content,
+.sumb--accountant .sumb--userheader {
+    background: #6c757d url('../img/random-grey-variations@30.png');
+}
+.sumb--accountant .account-wrap {
+    background: #f5c85b;
+}
+
+.sumb--accountant .noti__item>i:hover,
+.sumb--accountant .noti__item.show-dropdown>i {
+    color: #f5c85b;
+}
+
+.sumb--accountantBody h3,
+.sumb--accountantBody .sumb--title2 {
+    color: #6c757d;
+}
+
+.sumb--accountant .sumb--dashboardAnn a.create--announce,
+.sumb--accountant .sumb--dashboardCal a.create--announce {
+    background: #f5c85b;
+    font-size: 14px;
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    padding: 7px 17px;
+    color: #666;
+    text-transform: capitalize;
+    border-radius: 8px;
+    font-weight: 500;
+}
+
+.sumb--accountant .sumb--dashboardRequests .noti--actions a {
+    background: #f5c85b;
+    color: #666;
+}
+
+
+.sumb--accountant .sumb--dashboardAnn a.create--announce:hover,
+.sumb--accountant .sumb--dashboardCal a.create--announce:hover,
+.sumb--accountant .sumb--dashboardRequests .noti--actions a:hover {
+    background: #6c757d;
+    color: #fafafa;
+}
+
+.sumb--accountant .statistic__item--green {
+    /**background: #00b28d;**/
+    background: #fdb917;
+}
+
+.sumb--accountant .statistic__item--orange {
+    /**background: #eba328;**/
+    background: #fdb917;
+}
+
+.sumb--accountant .statistic__item--blue {
+    /**background: #63aee3;**/
+    background: #fdb917;
+}
+
+.sumb--accountant .statistic__item--red {
+    /**background: #fb6874;**/
+    background: #fdb917;
+}
+
+.sumb--accountant .sumb--dashlinkbox:hover {
+    background: #e5e5e5;
+}
+
+.sumb--accountant .sumb--dashlinkbox:hover .icon {
+    color: #979797;
+}
+
+
+
+/**  Form Skin (separate from main css) **/
+
+input[class="yes--btn"],
+input[class="no--btn"],
+.form--radiobutton label input,
+.form--genderoption label input,
+.form--cxboxbutton label input,
+.form--cxbox_seacrch label input,
+li.add--newactclnt label input {
+    display: none;
+}
+
+hr.form-cutter {
+    margin: 25px 0px 20px 0px;
+    border-top: 1px dotted #666;
+}
+
+.form-header--wseparator {
+    font-weight: 600;
+    color: #666;
+    padding-bottom: 10px;
+    border-bottom: 1px dotted #666;
+    margin: 10px 0px 15px 0px;
+}
+
+.form-header--title {
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.form-header--h5 {
+    font-weight: 600;
+    color: #666;
+}
+
+.form-input--wrap {
+    margin-bottom: 10px;
+}
+
+.form-input--wrap label.form-input--question {
+    display: block;
+    font-weight: 600;
+    margin: 7px 0px 12px 0px;
+    font-size: 14px;
+    line-height: 120%;
+}
+
+.form-input--wrap label.form-input--question a {
+    color: #666;
+    font-size: 15px;
+}
+
+.form-input--wrap label.form-input--question span {
+    color: #8c8c8c;
+    font-weight: 400;
+    font-size: 12px;
+    margin-left: 2px;
+}
+
+.form-input--wrap label.form-input--question span::before {
+    content: "(";
+    padding-right: 2px;
+}
+
+.form-input--wrap label.form-input--question span::after {
+    content: ")";
+    padding-left: 2px;
+}
+
+.form-input--wrap label.form-input--question small {
+    display: block;
+    font-weight: 500;
+}
+
+input[class="yes--btn"] + span::before,
+input[class="no--btn"] + span::before,
+.sumb--btn {
+    cursor: pointer;
+    display: inline-block;
+    background: #fdb917;
+    padding: 6px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    font-size: 14px;
+    min-width: 60px;
+    text-align: center;
+    outline: none;
+}
+
+.sumb--btn {
+    color: #28282a;
+    border: 0px;
+}
+
+.sumb--btn i {
+    margin-right: 5px;
+}
+
+.sumb-del-btn {
+    cursor: pointer;
+    display: inline-block;
+    background: #fdb917;
+    padding: 3px 5px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    font-weight: 200;
+    font-size: 10px;
+    min-width: 20px;
+    text-align: center;
+    outline: none;
+}
+
+.sumb-clear-btn {
+    background: #d5d5d5;
+}
+
+.sumb--btn.delepart i {
+    margin-right: 0px;
+}
+
+#history_btn,
+#invoice_history_btn {
+    margin-top: 10px;
+}
+
+input[class="yes--btn"] + span::before {
+    content: "Yes";
+    margin-right: 7px;
+}
+
+input[class="no--btn"] + span::before {
+    content: "No";
+}
+
+input[class="yes--btn"] + span:hover::before,
+input[class="yes--btn"]:checked + span::before,
+input[class="no--btn"] + span:hover::before,
+input[class="no--btn"]:checked + span::before,
+.sumb--btn:hover {
+    background: #666;
+    color: #fafafa;
+    transition: all 0.3s ease;
+}
+
+select[class="form-input--dropdown"] {
+    padding: 9px 50px 9px 12px;
+    border-radius: 5px;
+    border-color: #666;
+    cursor: pointer;
+    -moz-appearance: none; /* Firefox */
+    -webkit-appearance: none; /* Safari and Chrome */
+    appearance: none;
+    outline: none;
+    font-size: 13px;
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23666666%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E');
+    background-repeat: no-repeat, repeat;
+    background-position: right 0.9em top 50%, 0 0;
+    background-size: 0.8em auto, 100%;
+    color: #28282a;
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+.for--tables select[class="form-input--dropdown"] {
+    margin-bottom: 0px;
+    padding: 8px 30px 8px 12px;
+    border-color: #d5d5d5;
+}
+
+.date--picker,
+.form--inputbox,
+.form--textarea {
+    margin-bottom: 17px;
+}
+
+.date--picker input,
+.form--inputbox input,
+.form--textarea textarea,
+.form--dropimg .img--box__input_wrap,
+.form--recentsearch .form--recentsearch__result,
+.invoice-expenses--input,
+.modal-reskin textarea,
+textarea.invoice-settings--textarea {
+    position: relative;
+    padding: 9px 12px 9px 12px;
+    border-radius: 5px;
+    border: 1px solid #666;
+    font-size: 13px;
+    color: #28282a;
+    width: 100%;
+}
+
+textarea.invoice-settings--textarea {
+    min-height: 120px;
+}
+
+.form--inputbox .with--prepend {
+    position: relative;
+}
+
+.form--inputbox .with--prepend .prepend--text {
+    position: absolute;
+    z-index: 2;
+    background: #f2f2f2;
+    padding: 7px 11px 7.5px;
+    top: 0px;
+    left: 0px;
+    border: 1px solid #666;
+    font-size: 13px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    font-weight: 600;
+}
+
+.form--inputbox .with--prepend input {
+    padding-left: 40px;
+    z-index: 1;
+}
+
+.form--dropimg .img--box__input_wrap {
+    padding: 12px;
+}
+
+.form-control:disabled,
+.form-control[readonly],
+.form--inputbox.readOnly input {
+    background: #f2f2f2;
+    cursor: default;
+}
+
+.form--inputbox.recentsearch--input input {
+    z-index: 2;
+}
+
+
+.form--recentsearch {
+    position: absolute;
+    width: 100%;
+}
+
+.form--recentsearch .form--recentsearch__result {
+    z-index: 99;
+    margin-top: -20px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-color: #ccc;
+    padding-right: 12px;
+    background: #fff;
+}
+
+.form--recentsearch__result ul {
+    list-style: none;
+    width: 100%;
+}
+
+.form--recentsearch__result ul li button,
+.form--recentsearch__result ul li.noactive--list {
+    position: relative;
+    display: block;
+    width: 100%;
+    text-align: left;
+    margin: 6px 0px;
+    padding: 5px 10px;
+    border: 1px solid #d5d5d5;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+.form--recentsearch__result ul li button::after {
+    content: "Use This";
+    position: absolute;
+    right: 12px;
+    top: 7.5px;
+    font-size: 10px;
+    font-weight: 600;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.form--recentsearch__result ul li button:hover {
+    background: #fdb917;
+    transition: all 0.3s ease;
+}
+
+.form--recentsearch__result ul li button:hover::after {
+    color: #28282a;
+    transition: all 0.3s ease;
+}
+
+.form--recentsearch__result ul li.add--newactclnt {
+    margin: 3px 0px;
+}
+
+.form--recentsearch__result ul li.add--newactclnt label {
+    margin-bottom: 0px;
+    width: 100%;
+}
+
+.form--recentsearch__result ul li.add--newactclnt .option--title {
+    position: relative;
+    display: block;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 4px 0px 6px 26px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border-radius: 3px;
+    border: 1px solid #d5d5d5;
+}
+
+.form--recentsearch__result ul li.add--newactclnt .option--title:hover {
+    background: #e5e5e5;
+}
+
+.form--recentsearch__result ul li.add--newactclnt .option--title::before {
+    font-family: Material-Design-Iconic-Font;
+    content: "\f279";
+    font-weight: 500;
+    position: absolute;
+    left: 8px;
+}
+
+.form--recentsearch__result ul li.add--newactclnt input:checked + .option--title {
+    background: #f5c85b;
+    transition: all 0.3s ease;
+}
+
+.form--recentsearch__result ul li.add--newactclnt input:checked + .option--title::before {
+    content: "\f26a";
+}
+
+.saveNewRecord {
+    background-image: url('../img/forms/saveNewRecord-icon.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 100%;
+}
+
+
+.form--inputbox input.saveNewRecord {
+    padding-right: 55px;
+}
+
+.date--picker input,
+.date--picker-modal input {
+    cursor: pointer;
+    background-image: url('../img/forms/calendar-icon.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 100%;
+}
+
+.form--dropimg .img--box__input {
+    text-align: center;
+    min-height: 230px;
+    display: table;
+    text-align: center;
+    width: 100%;
+    background: #e6eaeb;
+    border-radius: 4px;
+    border: 1px dashed #bac5c8;
+}
+
+.img--box__input .img--box_label {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 150%;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.img--box__input .img--box_label i {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 40px;
+    color: #bac5c8;
+}
+
+.img--box__input .img--box_label a {
+    margin-bottom: 10px;
+}
+
+.img--box__input .img--box_label small {
+    display: block;
+    font-size: 8pt;
+    color: #666;
+}
+
+.img--box__input_wrap.imgisuploaded .img--box__input {
+    background: #fff;
+}
+
+.img--box__input_wrap.imgisuploaded .img--box__input #logoimagehtml {
+    display: block;
+    padding: 20px;
+    width: 100%;
+}
+
+.img--box__input_wrap.imgisuploaded .img--box__input .img--box_label {
+    background: #e6eaeb;
+    display: block;
+    padding: 10px;
+    margin: 0px 20px 20px;
+    border-radius: 4px;
+    line-height: 120%;
+    font-size: 12px;
+}
+
+.img--box__input_wrap.imgisuploaded .img--box__input .img--box_label a {
+    margin-bottom: 0px;
+}
+
+
+.form--radiobutton label,
+.form--cxboxbutton label {
+    width: 100%;
+}
+
+.form--radiobutton .option--title,
+.form--cxboxbutton .option--title {
+    position: relative;
+    display: block;
+    font-size: 14px;
+    cursor: pointer;
+    background: #fff;
+    padding: 10px 15px 12px 35px;
+    border-radius: 5px;
+    border: 1px solid #666;
+    font-weight: 500;
+    margin-bottom: 5px;
+    transition: all 0.3s ease;
+}
+
+.form--radiobutton .option--title span,
+.form--cxboxbutton .option--title span,
+.form--recentsearch__result ul li.add--newactclnt .option--title span {
+    display: block;
+    font-weight: 400;
+    line-height: 130%;
+    font-size: 12px;
+}
+
+.form--genderoption label .option--title {
+    position: relative;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 0px 15px 0px 20px;
+    font-weight: 500;
+}
+
+.form--radiobutton label input:hover + .option--title,
+.form--radiobutton label input:checked + .option--title,
+.form--cxboxbutton label input:hover + .option--title,
+.form--cxboxbutton label input:checked + .option--title {
+    background: #f5c85b;
+    color: #666;
+    transition: all 0.3s ease;
+}
+
+.form--radiobutton .option--title::before,
+.form--genderoption label .option--title::before {
+    font-family: Material-Design-Iconic-Font;
+    content: "\f26c";
+    font-weight: 500;
+    position: absolute;
+    left: 14px;
+}
+
+.form--genderoption label .option--title::before {
+    left: 0px;
+}
+
+.form--radiobutton label input:checked + .option--title::before,
+.form--genderoption label input:checked + .option--title::before {
+    content: "\f26f";
+}
+
+.form--cxboxbutton .option--title::before {
+    font-family: Material-Design-Iconic-Font;
+    content: "\f279";
+    font-weight: 500;
+    position: absolute;
+    left: 15px;
+}
+
+.form--cxboxbutton label input:checked + .option--title::before {
+    content: "\f26a";
+}
+
+.form--cxboxbutton .option--title img {
+    max-width: 120px;
+    display: block;
+    margin-bottom: 7px;
+}
+
+
+#errorMsg {
+    position: relative;
+    background: #f9dddf;
+    border: 1px solid #f3bbc1;
+    margin: -4px 0px 15px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 13px;
+    color: #666;
+    line-height: 130%;
+    overflow: hidden;
+}
+
+#errorMsg::after {
+    font-family: FontAwesome;
+    content: "\f071";
+    opacity: 0.07;
+    position: absolute;
+    bottom: .20em;
+    right: 2px;
+    font-size: 50px;
+    color: #666;
+}
+
+#errorMsg h5 {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #666;
+}
+
+.form-input--helpwrap {
+    position: relative;
+    background: #fff;
+    font-size: 13px;
+    margin-bottom: 15px;
+    padding: 10px 15px;
+    border: 1px solid #e5e5e5;
+    line-height: 130%;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.form-input--helpwrap::after {
+    font-family: FontAwesome;
+    content: "\f059";
+    opacity: 0.07;
+    position: absolute;
+    bottom: .20em;
+    right: 2px;
+    font-size: 50px;
+    color: #666;
+}
+
+/** Summary/Payment Table Skin **/
+
+.table--form_wrap {
+    position: relative;
+    width: 100%;
+    border: 1px solid #666;
+    border-radius: 7px;
+    margin: 20px 0px 15px;
+    padding: 10px;
+}
+
+.table--form {
+    position: relative;
+    width: 100%;
+}
+
+.table--form thead th {
+    background: #e5e5e5;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 10px 15px;
+    border: 0px;
+    text-align: center;
+}
+
+.table--form thead th:first-child {
+    border-top-left-radius: 4px;
+}
+
+.table--form thead th:last-child {
+    border-top-right-radius: 4px;
+}
+
+.table--form tbody td {
+    font-size: 13px;
+    padding: 10px 10px;
+    text-align: center;
+}
+
+.table--form tbody tr:nth-child(even) td {
+    background: #fff;
+}
+
+.table--form tbody td.no--items {
+    padding: 20px;
+    text-align: center;
+}
+
+.table--form tbody tr.invoice-total--amount td {
+    font-size: 15px;
+    background: #e5e5e5;
+}
+
+.table--form tbody tr.invoice-total--amount td:first-child {
+    border-bottom-left-radius: 4px;
+}
+
+.table--form tbody tr.invoice-total--amount td:last-child {
+    border-bottom-right-radius: 4px;
+}
+
+/** Invoice Table Skin **/
+
+a.transaction--Addbtn,
+a.transaction--Addbtn_expenses,
+a.transaction--Addbtn_chartaccounts {
+    background: #fdb917;
+    padding: 6px 15px;
+    border: 5px;
+    color: #28282a;
+    border-radius: 5px;
+    font-size: 14px;
+    display: inline-block;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    margin-bottom: 8px;
+}
+
+a.transaction--Addbtn i,
+a.transaction--Addbtn_expenses i,
+a.transaction--Addbtn_chartaccounts i {
+    margin-right: 5px;
+}
+
+a.transaction--Addbtn:hover,
+a.transaction--Addbtn_expenses:hover, 
+a.transaction--Addbtn_chartaccounts:hover {
+    background: #666;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.invoice--status-icon,
+.expense--status-icon {
+    position: relative;
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 700;
+    padding: 4px 10px;
+    top: -4px;
+    text-transform: uppercase;
+    margin-left: 4px;
+    border-radius: 4px;
+}
+
+.invoice--status-icon.Paid,
+.expense--status-icon.paid {
+    background: #b1dd65;
+    border: 1px solid #8fc72c;
+}
+
+.invoice--status-icon.Voided,
+.expense--status-icon.void {
+    background: #f1aab1;
+    border: 1px solid #e87883; 
+}
+
+.invoice--status-deets {
+    background: #fff;
+    border: 1px solid #d5d5d5;
+    border-radius: 5px;
+    padding: 7px 12px;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #28282a;
+    font-weight: 500;
+}
+
+.invoice--status-deets u {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.invoice-list--btns button,
+.bankTransactions-list--btns button {
+    padding: 6px 12px;
+}
+
+.chartofaccounts-list--btns input {
+    border: 1px solid #666;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 13px;
+}
+
+#partstable {
+    position: relative;
+    width: 100%;
+}
+
+#partstable tbody tr,
+.invoice_list tbody tr,
+.invoice_list thead tr,
+.activity--statement tbody tr {
+    cursor: pointer;
+}
+
+.invoice_list tbody span.email2client_pending,
+.invoice_list tbody span.payment--status-Unpaid {
+    color: #666;
+    font-weight: 600;
+}
+
+.invoice_list tbody span.email2client_sent,
+.invoice_list tbody span.payment--status-Paid {
+    color: #8fc72c;
+    font-weight: 600;
+}
+
+.invoice_list tbody span.payment--status-Voided {
+    color: #e87883;
+    font-weight: 600;
+}
+
+.invoice_list tbody span.payment--status-Recalled {
+    color: #666;
+    font-weight: 600;
+}
+
+.invoice_list tbody span.payment--status-PartlyPaid {
+    color: #e1a321;
+    font-weight: 600;
+}
+
+.invoice_list tbody span.email2client_pending::after {
+    content: "Not sent";
+}
+
+.invoice_list tbody span.email2client_sent::after {
+    content: "Sent";
+}
+
+#partstable tbody td input,
+#partstable tbody td textarea,
+.CT_table tbody td input {
+    width: 100%;
+    font-size: 13px;
+    border-bottom: 1px solid #fff;
+    transition: all 0.3s ease;
+}
+
+#partstable tbody td input:focus,
+#partstable tbody td textarea:focus,
+#partstable tbody td:hover textarea,
+#partstable tbody td:hover input,
+.CTForm_wrap tbody td input:focus,
+.CTForm_wrap tbody td textarea:focus,
+.CTForm_wrap tbody td:hover textarea,
+.CTForm_wrap tbody td:hover input {
+    border-bottom: 1px solid #f9ab30;
+    transition: all 0.3s ease;
+}
+
+#partstable tbody td input.input--readonly,
+#partstable tbody td input.input--readonly:focus,
+#partstable tbody td input.input--readonly:hover,
+.CTForm_wrap tbody td input.input--readonly,
+.CTForm_wrap tbody td input.input--readonly:focus,
+.CTForm_wrap tbody td input.input--readonly:hover {
+    border-bottom: 0px !important;
+}
+
+#partstable thead th,
+.CT_table thead th {
+    font-size: 13px;
+    background: #dbdbdb;
+    padding: 10px 15px;
+    border: 1px solid #e5e5e5;
+}
+
+#partstable tbody td,
+.CT_table tbody td {
+    vertical-align: top;
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    padding: 17px 10px 5px;
+}
+
+#partstable tbody td.tableOptions,
+.CT_table tbody td.tableOptions {
+    vertical-align: middle;
+    text-align: center;
+    padding: 0px 10px;
+}
+
+#partstable tbody td input,
+.CT_table tbody td input {
+    margin-top: 8px;
+    text-align: center;
+    padding-bottom: 18px;
+}
+
+#partstable tbody td .autoresizing,
+.CTForm_wrap tbody td .autoresizing {
+    display: block;
+    overflow: hidden;
+    resize: none;
+    height: 42px;
+    padding: 0px 10px;
+}
+
+
+#partstable tbody td input[type=number]::-webkit-inner-spin-button,
+#partstable tbody td input[type=number]::-webkit-outer-spin-button {
+    appearance: none !important;
+}
+
+#partstable tbody tr.add--new-line td,
+.CT_table tbody tr.add--new-line td {
+    padding: 14px 0px;
+    text-align: center;
+}
+
+#partstable tbody tr.invoice-total--amount td {
+    padding: 7px 10px;
+}
+
+#addnewline i {
+    position: relative;
+    margin-right: 7px;
+    font-size: 12px;
+    top: -0.9px;
+}
+
+#partstable tbody tr.invoice-separator td,
+.CT_table tbody tr.invoice-separator td {
+    height: 20px;
+    padding: 0px;
+    font-size: 1px;
+    background: #fafafa;
+    border: 0px;
+}
+
+#partstable tbody tr.invoice-total--subamount td:first-child,
+.CT_table tbody tr.invoice-total--subamount td:first-child,
+#partstable tbody tr.expenses-tax--option td:first-child,
+.CT_table tbody tr.expenses-tax--option td:first-child {
+    background: #fafafa;
+    border: 0px;
+    text-align: left;
+    vertical-align: top;
+}
+
+.CT_table tbody tr.invoice-separator td,
+.CT_table tbody tr.invoice-total--subamount td:first-child,
+.CT_table tbody tr.expenses-tax--option td:first-child {
+    background: #fff;
+}
+
+#partstable tbody tr.invoice-total--subamount td,
+#partstable tbody tr.invoice-total--gst td,
+#partstable tbody tr.invoice-total--paid td,
+#partstable tbody tr.expenses-tax--option td:nth-child(2),
+.CT_table tbody tr.expenses-tax--option td:nth-child(2),
+.CT_table tbody tr.invoice-total--subamount td,
+.CT_table tbody tr.invoice-total--gst td,
+.CT_table tbody tr.invoice-total--paid td {    
+    font-size: 13px;
+    padding: 7px 10px;
+    text-align: right;
+    vertical-align: middle;
+}
+
+#partstable tbody tr.invoice-total--subamount td:first-child  {
+    padding: 0px 20px 0px 0px;
+}
+
+#partstable tbody tr.expenses-tax--option td:nth-child(3),
+.CT_table tbody tr.expenses-tax--option td:nth-child(3) {
+    padding: 10px 0px !important;
+    vertical-align: middle;
+}
+
+#partstable tbody tr.expenses-tax--option td:nth-child(3) .form-input--wrap,
+.CT_table tbody tr.expenses-tax--option td:nth-child(3) .form-input--wrap {
+    margin-bottom: 0px !important;
+}
+
+#partstable tbody tr.invoice-total--amountdue td,
+.CT_table tbody tr.invoice-total--amountdue td {
+    font-size: 15px;
+    padding: 7px 10px;
+    text-align: right;
+    vertical-align: middle;
+    background: #e5e5e5;
+}
+
+
+#partstable tbody tr.invoice-total--amountdue td input.grandtotal,
+.CT_table tbody tr.invoice-total--amountdue td input.grandtotal {
+    font-size: 18px;
+    font-weight: 700;
+    background: #e5e5e5;
+}
+
+#partstable tbody tr.invoice-total--subamount td:nth-child(3) input,
+#partstable tbody tr.invoice-total--gst td input,
+#partstable tbody tr.invoice-total--paid td input,
+#partstable tbody tr.invoice-total--amountdue td input,
+.CT_table tbody tr.invoice-total--amountdue td input.grandtotal,
+.CT_table tbody tr.invoice-total--subamount td:nth-child(3) input,
+.CT_table tbody tr.invoice-total--gst td input,
+.CT_table tbody tr.invoice-total--paid td input {
+    border: 0px;
+    padding: 0px;
+    margin-top: 0px;
+}
+
+#partstable tbody tr.invoice-partial--paid td {
+    text-align: center;
+    padding: 7px 0px 0px;
+    font-size: 13px;
+}
+
+#partstable tbody tr.invoice-partial--paid td span i {
+    margin-right: 7px;
+}
+
+#partstable tbody tr.invoice-partial--paid td table.history--list {
+    position: relative;
+    width: 100%;
+    border-right-style: none;
+    margin-top: 7px;
+}
+
+#partstable tbody tr.invoice-partial--paid td table.history--list td {
+    font-size: 13px;
+    padding: 5px;
+    border: 0px;
+    border-bottom: 1px solid #e5e5e5;
+    border-top: 1px solid #e5e5e5;
+    vertical-align: middle;
+}
+
+#partstable tbody tr.invoice-partial--paid td table.history--list td span {
+    display: block;
+    line-height: 100%;
+}
+
+#partstable tbody tr.invoice-partial--paid td table.history--list tr:last-of-type td {
+    border-bottom: 0px;
+    background: #fff;
+}
+
+#partstable tbody tr.invoice-partial--paid td table.history--list td:first-child {
+    width: 44.5%;
+    border-right: 1px solid #e5e5e5;
+    padding-bottom: 7px;
+    padding-right: 10px;
+    text-align: right;
+}
+
+#partstable tbody tr.invoice-partial--paid td span,
+#partstable tbody tr.invoice-partial--paid td table.history--list td:last-child {
+    font-weight: 600;
+}
+
+
+#partstable tbody tr.settlepayment--invoice td {
+    border: 1px solid #e5e5e5;
+    cursor: default;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+#partstable tbody tr.settlepayment--invoice td:first-child {
+    border-right: 1px solid #fff;
+}
+
+
+/** When table items are disabled **/
+
+#partstable tbody td *:disabled {
+    background: #fff;
+    border: 0px !important;
+}
+
+#partstable tbody td.tableOptions button:disabled,
+#partstable tbody tr.add--new-line button:disabled {
+    display: none;
+}
+
+
+ul.invoice-expenses--dropdown {
+    padding: 0px 5px;
+    font-size: 13px;
+    max-height: 230px;
+    overflow-x: auto;
+}
+
+ul.invoice-expenses--dropdown li {
+    margin: 5px 0px;
+}
+
+ul.invoice-expenses--dropdown li.add-new--btn a {
+    color: #28282a;
+    background: #fdb917;
+    display: block;
+    padding: 5px 7px;
+    border-radius: 3px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+ul.invoice-expenses--dropdown li.add-new--btn a i {
+    margin-right: 5px;
+}
+
+ul.invoice-expenses--dropdown li.add-new--btn a:hover {
+    background: #666;
+    color: #fafafa;
+    transition: all 0.3s ease;
+}
+
+ul.invoice-expenses--dropdown .invoice_item {
+    background: #f2f2f2;
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 5px 8px;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+ul.invoice-expenses--dropdown .invoice_item:hover {
+    background: #fdb917;
+    transition: all 0.3s ease;
+}
+
+ul.invoice-expenses--dropdown li.accounts-group--label {
+    font-weight: 600;
+    padding: 5px 8px 0px;
+    color: #28282a;
+}
+
+
+/** Form Navigation **/
+
+.form-navigation {
+    padding: 30px 0px 40px;
+}
+
+.form-navigation .form-navigation--btns [class*="col-"]:nth-child(2) {
+    text-align: right;
+}
+
+.reset--btn {
+    background: #fff;
+    color: #666;
+}
+
+.CTForm_wrap .reset--btn {
+    margin-right: 15px;
+}
+
+.reset--btn.expenses--page {
+    margin-right: 10px;
+}
+
+.reset--btn:hover {
+    background: #dbdbdb;
+    color: #28282a;
+}
+
+.preview--btn {
+    background: #fafafa;
+    border: 1px solid #dbdbdb;
+    margin: 0px 10px;
+}
+
+.preview--btn:hover {
+    background: #dbdbdb;
+    border: 1px solid #dbdbdb;
+    color: #28282a;
+}
+
+/** Date Picker Skin **/
+
+.ui-widget {
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.ui-widget-header {
+    background: #dbdbdb;
+    border: 0px;
+}
+
+.ui-datepicker th {
+    padding: 4px;
+}
+
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default {
+    background: #f2f2f2;
+    font-size: 13px;
+    text-align: center;
+    border-color: #ccc;
+}
+
+.ui-state-highlight,
+.ui-widget-content .ui-state-highlight,
+.ui-widget-header .ui-state-highlight {
+    border-color: #fdb917;
+    background: #fffaed;
+}
+
+.ui-state-hover,
+.ui-widget-content .ui-state-hover,
+.ui-widget-header .ui-state-hover,
+.ui-state-focus,
+.ui-widget-content .ui-state-focus,
+.ui-widget-header .ui-state-focus {
+	border: 1px solid #666;
+	background: #fdb917;
+}
+
+a.ui-datepicker-prev,
+a.ui-datepicker-next {
+    top: 3px !important;
+    cursor: pointer;
+}
+
+a.ui-datepicker-prev:hover,
+a.ui-datepicker-next:hover {
+    background: none;
+    border: 0px;
+}
+
+.ui-widget-header .ui-icon {
+    background-image: none;
+}
+
+a.ui-datepicker-prev {
+    left: 3px !important;
+}
+a.ui-datepicker-next {
+    right: 3px !important;
+}
+
+a.ui-datepicker-prev span,
+a.ui-datepicker-next span {
+    display: none;
+}
+
+a.ui-datepicker-next::after,
+a.ui-datepicker-prev::after {
+    display: block;
+    text-align: center;
+    margin-top: 5px;
+    font-family: "FontAwesome";
+    color: #666;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+a.ui-datepicker-next::after {
+    content: "\f138";
+}
+
+a.ui-datepicker-prev::after {
+    content: "\f137";
+}
+
+a.ui-datepicker-prev:hover::after,
+a.ui-datepicker-next:hover::after {
+    color: #28282a;
+    transition: all 0.3s ease;
+}
+
+/** Modal Reskin **/
+
+.modal-reskin .document--header::before {
+    font-family: "FontAwesome";
+    content: "\f56f";
+    margin-right: 8px;
+}
+
+.modal-reskin .invoiceprev--header::before {
+    font-family: "FontAwesome";
+    content: "\f570";
+    margin-right: 8px;
+}
+
+.modal-reskin .deleteicon--header::before {
+    font-family: "FontAwesome";
+    content: "\f2ed";
+    margin-right: 8px;
+}
+
+.modal-reskin .editicon--header::before {
+    font-family: "FontAwesome";
+    content: "\f044";
+    margin-right: 8px;
+}
+
+.modal-reskin .sending--header::before,
+.modal-reskin .btn.send--btn::before,
+.sumb--fileSharebtn .dropdown-menu .send--btn::before {
+    font-family: "FontAwesome";
+    content: "\f1d8";
+    margin-right: 8px;
+}
+
+.modal-reskin .paymenticon--header::before {
+    font-family: "FontAwesome";
+    content: "\f09d";
+    margin-right: 8px;
+}
+
+.modal-reskin .deactivateicon--header::before {
+    font-family: "FontAwesome";
+    content: "\f05e";
+    margin-right: 8px;
+}
+
+.modal-reskin .updateSettings--header::before {
+    font-family: "FontAwesome";
+    content: "\f085";
+    margin-right: 8px;
+}
+
+.modal-reskin .statementAdjustment--header::before {
+    font-family: "FontAwesome";
+    content: "\f1de";
+    margin-right: 8px;
+}
+
+.modal-reskin .finalisebastax--header::before,
+.modal-reskin .btn.finalisebastax--btn::before {
+    font-family: "FontAwesome";
+    content: "\f058";
+    margin-right: 7px;
+}
+
+.modal-reskin .btn.payment--btn::before {
+    font-family: "FontAwesome";
+    content: "\f058";
+    margin-right: 7px;
+}
+
+.modal-reskin .uploadphoto--header::before,
+.modal-reskin .btn.uploadphoto--btn::before {
+    font-family: "FontAwesome";
+    content: "\f093";
+    margin-right: 7px;
+}
+
+.modal-reskin #userManageAddEdit--header::before {
+    font-family: "FontAwesome";
+    content: "\f234";
+    margin-right: 7px;
+}
+
+.modal-reskin .splittransaction--header::before,
+.modal-reskin .btn.split--btn::before {
+    font-family: "Material-Design-Iconic-Font";
+    content: "\f2ef";
+    margin-right: 7px;
+}
+
+.modal-reskin #userManageAddEdit--header.update::before {
+    font-family: "FontAwesome";
+    content: "\f4ff";
+    margin-right: 7px;
+}
+
+.modal-reskin .unreconcile--header::before {
+    font-family: "Material-Design-Iconic-Font";
+    content: "\f138";
+    margin-right: 7px;
+}
+
+.modal-reskin .btn {
+    font-weight: 600;
+    font-size: 14px;
+    padding: 5px 15px !important;
+    border: 0px;
+}
+
+.modal-reskin .btn.btn-primary {
+    background: #fdb917;
+    color: #28282a;
+    transition: all 0.3s ease;
+}
+
+.modal-reskin .btn.btn-primary:hover {
+    background: #666;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.modal-reskin .btn.btn-secondary {
+    background: #d5d5d5;
+    color: #666;
+    transition: all 0.3s ease;
+}
+
+.modal-reskin .btn.btn-secondary:hover {
+    background: #fdb917;
+    color: #28282a;
+    transition: all 0.3s ease;
+}
+
+.modal-reskin .btn.save--btn::before {
+    font-family: "Font Awesome 6 Free";
+    content: "\f0c7";
+    margin-right: 5px;
+    font-weight: 900 !important;
+}
+
+.modal-reskin .btn.close--btn::before {
+    font-family: "FontAwesome";
+    content: "\f00d";
+    margin-right: 5px;
+}
+
+.modal-reskin .btn.delete--btn::before {
+    font-family: "FontAwesome";
+    content: "\f2ed";
+    margin-right: 5px;
+}
+
+.modal-reskin .recallicon--header::before,
+.modal-reskin .btn.recall--btn::before {
+    font-family: "FontAwesome";
+    content: "\f1da";
+    margin-right: 5px;
+}
+
+.modal-reskin .btn.deactivate--btn::before {
+    font-family: "FontAwesome";
+    content: "\f05e";
+    margin-right: 5px;
+}
+
+.modal-reskin .modal-header,
+.modal-reskin .modal-footer {
+    border-color: #f2f2f2;
+}
+
+
+/** Invoice Preview Skin **/
+
+.modal-reskin .invoice--preview {
+    width: 90%;
+    max-width: none;
+}
+
+.modal-recallEmail .modal-body,
+.invoice--preview .modal-body {
+    font-size: 14px;
+    color: #28282a;
+}
+
+.invoice--preview table.table-striped td ,
+.invoice--preview table.table-striped thead th{
+    border-color: #d5d5d5;
+}
+
+.invoice--preview table.table-striped tr:nth-of-type(even) {
+    background: #fafafa;
+}
+
+.invoice--preview .invoicetable--header {
+    background: #fafafa;
+    padding: 20px;
+    border-radius: 5px 5px 0px 0px;
+    color: #28282a;
+}
+
+.invoice--preview .invoicetable--header li {
+    margin-bottom: 4px;
+}
+
+.invoice--preview .invoicetable--header li:last-child {
+    margin-bottom: 0px;
+}
+
+.invoice--preview thead th:nth-child(2),
+.invoice--preview thead th:nth-child(4),
+.invoice--preview thead th:nth-child(7),
+.invoice--preview tbody td:nth-child(2),
+.invoice--preview tbody td:nth-child(4),
+.invoice--preview tbody td:nth-child(7) {
+    text-align: center;
+}
+
+.invoice--preview tbody td:nth-child(3) {
+    font-size: 13px;
+}
+
+.invoice--preview p.invoice--paymentnotes {
+    font-size: 12px;
+    width: 96%;
+}
+
+.invoice--preview .invoice--paymentinfo,
+.invoice--preview .invoice--paymentinfo td {
+    background: #fafafa;
+    border: 1px solid #d5d5d5;
+    text-align: right;
+}
+
+.invoice--preview .invoice--paymentinfo tr.invoice--paymentinfo-total_amount td {
+    font-size: 18px;
+}
+
+.invoice--preview .invoice--paymentinfo tr.invoice--paymentinfo-total_amount td:nth-child(2) {
+    font-weight: 700;
+}
+
+/** Send Invoice Modal **/
+
+.modal-invoice--send .form--inputbox {
+    margin-bottom: 0px;
+}
+
+
+/** Error Message Re-Skin from Bootstrap **/
+
+.alert {
+    padding: 5px 13px;
+    font-size: 12px;
+}
+
+.alert-danger,
+.alert-success,
+.alert-primary {
+    position: relative;
+    overflow: hidden;
+}
+
+.alert-danger::after {
+    position: absolute;
+    font-family: "FontAwesome";
+    content: "\f071";
+    font-size: 60px;
+    bottom: -30px;
+    right: -5px;
+    opacity: 0.09;
+}
+
+.alert-success,
+.alert-primary {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.alert-success::after,
+.alert-primary::after {
+    position: absolute;
+    font-family: "FontAwesome";
+    content: "\f164";
+    font-size: 60px;
+    bottom: -45px;
+    right: 0px;
+    opacity: 0.09;
+}
+
+/* File Upload Div in Expense Form */
+
+.expsenses--table {
+    padding-top: 20px;
+}
+
+.sumb-expense-upload-container,
+.sumb-invoicesettings-upload-container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-image: url('../img/random-grey-variations@30.png');
+    background-position: center center;
+    border-radius: 5px;
+    border: 1px solid #666;
+    color: #28282a;
+    transition: all 0.3s ease;
+}
+
+.sumb-invoicesettings-upload-container {
+    height: auto;
+}
+
+.sumb-expense-upload-container:hover,
+.sumb-invoicesettings-upload-container:hover {
+    transition: all 0.3s ease;
+    background: #fffaed url('../img/random-grey-variations@30.png') center center;
+}
+
+.profilepic--preview {
+    border: 1px solid #d5d5d5;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+}
+
+.profilepic--preview img {
+    height: 200px;
+}
+
+.sumb-expense-dropzone {
+    position: relative;
+    text-align: center;
+    margin: 100px 20px;
+    z-index: 1;
+}
+
+.sumb-invoicesettings-dropzone {
+    position: relative;
+    margin: 20px 20px 30px;
+    text-align: center;
+    z-index: 1;
+}
+
+.sumb-expense-dropzone i {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.sumb-invoicesettings-dropzone i {
+    font-size: 30px;
+    margin-top: 13px;
+}
+
+.sumb-expense-dropzone p,
+.sumb-invoicesettings-dropzone p {
+    margin: 5px 0px 0px;
+    font-weight: 600;
+}
+
+.sumb-expense-dropzone .muted,
+.sumb-invoicesettings-dropzone .muted {
+    font-size: 12px;
+    margin: 0px;
+    font-weight: 400;
+    color: #666;
+}
+
+
+/*loader*/
+.loader-cont{
+    display:none;
+}
+.loader {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      position: relative;
+      animation: rotate 1s linear infinite;
+      left : 45%;
+    }
+    .loader::before {
+      content: "";
+      box-sizing: border-box;
+      position: absolute;
+      inset: 0px;
+      border-radius: 50%;
+      border: 5px solid #fdb917;
+      animation: prixClipFix 2s linear infinite;
+    }
+
+    @keyframes rotate {
+      100%   {transform: rotate(360deg)}
+    }
+
+    @keyframes prixClipFix {
+        0%   {clip-path:polygon(50% 50%,0 0,0 0,0 0,0 0,0 0)}
+        25%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 0,100% 0,100% 0)}
+        50%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,100% 100%,100% 100%)}
+        75%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,0 100%,0 100%)}
+        100% {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,0 100%,0 0)}
+    }
+#pre-loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 99999999999999999 !important;
+    display: none;
+}
+#pre-loader > .pre-container {
+    display: inline-block;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.pre-container > .loader{
+    width: 30px !important;
+    height: 30px !important;
+}
+/*///*/
+
+input[type="file" i].sumb-expense-dropzone-input,
+input#user-img-file {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.sumb-expense-receipt-actions {
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
+    z-index: 4;
+}
+
+iframe#pdf-preview {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    border: 0px;
+}
+
+.sumb-invoicesettings-preview-container {
+    position: relative;
+    background: #fff;
+    border: 1px solid #666;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+    min-height: 300px;
+}
+
+.sumb-invoicesettings-preview-container img {
+    height: 100%;
+}
+
+/** Invoice Settings **/
+
+.invset--tpt_wrap input {
+    display: none;
+}
+
+.invset--tpt_wrap label {
+    position: relative;
+    border: 1px solid #666;
+    padding: 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    text-align: center;
+}
+
+.invset--tpt_wrap label img {
+    border-radius: 4px;
+}
+
+.invset--tpt_wrap input:checked + label {
+    background: #fdb917;
+    transition: all 0.3s ease;
+}
+
+.invset--tpt_wrap label:hover {
+    background: #fffaed;
+    transition: all 0.3s ease;
+}
+.invset--tpt_wrap label a {
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    padding: 5px 8px;
+    background: #fdb917;
+    color: #28282a !important;
+    margin-top: 10px;
+    border-radius: 4px;
+    font-weight: 600;
+    border: 1px solid #fdb917;
+    transition: all 0.3s ease;
+}
+
+.invset--tpt_wrap label a:hover,
+.invset--tpt_wrap input:checked + label a:hover {
+    background: #fafafa;
+    border: 1px solid #fdb917;
+    transition: all 0.3s ease;
+}
+
+.invset--tpt_wrap input:checked + label a {
+    background: #28282a;
+    border: 1px solid #28282a;
+    color: #fafafa !important;
+}
+
+.invset--tpt_wrap input:checked + label a:hover {
+    border: 1px solid #28282a;
+    color: #28282a !important;
+}
+
+.invset--tpt_wrap label span {
+    position: absolute;
+    font-size: 16px;
+    display: inline-block;
+    text-align: center;
+    margin-top: 5px;
+    color: #28282a;
+    top: 8px;
+    left: 13px;
+    background: #fdb917;
+    padding: 0px 5px;
+    border-radius: 3px;
+}
+
+.invset--tpt_wrap label a::before {
+    font-family: "Font Awesome 6 Free";
+    content: "\f06e";
+    margin-right: 5px;
+}
+
+.invset--tpt_wrap input + label span::before {
+    font-family: "Font Awesome 6 Free";
+    content: "\f0c8";
+}
+
+.invset--tpt_wrap input:checked + label span::before {
+    font-family: "Font Awesome 6 Free";
+    content: "\f14a";
+}
+
+/** get Pro version **/
+
+.account-wrap.getPro {
+    background: #fafafa;
+    padding: 5px;
+    margin-top: 3.5px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.getPro--btn {
+    background: #fafafa;
+    padding: 3px 10px;
+    font-size: 10pt;
+    font-weight: 600;
+    border: 1px solid #fdb917;
+    margin: 0px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.getPro--btn::before,
+.goproicon--header::before,
+.goproicon--btn_mobile span::before {
+    font-family: "FontAwesome";
+    content: "\f5d2";
+    margin-right: 4px;
+}
+
+.account-wrap.getPro:hover {
+    background: #fdb917;
+    transition: all 0.3s ease;
+}
+
+.account-wrap.getPro:hover .getPro--btn {
+    background: #fdb917;
+    border-color: #28282a;
+    transition: all 0.3s ease;
+}
+
+.gopro--btn::before {
+    font-family: "FontAwesome";
+    content: "\f674";
+    margin-right: 7px;
+}
+
+.modal-getPro .modal-body ul {
+    list-style: square;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.modal-getPro .modal-body ul li {
+    margin-left: 15px;
+}
+
+.modal-getPro .modal-body ul li:first-child {
+    margin-left: 0px;
+    margin-bottom: 3px;
+    list-style: none;
+}
+
+/** for mobile view **/
+
+.goproicon--btn_mobile {
+    padding: 20px 0px !important;
+}
+
+.goproicon--mobile .goproicon--btn_mobile {
+    cursor: pointer;
+    background: #f9e0a3 !important;
+    transition: all 0.3s ease;
+}
+
+.goproicon--btn_mobile span {
+    background: #fafafa;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.goproicon--btn_mobile:hover span {
+    background: #fdb917;
+}
+
+.goproicon--btn_mobile span::before {
+    margin-right: 7px;
+}
+
+/** Email Verification Skin **/
+
+.email--verification_notif {
+    position: relative;
+    top: 120px;
+    padding: 0px 45px;
+}
+
+.email--verification_notif .verify--me {
+    position: relative;
+    background: #f9e0a3;
+    color: #28282a;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 5px;
+    padding: 7px 16px;
+    border: 1px solid #fdb917;
+    margin-bottom: 17px;
+    overflow: hidden;
+}
+
+.email--verification_notif .verify--me.sent--vercode {
+    background: #d4edda;
+    border-color: #c3e6cb;
+    color: #155724;
+}
+
+.email--verification_notif .verify--me::after {
+    position: absolute;
+    font-family: "Font Awesome 6 Free";
+    content: "\e4e8";
+    font-weight: 600;
+    font-size: 55px;
+    right: 0px;
+    top: -24px;
+    opacity: 0.1;
+}
+
+.email--verification_notif .verify--me span {
+    color: #28282a;
+    cursor: pointer;
+    font-weight: 600;
+    border-bottom: 1px solid #28282a;
+}
+
+/** Reporting & Transaction Skin **/
+
+.reporting--list-btns {
+    text-align: right;
+}
+
+.sumb--reporting .search--btn,
+.sumb--reporting .export--btn,
+.sumb--reporting .clear--btn,
+.sumb--transactions .search--btn,
+.sumb--transactions .export--btn,
+.sumb--transactions .clear--btn {
+    padding: 6px 12px;
+    font-weight: 600;
+}
+
+.sumb--reporting .search--btn::before,
+.sumb--transactions .search--btn::before {
+    font-family: "Font Awesome 6 Free";
+    content: "\f002";
+    margin-right: 7px;
+}
+
+.sumb--reporting .export--btn::before,
+.sumb--transactions .export--btn::before {
+    font-family: "Font Awesome 6 Free";
+    content: "\f56d";
+    margin-right: 7px;
+}
+
+.sumb--reporting .clear--btn::before,
+.sumb--transactions .clear--btn::before {
+    font-family: "Font Awesome 6 Free";
+    content: "\f057";
+    margin-right: 7px;
+}
+
+.sumb--reportingTable table thead th,
+.sumb--transactionsTable table thead th {
+    background: #e5e5e5;
+    padding: 12px 15px;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.sumb--reportingTable table thead th:first-child,
+.sumb--transactionsTable table thead th:first-child {
+    border-top-left-radius: 7px;
+}
+
+.sumb--reportingTable table thead th:last-child,
+.sumb--transactionsTable table thead th:last-child {
+    border-top-right-radius: 7px;
+}
+
+.sumb--reportingTable table tbody td,
+.sumb--transactionsTable table tbody td {
+    padding: 10px 20px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.sumb--transactionsTable table tbody tr.transactions--withLink td {
+    cursor: pointer;
+}
+
+.sumb--transactionsTable table tbody tr.transactions--withLink:nth-child(odd) {
+    background: #fafafa;
+}
+
+.sumb--reportingTable table tbody td a {
+    color: #666;
+    font-weight: 500;
+    font-size: 13px;
+}
+
+.sumb--reportingTable table tbody td:nth-child(2) a,
+.sumb--transactionsTable table tbody td {
+    color: #28282a;
+}
+
+.sumb--reportingTable table tbody td:first-child,
+.sumb--transactionsTable table tbody td.table--alignLeft,
+.sumb--transactionsTable table tbody.overallTotal td:first-child {
+    text-align: left;
+}
+
+.sumb--reportingTable table tbody tr.view--separator td,
+.sumb--transactionsTable table tbody tr.view--separator td {
+    padding: 10px 0px;
+    background: #fafafa;
+}
+
+.sumb--reportingTable table tbody tr.view--title th {
+    padding: 10px;
+    font-size: 16px;
+    color: #28282a;
+    border-bottom: 1px solid #ccc;
+}
+
+.sumb--reportingTable table tbody tr.view--perItemtotal td {
+    border-top: 1px dotted #ccc;
+}
+
+.sumb--reportingTable table tbody tr.view--perItemtotal td:nth-child(2),
+.sumb--reportingTable table tbody.overallTotal td:nth-child(2),
+.sumb--transactionsTable table tbody.overallTotal td {
+    font-size: 18px;
+    color: #28282a;
+}
+
+.sumb--reportingTable table tbody.overallTotal td {
+    background: #fbecc8;
+    padding: 15px;
+}
+
+.sumb--transactionsTable table tbody.overallTotal td {
+    background: #fbecc8;
+    padding: 10px 15px 0px;
+}
+
+.sumb--transactionsTable table tbody.overallTotal tr:last-child td {
+    padding: 0px 5px 10px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #666;
+}
+
+.sumb--reportingTable table tbody.overallTotal td:first-child,
+.sumb--transactionsTable table tbody.overallTotal tr:first-child td:first-child {
+    border-bottom-left-radius: 7px;
+    font-size: 18px;
+    font-weight: 700;
+    padding-left: 20px;
+}
+
+.sumb--transactionsTable table tbody.overallTotal tr:first-child td:first-child {
+    padding-top: 0px;
+}
+
+
+.sumb--reportingTable table tbody.overallTotal td:last-child,
+.sumb--transactionsTable table tbody.overallTotal tr:last-child td:last-child {
+    border-bottom-right-radius: 7px;
+}
+
+
+.sumb--reportingTable table tbody tr.view--perItemtotal td:first-child,
+.sumb--reportingTable table tbody td:first-child,
+.sumb--reportingTable table tbody tr td:nth-child(2) {
+    color: #28282a;
+}
+
+.sumb--reportingTable table.withFilter tr th:nth-child(2),
+.sumb--reportingTable table.withFilter tr td:nth-child(2) {
+    background: #f9e0a3;
+    border-top: 1px dotted #fafafa;
+}
+
+.sumb--reportingTable table.withFilter tr td:nth-child(2) a {
+    color: #28282a;
+}
+
+/** Account/Profile Settings **/
+
+.account--generatepass {
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 7px;
+}
+
+.account--generatepass::before {
+    font-family: "FontAwesome";
+    content: "\f084";
+    margin-right: 3px;
+}
+
+.account--updateprofile {
+    font-weight: 600;
+    margin: 20px 0px 40px;
+}
+
+.account--updateprofile::before {
+    font-family: "FontAwesome";
+    content: "\f0c7";
+    margin-right: 5px;
+    font-weight: 600;
+}
+
+.account--profileicon {
+    display: inline-block;
+    border: 1px solid #d5d5d5;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.account--profileicon img {
+    display: block;
+    border-radius: 5px;
+    width: 250px;
+    margin-bottom: 10px;
+}
+
+.account--profileicon button {
+    display: block;
+    width: 100%;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.account--deetswrap {
+    border: 1px solid #d5d5d5;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.account--settype,
+.account--verificationstatus,
+.account--actstatus {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    color: #28282a;
+    border-bottom: 1px dotted #d5d5d5;
+}
+
+.account--actstatus {
+    border-bottom: 0px dotted #d5d5d5;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.account--settype label,
+.account--verificationstatus label,
+.account--actstatus label {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.account--settype label::before,
+.account--verificationstatus label::before,
+.account--actstatus label::before {
+    font-family: "Font Awesome 6 Free";
+    content: "\f1de";
+    margin-right: 7px;
+}
+
+.account--settype div {
+    margin-top: 6px;
+    color: #28282a;
+}
+
+
+.account--settype span#user-account-type {
+    position: inline-block;
+    position: relative;
+    top: -10px;
+    background: #fdb917;
+    font-size: 9px;
+    font-weight: 600;
+    padding: 4px 5px 3px;
+    border-radius: 3px;
+}
+
+.account--verificationstatus span,
+.account--actstatus span {
+    font-weight: 600;
+    text-transform: capitalize;
+    font-size: 14px;
+}
+
+.account--verificationstatus span::before,
+.account--actstatus span::before,
+.account--reqdeact a::before {
+    font-family: "Font Awesome 6 Free";
+    margin-right: 5px;
+}
+
+.account--verificationstatus span.red-txt::before,
+.account--actstatus span.red-txt::before {
+    content: "\f119"
+}
+
+.account--verificationstatus span.green-txt::before,
+.account--actstatus span.green-txt::before {
+    content: "\f4da"
+}
+
+.account--reqdeact a {
+    margin-top: 30px;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+
+}
+
+.account--reqdeact a:not([href]) {
+    color: #838383;
+}
+
+.account--reqdeact a::before {
+    content: "\f05e";
+}
+
+/** BAS & Tax **/
+
+.financialyr--wrap {
+    position: relative;
+    font-size: 14px;
+    display: inline-block;
+    min-width: 250px
+}
+
+.financialyr--dropdown {
+    border: 1px solid #aaa;
+    padding: 9px 15px 8.5px;
+    border-radius: 5px;
+    text-align: left;
+    cursor: pointer;
+    background-color: #fff;
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23666666%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E');
+    background-repeat: no-repeat, repeat;
+    background-position: right 0.9em top 50%, 0 0;
+    background-size: 0.8em auto, 100%;
+}
+
+
+#financialyr--options {
+    position: absolute;
+    display: none;
+    background: #fff;
+    border-radius: 5px;
+    border: 1px solid #d5d5d5;
+    z-index: 999;
+    padding: 10px 15px;
+    white-space: nowrap;
+    min-height: 10px;
+    min-width: 250px;
+    text-align: left;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+#previous--years,
+#selected--year {
+    position: relative;
+    display: none;
+}
+
+.activity--statement_btn {
+    background: #fdb917;
+    padding: 10px 15px;
+    font-size: 13px;
+    color: #28282a;
+    font-weight: 600;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.activity--statement_btn > i {
+    margin-right: 5px;
+}
+
+.activity--statement_btn:hover {
+    background: #666;
+    color: #fafafa;
+    transition: all 0.3s ease;
+}
+
+#default--selection > a,
+#previous--years > a,
+#selected--year > a {
+    display: block;
+    padding: 5px 0px;
+    font-weight: 600;
+    color: #28282a;
+    cursor: pointer;
+}
+
+#default--selection ul,
+#previous--years ul,
+#selected--year ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    margin-top: 4px;
+}
+
+#default--selection ul li,
+#previous--years ul li,
+#selected--year ul li {
+    position: relative;
+    font-weight: 600;
+    line-height: 1.2;
+    border-top: 1px dotted #d5d5d5;
+    padding: 7px 0px;
+}
+
+#default--selection ul li:last-child,
+#previous--years ul li:last-child,
+#selected--year ul li:last-child {
+    padding-bottom: 5px;
+}
+
+#default--selection ul li,
+#default--selection > a,
+#previous--years ul li > a,
+#previous--years > a,
+#selected--year ul li,
+#selected--year > a {
+    display: block;
+    color: #28282a;
+    cursor: pointer;
+    transition: color 0.3s linear;
+}
+
+#default--selection ul li:hover,
+#default--selection > a:hover,
+#previous--years ul li > a:hover,
+#previous--years > a:hover,
+#selected--year ul li:hover,
+#selected--year > a:hover {
+    color: #666;
+    transition: color 0.3s linear;
+}
+
+#default--selection ul li span,
+#selected--year ul li span {
+    display: block;
+    font-weight: 400;
+    font-size: 10px;
+}
+
+#default--selection ul li span.dates--inclusive {
+    margin-top: 3px;
+}
+
+#selected--year-value {
+    color: #28282a;
+    cursor: default !important;
+}
+
+#selected--year-value:hover {
+    color: #28282a !important;
+}
+
+
+.prev--years-btn::before {
+    font-family: FontAwesome;
+    content: "\f04a";
+    margin-right: 7px;
+}
+
+.current--year-btn::before {
+    font-family: FontAwesome;
+    content: "\f783";
+    margin-right: 7px;
+}
+
+#selected--year-value::before {
+    font-family: FontAwesome;
+    content: "\f1da";
+    margin-right: 7px;
+}
+
+#financialyr--options.show,
+#previous--years.show,
+#selected--year.show {
+    display: block;
+}
+
+.bas-tax--settings_center {
+    position: relative;
+}
+
+.bas-tax--settings_wrap,
+.activity--statement,
+.userManage--stats {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+}
+
+.bas-tax--settings {
+    position: relative;
+    margin-bottom: 15px;
+    padding-bottom: 23px;
+    border-bottom: 1px dotted #e5e5e5;
+}
+
+.bas-tax--settings.payg-income-tax--method {
+    border-bottom: 0px solid #fff ;
+}
+
+.bas-tax--settings label {
+    color: #28282a;
+    font-weight: 600;
+}
+
+.bastax--initialsettings {
+    margin-bottom: 15px;
+    border-bottom: 1px dotted #e5e5e5;
+    padding-bottom: 15px;
+    color: #28282a;
+    line-height: 135%;
+}
+
+.bastax--initialsettings i {
+    margin-right: 5px;
+}
+
+.button--sets div {
+    display: inline-block;
+    color: #28282a;
+    padding: 3px 15px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    border-radius: 5px;
+    margin-right: 7px;
+    font-weight: 500;
+    background: #e5e5e5;
+}
+
+.button--sets div:last-child {
+    margin-right: 0px;
+}
+
+.button--sets div.active {
+    background: #fdb917;
+    font-weight: 500;
+    transition: background 0.3s ease;
+}
+
+.payg-income-tax--method .button--sets div > a {
+    text-align: center;
+    line-height: 100%;
+    padding-top: 5px;
+}
+
+.payg-income-tax--method .button--sets div > a span {
+    display: block;
+    font-size: 9px;
+}
+
+.bas-tax--settings_wrap .form-navigation {
+    padding-bottom: 0px;
+}
+
+.activity--statement label {
+    font-weight: 600;
+    color: #fdb917;
+    font-size: 20px;
+    line-height: 120%;
+}
+
+.activity--statement ul.instructions {
+    list-style: decimal;
+    margin-left: 18px;
+    color: #28282a;
+}
+
+.activity--statement ul.instructions li {
+    margin-bottom: 5px;
+}
+
+.activity--statement ul.instructions li:last-child {
+    margin-bottom: 0px;
+}
+
+.activity--statement ul.instructions li > span {
+    display: block;
+    font-size: 12px;
+}
+
+.activity--statement_status {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.activity--statement_status .blocks {
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    display: table;
+    border-radius: 5px;
+    position: relative;
+}
+
+.activity--statement_status .blocks > div {
+   display: table-cell;
+   vertical-align: middle;
+   padding: 20px 30px;
+   font-weight: 500;
+}
+
+.activity--statement_status .blocks > div span {
+    display: block;
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 100%;
+}
+
+.activity--statement_status .blocks.needs--attention {
+    background: #f2f2f2;
+    border: 1px solid #e5e5e5;
+    margin-right: 10px;
+}
+
+.activity--statement_status .blocks.completed--statements {
+    background: #f9e0a3;
+    border: 1px solid #fdb917;
+    color: #28282a;
+}
+
+.activity--statement_status .blocks.needs--attention::after {
+    position: absolute;
+    font-family: "Font Awesome 6 Free";
+    content: "\f065";
+    font-weight: 600;
+    font-size: 40px;
+    right: 15px;
+    bottom: 0px;
+    opacity: 0.1;
+}
+
+.activity--statement_status .blocks.completed--statements::after {
+    position: absolute;
+    font-family: "Font Awesome 6 Free";
+    content: "\f058";
+    font-weight: 600;
+    font-size: 40px;
+    right: 15px;
+    bottom: 0px;
+    opacity: 0.1;
+}
+
+.create-new--statement {
+    padding: 0px 0px 10px;
+}
+
+.create-new--statement .add--btn {
+    margin-top: 0px;
+    margin-left: 10px;
+}
+
+.activity--statement__settings {
+    text-align: right;
+}
+
+span.bastax--resume {
+    position: relative;
+    font-size: 9px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: 1px solid #f5c85b;
+    padding: 5px 10px;
+    border-radius: 3px;
+    top: -1px;
+    color: #666;
+    background: #fbecc8;
+}
+
+.activity--statement__status span {
+    font-weight: 600;
+    font-size: 9px;
+    border-radius: 3px;
+    padding: 5px 10px;
+    position: relative;
+    top: -1px;
+    text-transform: uppercase;
+}
+
+.activity--statement__status span.draft,
+#actvt--wrap .tab-content h3 > span.draft {
+    background: #f2f2f2;
+    border: 1px solid #e5e5e5;
+}
+
+.activity--statement__status span.finalise,
+#actvt--wrap .tab-content h3 > span.finalise {
+    background: #c3e6cb;
+    border: 1px solid #8fc72c;
+    color: #155724;
+}
+
+.activity--statement__payment b.for--refund {
+    color: #4BB543;
+}
+
+.activity--statement__payment b.for--payment {
+    color: #e87883;
+}
+
+#actvt--wrap ul.nav {
+    position: relative;
+    z-index: 2;
+}
+
+#actvt--wrap ul.nav li {
+    margin-right: 5px;
+}
+
+#actvt--wrap ul.nav li a {
+    border: 1px solid #e5e5e5; 
+    padding: 10px 20px;
+    background: #fff;
+    background: #fbecc8;
+    color: #666;
+    font-weight: 600;
+    border-top-right-radius: 7px;
+    border-top-left-radius: 7px;
+    font-size: 14px;
+}
+
+#actvt--wrap ul.nav li a > i {
+    margin-right: 7px;
+}
+
+#actvt--wrap ul.nav li a.active {
+    border-bottom: 1px solid #fff;
+    background: #fff;
+    color: #28282a;
+}
+
+#actvt--wrap .tab-content {
+    position: relative;
+    z-index: 1;
+    border: 1px solid #e5e5e5;
+    padding: 15px 20px;
+    top: -1px;
+    border-radius: 7px;
+    border-top-left-radius: 0px;
+    color: #28282a;
+    font-size: 14px;
+}
+
+#actvt--wrap .tab-content hr.form-cutter {
+    margin: 10px 0px;
+    border-top: 1px dashed #e5e5e5;
+    min-width: 750px;
+}
+
+#actvt--wrap .tab-content p {
+    display: block;
+}
+
+#actvt--wrap .tab-content h3 {
+    margin-bottom: 10px;
+}
+
+#actvt--wrap .tab-content h4 {
+    margin-bottom: 3px;
+}
+
+#actvt--wrap .tab-content h3 > span {
+    position: relative;
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: 500;
+    top: -4px;
+    margin-left: 5px;
+    border-radius: 3px;
+    padding: 5px 7px;
+}
+
+#actvt--wrap .tab-content .first--row,
+#actvt--wrap .tab-content .second--row,
+#actvt--wrap .tab-content .third--row,
+#actvt--wrap .tab-content .fourth--row,
+#actvt--wrap .tab-content .fifth--row,
+#actvt--wrap .tab-content .sixth--row,
+#actvt--wrap .tab-content .seventh--row {
+    padding: 10px 0px;
+}
+
+#actvt--wrap .tab-content p span {
+    text-transform: capitalize;
+}
+
+#actvt--wrap .tab-content .actvt--table {
+    display: block;
+    width: 100%;
+    margin-top: 7px;
+}
+
+#actvt--wrap .tab-content .actvt--table > table {
+    position: relative;
+    width: 100%;
+    min-width: 750px;
+}
+
+#actvt--wrap .tab-content .actvt--table td {
+    cursor: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 14px;
+}
+
+#actvt--wrap .tab-content .actvt--table input {
+    min-width: 150px;
+    font-weight: 600;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    border-radius: 5px;
+    padding: 7px 10px;
+}
+
+#actvt--wrap .tab-content .actvt--table input.readOnly {
+    border: 1px solid #ccc;
+    background: #f2f2f2;
+    color: #666;
+}
+
+#actvt--wrap .tab-content .actvt--table .tagging {
+    background: #fbecc8;
+    text-align: center;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-weight: 700;
+    min-width: 50px;
+}
+
+#actvt--wrap .tab-content .actvt--table .text-align-right {
+    text-align: right;
+}
+
+#actvt--wrap .tab-content .actvt--table button {
+    background: #fdb917;
+    padding: 3px 10px;
+    font-size: 12px;
+    border-radius: 3px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+#actvt--wrap .tab-content .actvt--table button.adjust--btn::before {
+    font-family: "Font Awesome 6 Free";
+    content: "\f1de";
+    margin-right: 7px;
+}
+
+#actvt--wrap .tab-content .actvt--table button:disabled {
+    opacity: 0.4;
+}
+
+#actvt--wrap .tab-content .actvt--table button:disabled:hover {
+    background: #fdb917;
+    color: #28282a;
+}
+
+
+#actvt--wrap .tab-content .actvt--table button:hover {
+    color: #fff;
+    background: #666;
+    transition: all 0.3s ease;
+}
+
+#actvt--wrap .tab-content .actvt--table select[class="form-input--dropdown"] {
+    width: 189px;
+    padding: 7px 10px;
+    border-color: #ccc;
+}
+
+#amount_refundable_header_div {
+    text-align: right;
+}
+
+#draft_finalise_btn_div,
+#delete_btn_div {
+    text-align: center;
+    width: 100%;
+    min-width: 750px;
+}
+
+#draft_finalise_btn_div button:nth-child(2) {
+    margin: 0px 10px;
+}
+
+#delete_activity_backbtn {
+    margin-right: 10px;
+}
+
+.modal-desc--bastax {
+    color: #28282a;
+    line-height: 135%;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px dotted #e5e5e5;
+}
+
+.modal-desc--bastax span {
+    display: block;
+    margin-top: 10px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.history--bastax {
+    border-top: 1px dotted #e5e5e5;
+    margin-top: 20px;
+    padding-top: 20px;
+}
+
+.history--bastax table#adjustments {
+    width: 100%;
+    min-width: 750px;
+    margin-top: 10px;
+}
+
+.history--bastax table#adjustments td {
+    font-size: 12px;
+    background: #fff;
+    cursor: auto;
+    color: #666;
+}
+
+.history--bastax table#adjustments td:nth-child(2) {
+    text-align: center;
+}
+
+.history--bastax table#adjustments tr:last-child td {
+    border-bottom: 0px;
+}
+
+/** Transaction By Tax Rate **/
+
+.transactionsByTaxRate--table {
+    padding-top: 10px;
+}
+
+.transactionsByTaxRate--table h3 {
+    padding-bottom: 10px;
+}
+
+.transactionsByTaxRate--table table {
+    margin-bottom: 35px;
+}
+
+.transactionsByTaxRate--table table:last-of-type {
+    margin-bottom: 0px;
+}
+
+.transactionsByTaxRate--table table td,
+.transactionsByTaxRate--table table th {
+    cursor: auto;
+    text-align: center;
+}
+
+.transactionsByTaxRate--table tr.tableTotal td {
+    background: #fbecc8;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 10px 20px 0px;
+    border-bottom: 0px;
+}
+
+.transactionsByTaxRate--table tr.tableTotal td:first-child {
+    text-align: left;
+    padding-left: 30px;
+    padding-bottom: 10px;
+}
+
+.transactionsByTaxRate--table tr.tableTotal--tags td {
+    border-bottom: 0px;
+    background: #fbecc8;
+    padding-top: 0px;
+    font-weight: 600;
+    font-size: 10px;
+}
+
+.nothing--follows {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0px 5px;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.transactionsByTaxRate--table hr {
+    margin: 30px 0px 25px;
+    border-top: 1px dotted #ccc;
+}
+
+.transactionsByTaxRate--table hr:last-of-type {
+    display: none;
+}
+
+/** User Management **/
+
+.userManage--stats {
+    margin-bottom: 20px;
+    min-height: 200px;
+}
+
+.userManage--stats .add-edit--user {
+    background: #fdb917;
+    display: block;
+    text-align: center;
+    color: #28282a;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.userManage--stats .add-edit--user i {
+    margin-right: 7px;
+}
+
+.userManage--stats .add-edit--user:hover {
+    background: #666;
+    color: #fafafa;
+    transition: all 0.3s ease;
+}
+
+.userManage--stats .block {
+    position: relative;
+    color: #28282a;
+    border: 1px solid #d5d5d5;
+    border-radius: 5px;
+    margin-bottom: 25px;
+    font-size: 13px;
+    text-align: center;
+    font-weight: 600;
+    line-height: 100%;
+}
+
+.userManage--stats.userTotal--stats .block {
+    padding: 40px 15px 25px;
+    overflow: hidden;
+}
+
+.userManage--stats.subscription--stats .block {
+    margin-bottom: 0px;
+    padding: 43px 20px 33px;
+    overflow: hidden;
+    text-align: left;
+}
+
+.userManage--stats.subscription--stats .block > div {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.userManage--stats.subscription--stats .block > span {
+    display: block;
+    font-weight: 500;
+}
+
+.userManage--stats.subscription--stats .block > span.inactive {
+    opacity: 0.5;
+    margin: 8px 0px;
+}
+
+.userManage--stats.subscription--stats .block > span.total {
+    border-top: 1px dotted #666;
+    padding-top: 10px;
+    margin-top: 15px;
+}
+
+.userManage--stats.userTotal--stats .block::after {
+    position: absolute;
+    font-family: "Font Awesome 6 Free";
+    content: "\f007";
+    right: -2px;
+    bottom: 20px;
+    font-size: 60px;
+    opacity: 0.05;
+}
+
+.userManage--stats.subscription--stats .block::after {
+    position: absolute;
+    font-family: "Font Awesome 6 Free";
+    content: "\f5fd";
+    right: -10px;
+    bottom: 15px;
+    font-size: 60px;
+    opacity: 0.05;
+}
+
+.userManage--stats.userTotal--stats .block > span {
+    display: block;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.userManage--stats.userTotal--stats .block.total {
+    background: #fbecc8;
+    border-color: #f5c85b;
+}
+
+.userManage--stats.userTotal--stats .block.active {
+    background: #c3e6cb;
+    border-color: #4BB543;
+}
+
+.userManage--stats.userTotal--stats .block.deacti {
+    background: #f3bbc1;
+    border-color: #e87883;
+}
+
+.userManage--stats.subscription--stats .block.lite {
+    background: #fbecc8;
+    border-color: #f5c85b;
+}
+
+.userManage--stats.subscription--stats .block.basic {
+    background: #f5c85b;
+    border-color: #fdb917;
+}
+
+.userManage--stats.subscription--stats .block.pro {
+    background: #fdb917;
+    border-color: #f9ab30;
+}
+
+.sumb--recentlogdements.userManage--table table thead tr th i {
+    position: relative;
+    left: 8px;
+}
+
+.sumb--recentlogdements.userManage--table table thead tr th i.fa-caret-up {
+    top: 2px
+}
+
+.sumb--recentlogdements.userManage--table table tbody tr td:nth-child(3) {
+    text-transform: none;
+}
+
+.sumb--recentlogdements.userManage--table table thead tr th:nth-child(5),
+.sumb--recentlogdements.userManage--table table tbody tr td:nth-child(5),
+.sumb--recentlogdements.userManage--table table thead tr th:nth-child(4),
+.sumb--recentlogdements.userManage--table table tbody tr td:nth-child(4) {
+    text-align: center;
+} 
+
+.sumb--recentlogdements.userManage--table table tbody tr td:nth-child(5) .user--status-active {
+    color: #8fc72c;
+    font-weight: 600;
+}
+
+.sumb--recentlogdements.userManage--table table tbody tr td:nth-child(5) .user--status-deacti {
+    color: #e87883;
+    font-weight: 600;
+}
+
+.sumb--recentlogdements.userManage--table td.account--type > span {
+    background: #e5e5e5;
+    font-size: 10px;
+    position: relative;
+    top: -1px;
+    left: 4px;
+    padding: 3px 6px;
+    border-radius: 3px;
+    color: #28282a;
+    font-weight: 600;
+    border: 1px solid #ccc;
+}
+
+.sumb--recentlogdements.userManage--table td.account--type > span.lite {
+    background: #fbecc8;
+    border-color: #f5c85b;
+}
+
+.sumb--recentlogdements.userManage--table td.account--type > span.basic {
+    background: #f5c85b;
+    border-color: #fdb917;
+}
+
+.sumb--recentlogdements.userManage--table td.account--type > span.pro {
+    background: #fdb917;
+    border-color: #ffa423;
+}
+
+.sumb--recentlogdements.userManage--table td.account--type > span.basic::before {
+    content: "Basic";
+}
+
+.sumb--recentlogdements.userManage--table td.account--type > span.lite::before {
+    content: "Lite";
+}
+
+.sumb--recentlogdements.userManage--table td.account--type > span.pro::before {
+    content: "Pro";
+}
+
+.sumb--recentlogdements.userManage--table td.account--type > span.admin::before {
+    content: "Admin";
+}
+
+.sumb--recentlogdements.userManage--table td.account--type > span.accountant::before {
+    content: "Accountant";
+}
+
+.sumb--fileSharebtn .dropdown-menu.userManage--options a.dropdown-item {
+    cursor: pointer;
+}
+
+.sumb--fileSharebtn .dropdown-menu.userManage--options a.dropdown-item > i {
+    margin-right: 7px;
+}
+
+/** Feature Coming Soon **/
+
+#feature--comingsoon {
+    position: relative;
+    border: 1px solid #fdb917;
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 7px;
+    color: #28282a;
+    font-weight: 600;
+    overflow: hidden;
+}
+
+#feature--comingsoon::before {
+    content: 'This feature is currently under development. Coming soon!';
+}
+
+#feature--comingsoon::after {
+    font-family: 'FontAwesome';
+    content: '\f06a';
+    position: absolute;
+    font-size: 70px;
+    opacity: 0.03;
+    right: -10px;
+    bottom: -30px;
+}
+
+/** Bank Accounts **/
+
+.sumb--backAccountsBox {
+    background: #fff;
+    padding: 20px;
+}
+
+.bank--cards {
+    width: 100%;
+    margin-top: 15px;
+}
+
+.bank--cards > a {
+    border: 1px solid #fdb917;
+    padding: 30px 120px;
+    font-weight: 400;
+    font-size: 40px;
+    color: #fdb917;
+    border-radius: 7px;
+    background: #fef9ed;
+    text-align: center;
+    display: block;
+}
+
+.bank--cards > a:hover {
+    background: #fbecc8;
+}
+
+.bank--cards.connected {
+    position: relative;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    border: 1px solid #fdb917;
+    padding: 15px;
+    border-radius: 7px;
+}
+
+.bank--cards.connected:nth-child(even) {
+    background: #fef9ed;
+}
+
+.bank--cards.connected:last-child {
+    margin-bottom: 0px;
+}
+
+.bank--cards.connected .account--type {
+    font-size: 13px;
+    margin-bottom: 30px;
+}
+
+.bank--cards.connected .account--number {
+    position: relative;
+    font-size: 23px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+}
+
+.bank--cards.connected .account--number span {
+    display: inline-block;
+    font-size: 15px;
+    position: relative;
+    bottom: 3px;
+    cursor: pointer;
+}
+
+.bank--cards.connected .account--number span.fa-eye-slash {
+   left: -1px;
+}
+
+.bank--cards.connected .account--name {
+    text-transform: uppercase;
+    font-size: 14px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.bank--cards.connected .account--manage,
+.bank--cards.connected .account--balance {
+    text-align: right;
+}
+
+.bank--cards.connected .account--manage .dropdown-menu a {
+    font-size: 13px;
+}
+
+.bank--cards.connected .account--balance {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.bank--cards.connected .account--balance.neg {
+    color: #e87883;
+}
+
+.bank--cards.connected .account--balance.pos {
+    color: #4BB543;
+}
+
+.bank--cards.connected .account--balance::after {
+    content: "Available Funds";
+    display: block;
+    font-size: 12px;
+    font-weight: 400;
+    color: #28282a;
+    margin-top: 5px;
+}
+
+.bank--cards.connected .flex-end {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+a.add--bankAccount {
+    display: block;
+    text-align: center;
+    padding: 15px;
+    font-size: 30px;
+    border: 1px solid #fdb917;
+    font-weight: 400;
+    color: #fef9ed;
+    border-radius: 7px;
+    background: #f8d47e;
+}
+
+a.add--bankAccount:hover {
+    background: #fdb917;
+}
+
+#bankAccount--search {
+    border: 1px solid #28282a;
+    margin-bottom: 10px;
+    display: block;
+    border-radius: 5px;
+    padding: 12px;
+    padding-right: 30px;
+    width: 100%;
+}
+
+.bankAccount--search-wrap {
+    position: relative;
+}
+
+.bankAccount--search-wrap::after {
+    content: '\f002';
+    font-family: 'FontAwesome';
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    font-size: 18px;
+    color: #e5e5e5;
+    background: #fff;
+    padding: 12px 13px;
+    border-radius: 0px 4px 4px 0px;
+}
+
+.nobank--cards {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#addBankFrame {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 550px;
+    border: 0px;
+    margin-bottom: 30px;
+}
+
+.nobankaccount--transactions {
+    border: 1px solid #fdb917;
+    padding: 10px 15px 16px;
+    border-radius: 7px;
+    text-align: center;
+    font-size: 16px;
+    color: #28282a;
+    background: #fff;
+    font-weight: 600;
+}
+
+.nobankaccount--transactions > a {
+    display: block;
+    border: 1px solid #fdb917;
+    padding: 10px 15px;
+    color: #28282a;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 13px;
+    font-weight: 600;
+    background: #f8d47e;
+    transition: all 0.3s ease;
+}
+
+.nobankaccount--transactions > a i {
+    margin-right: 5px;
+}
+
+.nobankaccount--transactions > a:hover {
+    background: #fdb917;
+}
+
+.transactionBox_wrap {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #fdb917;
+    border-radius: 5px;
+    display: flex;
+    background: #fef9ed;
+}
+
+.transactionBox {
+    display: table;  
+    padding: 18px 20px;
+}
+
+.transactionBox > div {
+    display: table-cell;  
+    vertical-align: middle;
+}
+
+.transactionBox .currentAccount ul {
+    list-style: none;
+}
+
+.transactionBox .currentAccount ul li:first-child {
+    font-size: 12px;
+    margin-bottom: 60px;
+}
+
+.transactionBox .currentAccount ul li:nth-child(2) {
+    font-size: 23px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.transactionBox .currentAccount ul li:last-child {
+    text-transform: uppercase;
+    overflow-x: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.bankTransaction_list tbody tr td:nth-child(2) {
+    text-transform: uppercase;
+}
+
+.bankTransaction_list tbody tr td:nth-child(4) {
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.bankTransaction_list tbody tr td:nth-child(4).debit {
+    color: #e87883;
+}
+
+.bankTransaction_list tbody tr td:nth-child(4).credit {
+    color: #8fc72c;
+}
+
+.bankTransaction_list tbody tr td:nth-child(7) span,
+.AccountTransaction_list tr td:nth-child(6) span {
+    font-size: 10px;
+    padding: 5px 7px;
+    border-radius: 3px;
+    font-weight: 600;
+}
+
+.bankTransaction_list tbody tr td:nth-child(7).unrecon span,
+.AccountTransaction_list tr td:nth-child(6).unrecon span {
+    background: #f3bbc1;
+    border: 1px solid #dc3545;
+    color: #74141d;
+}
+
+.bankTransaction_list tbody tr td:nth-child(7).recon span,
+.AccountTransaction_list tr td:nth-child(6).recon span {
+    background: #c3e6cb;
+    border: 1px solid #8fc72c;
+    color: #155724;
+}
+
+.bankTransaction--status .status--box_wrap {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+.bankTransaction--status .status--box_wrap.credit,
+.bankTransaction--status .status--box_wrap.recon {
+    background: #f9e0a3;
+    border: 1px solid #fdb917;
+    color: #28282a;
+}
+
+.bankTransaction--status .status--box_wrap.debit,
+.bankTransaction--status .status--box_wrap.unrecon {
+    background: #f2f2f2;
+    border: 1px solid #e5e5e5;
+    color: #666;
+}
+
+.bankTransaction--status .status--box {
+    display: table;
+    padding: 10px 20px;
+}
+
+.bankTransaction--status .status--box div {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.bankTransaction--status .status--box div span {
+    font-size: 30px;
+    display: block;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+/** Account Transactions **/
+
+.accountTransaction--settings,
+.transactionSummary .accountTransaction--noInvoice,
+.transactionSummary .accountTransaction--from {
+    text-align: right;
+}
+
+.accountTransaction--dropdown > a {
+    font-size: 14px;
+    background: #fdb917;
+    padding: 5px 12px 4px;
+    border-radius: 5px;
+    color: #28282a;
+    border: 1px solid #fdb917;
+    font-weight: 600;
+}
+
+.accountTransaction--dropdown > a i {
+    margin-right: 7px;
+}
+
+.accountTransaction--dropdown > .dropdown-menu {
+    font-size: 13px;
+}
+
+.accountTransaction--dropdown > .dropdown-menu a {
+    text-align: left;
+}
+
+#unreconcile_transaction > i {
+    margin-right: 7px;
+}
+
+.AccountTransaction_list td:nth-child(2) {
+    text-transform: uppercase;
+}
+
+.bankTransaction_list tr th:nth-child(4),
+.bankTransaction_list tr th:nth-child(5),
+.bankTransaction_list tr th:nth-child(6),
+.bankTransaction_list tr td:nth-child(4),
+.bankTransaction_list tr td:nth-child(5),
+.bankTransaction_list tr td:nth-child(6),
+.AccountTransaction_list tr th:nth-child(4),
+.AccountTransaction_list tr th:nth-child(5),
+.AccountTransaction_list tr td:nth-child(4),
+.AccountTransaction_list tr td:nth-child(5) {
+    text-align: center;
+}
+
+.AccountTransaction_list tr.clickable-row {
+    cursor: pointer;
+}
+
+.transactionSummary {
+    background: #fbecc8;
+    border-radius: 5px;
+    padding: 10px 20px;
+    border: 1px solid #fdb917;
+    margin: 20px 0px 20px;
+    color: #28282a;
+}
+
+.transactionSummary [class*="col-"],
+.transactionSummary--deets [class*="col-"] {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.transactionSummary [class*="col-"]:nth-child(1),
+.transactionSummary [class*="col-"]:nth-child(2) {
+    margin-bottom: 10px;
+}
+
+.transactionSummary [class*="col-"] span,
+.transactionSummary--deets [class*="col-"] span {
+    display: block;
+    margin-top: -3px;
+    font-weight: 400;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.transactionSummary--deets [class*="col-"]:first-child span {
+    line-height: 130%;
+}
+
+.transactionSummary--deets .accountTransaction--noInvoice span i {
+    margin-right: 3px;
+}
+
+.accountTransaction--settings a  {
+    min-width: 150px;
+    text-align: center;
+}
+
+.transactionSummary--deets .accountTransaction--noInvoice span {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.transactionSummary--deets {
+    position: relative;
+    color: #28282a;
+    background: #efefef;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    border: 1px solid #e5e5e5;
+    border-radius: 5px;
+}
+
+.transactionSummary--deets::after {
+    content: "\f05a";
+    font-family: "FontAwesome";
+    position: absolute;
+    right: 0px;
+    bottom: -30px;
+    font-size: 80px;
+    opacity: 0.05;
+}
+
+.transactionSummary .unreconciled {
+    color: #dc3545;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.transactionSummary .unreconciled::before {
+    font-family: "Material-Design-Iconic-Font";
+    content: "\f138";
+    margin-right: 1px;
+}
+
+.transactionSummary .unreconciled--settings {
+    display: none;
+}
+
+#partstable.AccountTransaction_table tbody tr td {
+    padding: 17px;
+    font-size: 13px;
+    cursor: default;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#partstable.AccountTransaction_table tbody tr td .autoresizing {
+    border-bottom: 0px;
+    cursor: default;
+    color: #666;
+}
+
+#partstable.AccountTransaction_table tbody tr td input {
+    cursor: default;
+}
+
+#partstable.AccountTransaction_table thead tr th {
+    text-align: center;
+}
+
+#partstable.AccountTransaction_table tbody tr td:nth-child(1),
+#partstable.AccountTransaction_table thead tr th:nth-child(1) {
+    text-align: left;
+}
+
+#partstable.AccountTransaction_table tbody tr.invoice-separator td {
+    height: 10px;
+    padding: 0px;
+}
+
+#partstable.AccountTransaction_table tbody tr.invoice-total--paid td {
+    background: #e5e5e5;
+    font-size: 15px;
+    padding: 7px 10px;
+}
+
+#partstable.AccountTransaction_table tbody tr.invoice-total--paid td:first-child {
+    text-align: right;
+    font-weight: 700;
+}
+
+#partstable.AccountTransaction_table tbody tr.invoice-total--paid td input {
+    font-size: 18px;
+    font-weight: 700;
+    background: #e5e5e5;
+}
+
+#partstable.AccountTransaction_table tbody tr.invoice-total--subamount td,
+#partstable.AccountTransaction_table tbody tr.invoice-total--gst td {
+    text-align: right;
+    padding: 7px 10px;
+}
+
+#partstable.AccountTransaction_table tbody tr.invoice-total--taxRate td {
+    text-align: center;
+    padding: 10px;
+    background: #efefef;
+    font-weight: 500;
+    color: #28282a;
+}
+
+#partstable.AccountTransaction_table tbody tr.invoice-total--taxRate td:nth-child(1) {
+    border-right: 1px solid #efefef;
+}
+
+#history_discuss.accountTransactionHistory td:nth-child(4){
+    text-wrap: wrap;
+}
+
+
+/** Bank Reconciliation **/
+
+.bankreconHeader > h5 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.acctTransactions--btn {
+    margin-bottom: 8px;
+    background: #fdb917;
+    border-radius: 5px;
+    color: #28282a;
+    border: 1px solid #fdb917;
+    padding: 8px 15px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.acctTransactions--btn > i {
+    margin-right: 7px;
+}
+
+.acctTransactions--btn:hover {
+    background: #fff;
+    color: #28282a;
+    transition: all 0.3s ease;
+}
+
+.reconcileTransactions--notransactions {
+    font-size: 14px;
+    color: #28282a;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.reconcileTransactions > .row {
+    position: relative;
+    margin: 0px;
+    margin-bottom: 15px;
+    padding: 20px 10px;
+    border-radius: 7px;
+    border: 1px solid #e5e5e5;
+    color: #28282a;
+    background: #f4f4f4;
+} 
+
+.reconcileTransactions:last-of-type > .row {
+    margin-bottom: 0px;
+}
+
+.reconcileTransactions.match > .row {
+    background: #f0f9f2;
+    border: 1px solid #c6e7ce;
+}
+
+.reconcileTransactions .button--style {
+    text-align: center;
+}
+
+.reconcileTransactions .button--style > div {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+.reconcileTransactions .button--style > div > div {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.reconcileTransactions .button--style > div > div a {
+    cursor: pointer;
+    background: #fdb917;
+    color: #28282a;
+    font-size: 14px;
+    padding: 5px 15px;
+    border: 1px solid #fdb917;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.reconcileTransactions .button--style > div > div a:hover {
+    background: #fff;
+    color: #28282a;
+}
+
+.reconcileTransactions .form-navigation {
+    padding: 0px;
+}
+
+.RT--bankTransaction {
+    height: 100%;
+}
+
+.RT--bankTransaction > .transactionItem-box {
+    margin-top: 20px;
+    background: #fff;
+    padding: 15px 20px;
+    border-radius: 5px;
+    border: 1px solid #e5e5e5;
+}
+
+.RT--bankTransaction > span,
+.RT--sumbTransaction > span {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.RT--bankTransaction > span i,
+.RT--sumbTransaction > span i,
+.findMatchingTra_wrap h5 i  {
+    margin-right: 7px;
+}
+
+.RT--bankTransaction .desc,
+.matchedTransaction .desc {
+    text-transform: uppercase;
+    line-height: 110%;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.RT--bankTransaction .date,
+.matchedTransaction .date {
+    font-size: 13px;
+}
+
+.RT--bankTransaction .deets,
+.matchedTransaction .deets {
+    text-align: center;
+    line-height: 110%;
+}
+
+.RT--bankTransaction .deets > div,
+.matchedTransaction .deets > div {
+    display: block;
+    width: 100%;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.RT--bankTransaction .deets.Debit > div,
+.matchedTransaction .deets.Debit > div {
+    color: #e87883;
+}
+
+.RT--bankTransaction .deets.Credit > div,
+.matchedTransaction .deets.Credit > div  {
+    color: #4BB543;
+}
+
+.RT--bankTransaction .deets > div span,
+.matchedTransaction .deets > div span {
+    display: block;
+    width: 100%;
+    font-size: 13px;
+    letter-spacing: 0px;
+    margin-top: 3px;
+    text-align: center;
+}
+
+.matchedTransaction .no--matching {
+    font-size: 14px;
+    font-weight: 600;
+    color: #e87883;
+}
+
+.matchedTransaction .no--matching i,
+.matchedTransaction .other--matches > a > i,
+.matchList_wrap > .header > i {
+    margin-right: 6px;
+}
+
+.matchedTransaction .other--matches {
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.matchedTransaction .other--matches > a {
+    display: inline-block;
+    border: 1px solid #e1a321;
+    cursor: pointer;
+    padding: 5px 12px 5px 11px;
+    border-radius: 5px;
+    background: #f8ebce;
+    font-weight: 500;
+    transition: all 0.3s ease'
+}
+
+.matchedTransaction .other--matches > a > i {
+    color: #e1a321;
+}
+
+.matchedTransaction .other--matches > a:hover {
+    background: #fdf9f0;
+}
+
+.RT--sumbTransaction > .transactions {
+    margin-top: 20px;
+}
+
+.RT--sumbTransaction > .transactions .nav {
+    font-size: 13px;
+}
+
+.RT--sumbTransaction > .transactions .nav-tabs {
+    position: relative;
+    border-bottom: 0px;
+}
+
+.RT--sumbTransaction > .transactions .nav-tabs li a:hover {
+    border-color: #e5e5e5;
+}
+
+.RT--sumbTransaction > .transactions .nav-tabs li.find--match {
+    position: absolute;
+    right: 1px;
+    top: 1px;
+}
+
+.find--andmatch_mobile {
+    display: none;
+    position: relative;
+    margin-bottom: 15px;
+    text-align: right;
+}
+
+.RT--sumbTransaction > .transactions .nav-tabs li.find--match a,
+.find--andmatch_mobile a,
+.cancelMatch_wrap > button,
+.RT--sumbTransaction .add--deets .createT--btn {
+    background: #fdb917;
+    font-size: 10px;
+    cursor: pointer;
+    padding: 6px 10px 4px;
+    border-radius: 5px;
+    font-weight: 600;
+    border: 1px solid #fdb917;
+    transition: all 0.3s ease;
+}
+
+.RT--sumbTransaction .add--deets .createT--btn {
+    float: right;
+    margin-top: 1px;
+    padding: 5px 10px;
+    font-size: 12px;
+}
+
+.RT--sumbTransaction > .transactions .nav-tabs li.find--match a i,
+.find--andmatch_mobile a i,
+.RT--sumbTransaction > .transactions .nav-tabs li.nav-item a i,
+.cancelMatch_wrap > button i {
+    margin-right: 5px;
+}
+
+.RT--sumbTransaction > .transactions .nav-tabs li.find--match a:hover,
+.find--andmatch_mobile a:hover,
+.cancelMatch_wrap > button:hover,
+.RT--sumbTransaction .add--deets .createT--btn:hover {
+    transition: all 0.3s ease;
+    background: #fff;
+}
+
+.RT--sumbTransaction > .transactions .nav-tabs .nav-item a.nav-link {
+    border-radius: 0px;
+    background: #e5e5e5;
+    cursor: pointer;
+}
+
+.RT--sumbTransaction > .transactions .nav-tabs .nav-item:first-child a {
+    border-top-left-radius: 6px;
+}
+
+.RT--sumbTransaction > .transactions .nav-tabs .nav-item:nth-child(3) a {
+    border-top-right-radius: 6px;
+}
+
+.RT--sumbTransaction > .transactions .nav-tabs .nav-item .nav-link {
+    font-weight: 600;
+}
+
+.RT--sumbTransaction > .transactions .nav-tabs .nav-item .nav-link.active {
+    position: relative;
+    border-color: #e5e5e5 #e5e5e5 #fff;
+    background: #fff;
+    z-index: 1;
+} 
+
+.matchedTransaction,
+.createTransaction,
+.discussTransaction {
+    position: relative;
+    background: #fff;
+    border: 1px solid #fff;
+    border-color: #e5e5e5;
+    border-radius: 0px 6px 6px 6px;
+    padding: 15px;
+}
+
+.RT--sumbTransaction .add--deets {
+    position: relative;
+    padding: 7px 0px 5px;
+}
+
+.RT--sumbTransaction .discussTransaction .add--deets {
+    position: relative;
+    padding: 0px;
+}
+
+.RT--sumbTransaction .add--deets a {
+    font-size: 12px;
+    color: #28282a;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 5px 10px;
+    transition: all 0.3s ease;
+    border: 1px solid #fdb917;
+    border-radius: 5px;
+}
+
+.RT--sumbTransaction .discussTransaction .add--deets a {
+    margin-top: 7px;
+}
+
+
+.RT--sumbTransaction .add--deets a i,
+.findMatchingTra_wrap .fmtransac_wrap .spltBTN_wrap .splitBTN i {
+    margin-right: 4px;
+}
+
+.RT--sumbTransaction .add--deets a:hover {
+    background: #fef9ed;
+}
+
+.createTransaction .form-input--wrap,
+.createTransaction .form--inputbox {
+    margin-bottom: 12px;
+}
+
+.createTransaction .form-input--wrap label.form-input--question,
+.CTForm_wrap .form-input--wrap label.form-input--question {
+    margin: 0px;
+    margin-bottom: 5px;
+}
+
+.createTransaction .form-input--wrap.account--dropdown input.input--box {
+    position: relative;
+    padding: 8px 12px 8px 12px;
+    border-radius: 5px;
+    border: 1px solid #666;
+    font-size: 13px;
+    color: #28282a;
+    width: 100%;
+    cursor: pointer;
+}
+
+.createTransaction .form-input--wrap.account--dropdown input.input--box {
+    background-image: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23666666%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E);
+    background-repeat: no-repeat, repeat;
+    background-position: right 0.9em top 50%, 0 0;
+    background-size: 0.8em auto, 100%;
+    color: #28282a;
+    width: 100%;
+}
+
+.createTransaction .form-input--wrap.textarea,
+.discussTransaction .form-input--wrap.textarea {
+    margin-bottom: 0px;
+}
+
+.createTransaction .form-input--wrap.textarea textarea,
+.discussTransaction .form-input--wrap.textarea textarea {
+    border: 1px solid #28282a;
+    border-radius: 6px;
+    font-size: 13px;
+    padding: 7px 12px;
+    min-height: 100px;
+}
+
+.discussTransaction .form-input--wrap.textarea textarea {
+    min-height: 150px;
+}
+
+.matchList_wrap {
+    position: relative;
+    width: 100%;
+    background: #fff;
+    margin-top: 22px;
+    padding-top: 12px;
+    border-top: 1px dashed #e5e5e5;
+}
+
+.matchList_wrap > .header {
+    font-size: 14px;
+    position: absolute;
+    left: 0px;
+    top: -13px;
+    background: #fff;
+    padding-right: 10px;
+    font-weight: 600;
+}
+
+.otherMatchItemCheck[type="checkbox"] {
+    height: 0px;
+    width: 0px;
+}
+
+.otherMatchItem {
+    display: block;
+    margin: 7px 0px;
+}
+
+.otherMatchItemLabel {
+    width: 100%;
+    margin-bottom: 0px;
+    cursor: pointer;
+    background: #f2f2f2;
+    border: 1px solid #e5e5e5;
+    padding: 12px 8px 10px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.otherMatchItemLabel:hover,
+.otherMatchItemCheck[type="checkbox"]:checked + .otherMatchItemLabel {
+    background: #fbecc8;
+    border-color: #f5c85b;
+    transition: all 0.3s ease;
+}
+
+.otherMatchItemLabel .descr,
+.otherMatchItemLabel .deetsom {
+    line-height: 100%;
+}
+
+.otherMatchItemLabel .descr div:first-child {
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 7px;
+}
+
+.otherMatchItemLabel .descr div:nth-child(2) {
+    font-size: 12px;
+}
+
+.otherMatchItemLabel .deetsom {
+    text-align: center;
+}
+
+.otherMatchItemLabel .deetsom > div {
+    font-size: 18px;
+    font-weight: 600;
+    padding-top: 3px;
+}
+
+.otherMatchItemLabel .deetsom > div > span {
+    display: block;
+    font-size: 9px;
+    text-transform: capitalize;
+}
+
+.cancelMatch_wrap > button {
+    margin-top: 10px;
+    padding: 6px 10px;
+}
+
+.CTForm_wrap,
+.findMatchingTra_wrap {
+    position: relative;
+    background: #fff;
+    border-radius: 6px;
+    padding: 20px;
+    margin: 50px 0px 5px;
+    border: 1px solid #e5e5e5;
+}
+
+.CTForm_wrap::before {
+    position: absolute;
+    width: 300px;
+    content: "Additional Details";
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    top: -35px;
+    left: 50%;
+    margin-left: -150px;
+}
+
+.CTForm_wrap .form-navigation {
+    padding: 20px 0px 0px;
+}
+
+.CTForm_wrap select[class="form-input--dropdown"] {
+    padding: 8.5px 50px 8px 15px;
+}
+
+.CTForm_wrap .form-input--wrap label.form-input--question {
+    margin-bottom: 5px;
+    padding: 0px;
+}
+
+.findMatchingTra_wrap::before {
+    position: absolute;
+    width: 300px;
+    content: "Find & Match";
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    top: -35px;
+    left: 50%;
+    margin-left: -150px;
+}
+
+.findMatchingTra_wrap .scrollable_wrap {
+    position: relative;
+    min-height: 50px;
+    max-height: 250px;
+    overflow-y: scroll;
+    margin: 20px 0px;
+    padding-right: 10px;
+}
+
+.findMatchingTra_wrap .fmtransac_wrap {
+    position: relative;
+    z-index: 1;
+}
+
+
+
+.findMatchingTra_wrap .fmtransac_wrap label,
+.findMatchingTra_wrap .splitTrans_wrap,
+.fmselectedtransac_wrap .fmselectedtransac--item {
+    position: relative;
+    margin-bottom: 10px;
+    border: 1px solid #e5e5e5;
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+    padding: 15px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.findMatchingTra_wrap .fmtransac_wrap > input[type=checkbox] {
+    height: 0px;
+    width: 0px;
+    position: absolute;
+}
+
+.findMatchingTra_wrap .fmtransac_wrap > input[type=checkbox]:checked + label,
+.findMatchingTra_wrap .fmtransac_wrap label:hover {
+    background: #fef9ed;
+    border-color: #fdb917;
+    transition: all 0.3s ease;
+}
+
+.findMatchingTra_wrap .fmtransac_wrap .deets,
+.findMatchingTra_wrap .splitTrans_wrap .deets,
+.fmselectedtransac--item .deets {
+    font-size: 12px;
+}
+
+.findMatchingTra_wrap .fmtransac_wrap .deets .name,
+.findMatchingTra_wrap .splitTrans_wrap .deets .name,
+.fmselectedtransac--item .deets .name {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.findMatchingTra_wrap .fmtransac_wrap .amount .viewableAmount,
+.findMatchingTra_wrap .splitTrans_wrap .amount .viewableAmount,
+.fmselectedtransac--item .amount > input {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 17px;
+    margin-top: 5px;
+}
+
+.findMatchingTra_wrap .fmtransac_wrap .reference,
+.findMatchingTra_wrap .fmtransac_wrap .amount,
+.findMatchingTra_wrap .splitTrans_wrap .reference,
+.findMatchingTra_wrap .splitTrans_wrap .amount,
+.fmselectedtransac--item .reference,
+.fmselectedtransac--item .amount {
+    font-size: 12px;
+}
+
+.findMatchingTra_wrap .fmtransac_wrap .deets .name,
+.findMatchingTra_wrap .fmtransac_wrap .reference,
+.findMatchingTra_wrap .splitTrans_wrap .deets .name,
+.fmselectedtransac--item .deets .name {
+    line-height: 100%;
+}
+
+.findMatchingTra_wrap .fmtransac_wrap .amount,
+.findMatchingTra_wrap .splitTrans_wrap .amount,
+.fmselectedtransac--item .amount {
+    text-align: center;
+    font-weight: 600;
+}
+
+.findMatchingTra_wrap .fmtransac_wrap .spltBTN_wrap {
+    position: absolute;
+    right: 25px;
+    top: 28%;
+}
+
+.findMatchingTra_wrap .fmtransac_wrap .spltBTN_wrap .splitBTN {
+    background: #fdb917;
+    padding: 4px 10px 2px;
+    font-size: 13px;
+    border: 1px solid #fdb917;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.findMatchingTra_wrap .fmtransac_wrap .spltBTN_wrap .splitBTN:hover {
+    background: #fafafa;
+}
+
+.findMatchingTra_wrap .splitTrans_wrap {
+    background: #f4f4f4;
+    cursor: auto;
+    margin-top: -15px;
+    border-radius: 0px 0px 5px 5px;
+    padding-top: 25px;
+    margin-bottom: 40px;
+}
+
+.findMatchingTra_wrap .splitTrans_wrap::after {
+    content: "\f141";
+    font-family: "FontAwesome";
+    position: absolute;
+    width: 200px;
+    left: 50%;
+    margin-left: -100px;
+    text-align: center;
+    bottom: -44px;
+    font-size: 30px;
+}
+
+.findMatchingTra_wrap .fmselectedtransac_wrap,
+.findMatchingTra_wrap .fmcalculation_wrap {
+    border-top: 1px dashed #aaa;
+    padding: 20px 0px 0px;
+    margin-top: 20px;
+    min-height: 100px;
+}
+
+.fmselectedtransac_wrap .fmselectedtransac--item {
+    cursor: auto;
+    background: #f0f9f2;
+    border-color: #c6e7ce;
+}
+
+.fmselectedtransac--item .amount > input {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background: #f0f9f2;
+}
+
+.fmselectedtransac--item .amount > input {
+    margin-top: 0px;
+}
+
+.novalue_wrap {
+    font-size: 13px;
+    font-weight: 600;
+    background: #f4f4f4;
+    padding: 20px;
+    border: 1px solid #e5e5e5;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.novalue_wrap i {
+    margin-right: 7px;
+}
+
+.fmcalculation_wrap .calc_matching {
+    margin: 20px 0px;
+}
+
+.fmcalculation_wrap .calc_matching .row-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.fmcalculation_wrap .calc_matching .subtotal_wrap,
+.fmcalculation_wrap .calc_matching .transactiontype_wrap,
+.fmcalculation_wrap .calc_matching .amountmatch_wrap,
+.fmcalculation_wrap .calc_matching .currentadjustment_wrap,
+.fmcalculation_wrap .calc_matching .minoradjustment_wrap {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+
+.fmcalculation_wrap .calc_matching .wrap {
+    position: relative;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    border-radius: 5px;
+    padding: 30px 20px;
+    font-size: 12px;
+    font-weight: 600;
+    border: 1px solid #e5e5e5;
+    line-height: 100%;
+}
+
+.fmcalculation_wrap .calc_matching .wrap .desc {
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 130%;
+    margin-top: 10px;
+}
+
+.fmcalculation_wrap .calc_matching .wrap > input,
+.fmcalculation_wrap .calc_matching .transactiontype_wrap .wrap > .amount {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background: transparent;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.fmcalculation_wrap .calc_matching .transactiontype_wrap .wrap > .amount {
+    margin: 15px 0px 25px;
+    line-height: 0px;
+}
+
+.fmcalculation_wrap .calc_matching .wrap > input {
+    margin-bottom: 7px;
+}
+
+
+.fmcalculation_wrap .calc_matching .transactiontype_wrap .wrap {
+    background: #fbecc8;
+    border-color: #fdb917;
+}
+
+.fmcalculation_wrap .calc_matching .subtotal_wrap .wrap {
+    background: #f4f4f4;
+}
+
+.fmcalculation_wrap .calc_matching .currentadjustment_wrap .wrap {
+    background: #f0f9f2;
+    border-color: #4BB543;
+    color: #28282a;
+}
+
+.fmcalculation_wrap .calc_matching .amountmatch_wrap .wrap,
+.fmcalculation_wrap .calc_matching .amountmatch_wrap .wrap input {
+    background: #fcedee;
+    border-color: #DC3545;
+    color: #DC3545;
+}
+
+.fmcalculation_wrap .calc_matching .amountmatch_wrap .wrap.match,
+.fmcalculation_wrap .calc_matching .amountmatch_wrap .wrap.match input {
+    background: #f0f9f2;
+    border-color: #4BB543;
+    color: #28282a;
+} 
+
+.fmcalculation_wrap .calc_matching .amountmatch_wrap .wrap {
+    overflow: hidden;
+}
+
+.fmcalculation_wrap .calc_matching .amountmatch_wrap .wrap > i,
+.fmcalculation_wrap .calc_matching .amountmatch_wrap .wrap.match input {
+    display: none;
+}
+
+.fmcalculation_wrap .calc_matching .amountmatch_wrap .wrap.match > i {
+    position: relative;
+    display: block;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.fmcalculation_wrap .calc_matching .minoradjustment_wrap {
+    padding-top: 25px;
+}
+
+.fmcalculation_wrap .calc_matching .minoradjustment_wrap .wrap {
+    border: 1px dashed #e5e5e5;
+    text-align: left;
+    font-size: 16px;
+    padding: 20px;
+}
+
+.fmcalculation_wrap .calc_matching .minoradjustment_wrap .wrap input {
+    font-size: 16px;
+    display: inline;
+    text-align: center;
+    width: auto;
+    margin-left: 5px;
+    margin-bottom: 0px;
+    padding: 5px 0px;
+    border: 1px solid #e5e5e5;
+    border-radius: 5px;
+}
+
+
+/** X-Large devices (large desktops, less than 1400px) **/
+@media (max-width: 1399.98px) {
+
+
+}
+
+/** Large devices (desktops, less than 1200px) **/
+@media (max-width: 1199.98px) {
+
+    .linegraph-dashboard {
+        height: 340px;
+    }
+
+    .sumb--statistics {
+        padding-top: 5px !important;
+    }
+
+    .sumb--statistics [class*="col-"] {
+        margin: 15px 0px;
+    }
+
+    .sumb--statistics.nondashboard {
+        padding-bottom: 5px;
+    }
+
+    .path--bar {
+        display: block;
+        margin-bottom: 15px;
+    }
+
+    .invoicelist--hideThis {
+        display: none;
+    }
+
+    .invoice-list--btns,
+    .bankTransactions-list--btns{
+        margin-top: 20px;
+    }
+
+    .invoice-list--btns_expenses,
+    a.transaction--Addbtn_expenses {
+        margin-top: 0px;
+    }
+
+    .transaction--filter {
+        margin-top: 5px;
+    }
+
+    .expsenses--table table {
+        margin-top: 25px;
+    }
+
+    #sumb-receipt-container {
+        min-height: 500px;
+    }
+
+    .sumb-expense-upload-container {
+        position: relative;
+        margin: 15px 0px;
+        height: auto;
+    }  
+
+    .expsenses--table {
+        padding-top: 0px;
+    }
+
+    .userManage--stats.userTotal--stats .block {
+        padding: 50px 15px 0px;
+        min-height: 150px;
+    }
+    
+    .userManage--stats.subscription--stats .block {
+        padding: 62px 20px 51px;
+    }
+
+    .bankTransaction--status [class*="col-"]:first-child,
+    .bankTransaction--status [class*="col-"]:nth-child(2) {
+        margin-bottom: 20px;
+    }
+    
+    .bankTransaction--status .status--box_wrap {
+        padding: 15px 0px 10px;
+    }
+
+}
+
+/** Special for Admins **/
+@media (max-width: 1160px) {
+    .header-desktop_ltst.admin--header {
+        display: none;
+    }
+
+    .header-mobile.admin--header {
+        display: block;
+    }
+}
+
+/** Medium devices (tablets, less than 992px) **/
+@media (max-width: 991.98px) {
+
+    .page-container {
+        top: 0px;
+    }
+
+    .header-desktop {
+        position: relative;
+        height: 55px;
+    }
+
+    .main-content {
+        padding-top: 125px;
+    }
+
+    .sumb--userheader {
+        position: relative;
+        border-bottom-left-radius: 0px;
+        padding: 10px;
+        padding-left: 20px;
+        width: 100%;
+        margin-bottom: 600px;
+    }
+
+    .header-button {
+        margin-top: 0px;
+    }
+
+    .notifi-dropdown,
+    .email-dropdown,
+    .mess-dropdown {
+        top: 51px;
+    }
+
+    .account-dropdown {
+        top: 60px;
+    }
+
+    .mess-dropdown {
+        left: -20px;
+    }
+
+    .notifi-dropdown {
+        left: -102px;
+    }
+
+    .mess-dropdown:before {
+        left: 20px;
+    }
+
+    .email-dropdown:before {
+        left: 53px;
+    }
+
+    .notifi-dropdown:before {
+        left: 101px !important;
+    }
+
+    .login-wrapper {
+        margin: 2vh 0px;
+    }
+    
+    .login-content-left {
+        padding: 10px 0px;
+    }
+
+    .login-content-left .login--logo {
+        width: 40%;
+    }
+
+    .bizmate--logo {
+        display: inline-block;
+        width: 40%;
+        margin-top: 4px;
+    }
+
+    .login-checkbox {
+        flex-direction: row;
+    }
+    
+    .docu-item-forms-nav,
+    .register-link,
+    .header-desktop_ltst {
+        display: none;
+    }
+
+    .show-mobile--tablet,
+    .show-mobile--tablet .register-link,
+    .header-mobile {
+        display: block !important;
+    }
+
+    #DocumentCategory .accordion-body {
+        padding: 10px 0px;
+    }
+
+    .docu-item-fixed-proceed {
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    .docu-item-forms-panel {
+        padding-left: 15px;
+    }
+
+    .form--side {
+        border-radius: 9px;
+        height: auto;
+    }
+
+    .mobile--nav {
+        display: block !important;
+    }
+
+    .invoicetable--header_from {
+        padding-top: 15px;
+    }
+
+    .invoice--paymentinfo {
+        margin-bottom: 20px;
+    }
+
+    .invoice--extrainfo,
+    .userManage--wrap,
+    .selectedBank {
+        display: flex;
+        flex-flow: column-reverse;
+    }
+
+    .transaction--filter {
+        margin-top: 10px;
+    }
+
+    .graph_inv-exp {
+        margin-top: 30px;
+    }
+
+    .ytdlegend.for-dashboard [class*="col-"]:nth-child(2) {
+        margin-top: 10px;
+    }
+
+    .email--verification_notif {
+        padding: 0px 18px;
+        padding-top: 5px;
+    }
+
+    .sumb--reporting .search--btn,
+    .sumb--reporting .clear--btn {
+        margin-top: 5px;
+    }
+
+    #actvt--wrap .tab-content .scrollable-x {
+        overflow-x: auto;
+        position: relative;
+        padding-bottom: 20px;
+    }
+
+    .manageUsers-list--btns {
+        text-align: left !important;
+        margin-top: 10px;
+    }
+
+    .manageUsers-list--btns button {
+        width: 49.2%;
+        padding: 10px;
+    }
+
+    .userManage--stats {
+        min-height: auto;
+    }
+
+    .userManage--stats.userTotal--stats .block {
+        padding: 30px 15px 20px;
+        min-height: auto;
+    }
+    
+    .userManage--stats.subscription--stats .block {
+        padding: 50px 15px 30px;
+    }
+
+    .selectedBank > [class*="col-"]:first-child {
+        margin-bottom: 0px;
+    }
+
+    .selectedBank > [class*="col-"]:nth-child(2)  {
+        margin-bottom: 25px;
+    }
+
+    .reconcileTransactions .button--style.hide {
+        display: none;
+    }
+    
+    .reconcileTransactions .button--style > div > div > a {
+        width: 100%;
+        padding: 10px 0px;
+    }
+    
+    .reconcileTransactions .button--style {
+        padding-top: 20px;
+    }
+    
+    .RT--sumbTransaction {
+        margin-top: 20px;
+        padding-top: 20px;
+        border-top: 1px dotted #666;
+    }    
+
+    .findMatchingTra_wrap .fmtransac_wrap .amount,
+    .findMatchingTra_wrap .splitTrans_wrap .amount {
+        text-align: left;
+    }
+
+    .fmcalculation_wrap .calc_matching .minoradjustment_wrap .wrap input {
+        margin: 7px 0px 0px;
+        padding: 5px 10px;
+        width: 100%;
+        text-align: left;
+    }
+
+}
+
+/** Small devices (landscape phones, less than 768px) **/
+@media (max-width: 767.98px) {
+
+    .sumb--graphs [class*="col-"]:nth-child(2) {
+        margin-top: 30px;
+    }
+
+    .login-content-left .login--logo {
+        width: 40%;
+        display: inline-block;
+    }
+
+    .bizmate--logo {
+        display: inline-block;
+        width: 40%;
+        margin-top: 2px;
+    }
+
+    .login-checkbox {
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .sumb--statistics [class*="col-"] {
+        margin: 10px 0px;
+    }
+
+    .form-navigation .form-navigation--btns.row,
+    .form-navigation .form-navigation--btns.row [class*="col-"]:nth-child(2),
+    .chartaccounts--searcharea,
+    .accountsettings--fields,
+    .create-new--statement_wrap {
+        display: flex;
+        flex-flow: column-reverse;
+    }
+
+    .form-navigation .form-navigation--btns.row [class*="col-"]:nth-child(1) a,
+    .form-navigation .form-navigation--btns.row [class*="col-"]:nth-child(2) button,
+    .chartaccounts--searcharea .chartofaccounts-list--btns input,
+    .CTForm_wrap .form-navigation--btns .cancel--btn,
+    .findMatchingTra_wrap .form-navigation--btns .cancel--btn {
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .CTForm_wrap .form-navigation--btns .cancel--btn,
+    .findMatchingTra_wrap .form-navigation--btns .cancel--btn {
+        margin-bottom: 0px;
+    }
+
+    .chartaccounts--searcharea .chartofaccounts-list--btns input {
+        padding: 10px 10px;
+        margin-bottom: 14px;
+    }
+
+    .form-navigation .form-navigation--btns.row [class*="col-"]:nth-child(1) a {
+        margin-bottom: 0px;
+    }
+
+    .preview--btn {
+        margin: 0px;
+    }
+
+    .invoice-list--btns,
+    .invoice-list--btns_expenses,
+    .bankTransactions-list--btns {
+        display: inline-block;
+        text-align: left !important;
+    }
+
+    .invoice-list--btns button,
+    .invoice-list--btns_expenses button,
+    .chartaccounts--searcharea .chartofaccounts-list--btns button,
+    .sumb--reporting .search--btn,
+    .sumb--reporting .clear--btn,
+    .sumb--transactions .search--btn,
+    .sumb--transactions .clear--btn,
+    .bankTransactions-list--btns button{
+        width: 49.4%;
+        padding: 10px;
+    }
+    
+    .reporting--list-btns {
+        text-align: left;
+    }
+
+    .sumb--reporting .export--btn,
+    .sumb--transactions .export--btn {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        margin-top: 16px;
+    }
+
+    .multiselect-wrapper {
+        margin-bottom: 15px !important;
+    }
+
+    a.transaction--Addbtn,
+    a.transaction--Addbtn_expenses,
+    .chartaccounts--searcharea a.transaction--Addbtn_chartaccounts  {
+        display: block;
+        text-align: center;
+        padding: 10px 10px;
+    }
+
+    .invoice-list--btns_expenses {
+        margin-top: 5px;
+    }
+
+    a.transaction--Addbtn_expenses {
+        margin-top: 20px;
+    }
+
+    .chartaccounts--searcharea a.transaction--Addbtn_chartaccounts {
+        margin-top: 10px;
+    }
+
+    .footer--login .copyright--login span,
+    .footer--dashboard .copyright--dashboard span {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .footer--login .copyright--login span::after,
+    .footer--dashboard .copyright--dashboard span::after {
+        content: "";
+    }
+
+    .account--deetswrap {
+        margin-bottom: 20px;
+    }
+
+    .account--updateprofile,
+    .account--generatepass {
+        width: 100%;
+        padding: 10px 0px;
+    }
+
+    .account--profileicon {
+        display: block;
+    }
+
+    .account--profileicon img {
+        width: 100%
+    }
+
+    .activity--statement__settings a {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    
+    .financialyr--wrap {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    #financialyr--options {
+        width: 100%;
+    }
+
+    .create-new--statement .add--btn {
+        margin-left: 0px;
+        width: 100%;
+    }
+
+    #amount_refundable_header_div {
+        padding-top: 20px;
+        text-align: left;
+    }
+
+    .acctTransactions--btn {
+        display: block;
+        width: 100%;
+        margin: 5px 0px 0px;
+    }
+
+    .RT--sumbTransaction .transactions > ul.nav-tabs {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .RT--sumbTransaction .transactions > ul.nav-tabs:first-child a {
+        margin-bottom: 0px;
+    }
+
+    .findMatchingTra_wrap .scrollable_wrap {
+        max-height: 400px;
+        min-height: 50px;
+    }
+
+    .findMatchingTra_wrap .fmtransac_wrap > input[type=checkbox]:checked + label {
+        border-radius: 5px 5px 0px 0px;
+    }
+
+    .findMatchingTra_wrap .fmtransac_wrap.create--new > input[type=checkbox]:checked + label {
+        border-radius: 5px;
+    }
+
+
+    .findMatchingTra_wrap .fmtransac_wrap .reference,
+    .findMatchingTra_wrap .splitTrans_wrap .reference,
+    .fmselectedtransac--item .reference {
+        margin: 10px 0px;
+    }
+
+    .findMatchingTra_wrap .fmtransac_wrap .spltBTN_wrap {
+        position: relative;
+        width: 100%;
+        bottom: 12px;
+        left: 0px;
+        top: auto;
+    }
+
+    .findMatchingTra_wrap .fmtransac_wrap .spltBTN_wrap .splitBTN {
+        width: 100%;
+        display: block;
+        text-align: center;
+        padding: 8px 0px;
+        border-radius: 0px 0px 5px 5px;
+    }
+
+    .fmselectedtransac--item .amount,    
+    .fmselectedtransac--item .amount > input {
+        text-align: left;
+    }
+
+    .fmcalculation_wrap .calc_matching .minoradjustment_wrap {
+        padding: 20px 0px;
+    }
+
+    .transactionSummary [class*="col-"] {
+        margin-bottom: 10px;
+        border-bottom: 1px dotted #fdb917;
+        padding-bottom: 8px;
+    }
+
+    .transactionSummary--deets [class*="col-"]:first-child {
+        margin-bottom: 10px;
+        border-bottom: 1px dotted #ccc;
+        padding-bottom: 8px;
+    }
+
+    .transactionSummary--deets .minorAdjustment [class*="col-"]:first-child,
+    .transactionSummary [class*="col-"].unreconciled--type {
+        margin-bottom: 0px;
+        border-bottom: 0px dotted #ccc;
+        padding-bottom: 0px;
+    }
+
+    .accountTransaction--settings,
+    .transactionSummary .accountTransaction--noInvoice,
+    .transactionSummary .accountTransaction--from {
+        text-align: left;
+    }
+
+    .accountTransaction--settings .accountTransaction--dropdown {
+        margin: 5px 0px;
+    }
+
+    .transactionSummary [class*="col-"]:nth-child(3) {
+        margin-bottom: 0px;
+        border-bottom: 0px solid #000;
+        padding-bottom: 0px;
+    }
+}
+ 
+/** X-Small devices (portrait phones, less than 576px) **/
+@media (max-width: 575.98px) {
+
+    #sumb--sliderContainer {
+        overflow-x: scroll; 
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+    #sumb--sliderContainer::-webkit-scrollbar {
+        display: none; /* for Chrome, Safari, and Opera */
+    }
+
+    .nav-tabs {
+        padding: 0px 20px;
+    }
+
+    .nav-tabs a {
+        display: block;
+        width: 100%;
+    }
+
+    .nav-tabs:first-child a {
+        margin-bottom: 10px;
+    }
+
+    .sumb--progressButtons,
+    .sumb--accountant .sumb--dashboardAcctUsers .row {
+        display: flex;
+        flex-flow: column-reverse;
+    }
+
+    .sumb--progressButtons [class*="col-"] a {
+        display: block;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .addnewSvc .dropdown-menu {
+        width: 100%;
+    }
+
+
+    .sumb--dashboardAcctUsers .addNewUser {
+        margin-bottom: 15px;
+    }
+
+    .modal-reskin {
+        padding-right: 0px !important;
+    }
+
+    .modal-reskin .invoice--preview {
+        width: 97%;
+    }
+
+    .userManage--stats.subscription--stats .block {
+        padding: 40px 15px 30px;
+    }
+
+    .userManage--stats.subscription--stats .block.basic {
+        margin: 20px 0px;
+    }
+
+    .fmcalculation_wrap .calc_matching .wrap {
+        padding: 15px;
+    }
+
+    .fmcalculation_wrap .calc_matching .transactiontype_wrap,
+    .fmcalculation_wrap .calc_matching .currentadjustment_wrap {
+        padding-bottom: 20px;
+    }
+
+    .RT--sumbTransaction > .transactions {
+        margin-top: 5px;
+    }
+
+    .RT--sumbTransaction > .transactions .nav-tabs li.find--match {
+        display: none;
+    }
+    
+    .find--andmatch_mobile {
+        display: block;
+    }
+
+}
+
+.paygw--box{
+    padding: 5px;
+    background: lightgrey;
+}

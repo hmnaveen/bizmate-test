@@ -1,0 +1,66 @@
+.accordion {margin-top: 10px}
+
+    .accordion-item {
+        padding-bottom: 20px; 
+        border-bottom: 1px solid #e5e5e5;
+        border-radius: 0px !important;
+    }
+
+    .accordion-button {
+        position:relative;
+        display:flex;
+        align-items:center;
+        width:100%;
+        font-size: 14px;
+        color:#666;
+        font-weight: 600;
+        text-align:left;
+        border:0;
+        border-radius:0;
+        overflow-anchor:none;
+        transition: color .15s ease-in-out,
+                    background-color .15s ease-in-out,
+                    border-color .15s ease-in-out,
+                    box-shadow .15s ease-in-out,
+                    border-radius .15s ease;
+        }
+    
+
+    .accordion-button::after {
+        content:"Expand";
+        position: absolute;
+        right: 0px;
+        background: #f5c85b;
+        padding: 5px 10px;
+        font-size: 12px;
+        border-radius: 3px;
+        color: #28282a;
+    }
+
+    .accordion-button:not(.collapsed)::after{
+        content:"Collapse";
+        background: #fdb917;
+    }
+
+    .accordion-button:not(.collapsed) {
+        border-bottom: 0px solid #e5e5e5;
+    }
+
+
+    .accordion-item{ background-color:#fafafa;}
+    .accordion-item:first-of-type{border-top-left-radius:.25rem;border-top-right-radius:.25rem}
+    .accordion-item:first-of-type .accordion-button{border-top-left-radius:calc(.25rem - 1px);border-top-right-radius:calc(.25rem - 1px)}
+    .accordion-item:not(:first-of-type){border-top:0}
+    .accordion-item:last-of-type{border-bottom-right-radius:.25rem;border-bottom-left-radius:.25rem}
+    .accordion-item:last-of-type .accordion-button.collapsed{border-bottom-right-radius:calc(.25rem - 1px);border-bottom-left-radius:calc(.25rem - 1px)}
+    .accordion-item:last-of-type .accordion-collapse{border-bottom-right-radius:.25rem;border-bottom-left-radius:.25rem}
+    .accordion-flush .accordion-collapse{border-width:0}
+    .accordion-flush .accordion-item{border-right:0;border-left:0;border-radius:0}
+    .accordion-flush .accordion-item:first-child{border-top:0}
+    .accordion-flush .accordion-item:last-child{border-bottom:0}
+    .accordion-flush .accordion-item .accordion-button{border-radius:0}
+
+    .accordion-body { padding: 0px; padding-bottom: 10px;}
+
+    @media (prefers-reduced-motion:reduce){.accordion-button{transition:none}} @media (prefers-reduced-motion:reduce){.accordion-button::after{transition:none}}.accordion-button:hover{z-index:2}.accordion-button:focus{z-index:3;border-color:#86b7fe;outline:0;box-shadow:0 0 0 .25rem rgba(13,110,253,.25)}.accordion-header{margin-bottom:0}.breadcrumb{display:flex;flex-wrap:wrap;padding:0 0;margin-bottom:1rem;list-style:none}
+    

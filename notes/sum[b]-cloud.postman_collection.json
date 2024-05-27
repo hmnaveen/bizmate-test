@@ -1,0 +1,171 @@
+{
+	"info": {
+		"_postman_id": "26840671-891d-40b0-b84f-26fd8832af38",
+		"name": "sum[b]-cloud",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "app-version",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-SUMB-Security-Token",
+						"value": "qZaMZErzv8Ey42kw6beEQZTWeRSofB1UUK5iqGdwHxgtmc5unykAysypZq3RuKaQwMB-user",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "{{sumb-cloud-dev-endpath}}",
+					"host": [
+						"{{sumb-cloud-dev-endpath}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "oauth2-token",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-SUMB-Security-Token",
+						"value": "qZaMZErzv8Ey42kw6beEQZTWeRSofB1UUK5iqGdwHxgtmc5unykAysypZq3RuKaQwMB-user",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"vishwanatha.st@sanradiance.com\",\r\n    \"password\":\"123456789\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{sumb-cloud-dev-endpath}}/oauth2/token",
+					"host": [
+						"{{sumb-cloud-dev-endpath}}"
+					],
+					"path": [
+						"oauth2",
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "verification-code",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-SUMB-Security-Token",
+						"value": "qZaMZErzv8Ey42kw6beEQZTWeRSofB1UUK5iqGdwHxgtmc5unykAysypZq3RuKaQwMB-user",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"vishwanatha.st@sanradiance.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{sumb-cloud-dev-endpath}}/verification-code",
+					"host": [
+						"{{sumb-cloud-dev-endpath}}"
+					],
+					"path": [
+						"verification-code"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "signup",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-SUMB-Security-Token",
+						"value": "qZaMZErzv8Ey42kw6beEQZTWeRSofB1UUK5iqGdwHxgtmc5unykAysypZq3RuKaQwMB-user",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"first_name\":\"v\",\r\n    \"last_name\":\"vdd\",\r\n    \"email\":\"vishwanatha.st@sanradiance.com\",\r\n    \"verification_code\":\"TtZR6gn34b\",\r\n    \"mobile_number\":\"0412345679\",\r\n    \"password\":\"123456789\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{sumb-cloud-dev-endpath}}/signup",
+					"host": [
+						"{{sumb-cloud-dev-endpath}}"
+					],
+					"path": [
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "profile",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIyIiwianRpIjoiMTc5NjIxN2UyM2I1OWNiZGVjZWUyYjUwYTU0MTA4YjE0N2EzOGEwZWYxY2UyYjAwNzNhYjcyMWE3NWYxMDNlNjUxODA4MmRlYmQwNjI2YWEiLCJpYXQiOjE2NjA3MjM3NDIuNzMwNzc2LCJuYmYiOjE2NjA3MjM3NDIuNzMwNzgsImV4cCI6MTY5MjI1OTc0Mi42OTcxNzMsInN1YiI6IjUxIiwic2NvcGVzIjpbInVzZXIiXX0.E40fKrMRtIlfaIQy43I33YSIAWGcqhI9TCGqItZaFnaZo-I0qXfyYXjlZYTTvuEKbhJMzwnJtyBSK9YSyzkgaf7ePVkptzIdrLIkutr4H5KA1m1890irxOL0bPoM-2t4OXQDKTOniUR0CsPT618pLd9ub0OmSac0wIJ7pOhBeBT23o54YxZLxxIF5NFS0Jpnd39FMoE44BPuD8iZp2q1pL_-wx-Ma0a-xuvBRgTbj0IHkq9y0Kh6cCc7lChsmiEkQQJbrQpHyBu1r9nQNmNtZKFzzmR4yOM7lfyBqoZ_HH5PmCjKvprlA8ZcMjNrs7xo5fmxQO2FFTVC4pJEUAzW-M44WuhV3lsgnRK2MMjl5xIX89gncaDzKHyM_-s7ogJGtym9nsqWvWM8KX40lWOHRScb9qidgxyWJQeb6z-w_Y3Ibo0vwCIAhXERAGNJjsWokrEKEcH_rzvFitn8aVCaKELGJK5mcqXtP2PabQgpHeXE1MnnhzDF00Bp6_lLHJmRCYJ85U2lh5G2w4HMH6FDVsmbYkE3CyAGM92OEE5CyAUxyGOiRiurBnHz49apwm5DEzAjhYl9_gVZBjhL-vkTUQvWlPzLmzKDtqmrdKyWssDEF5YKs666K0JGI6WpEuIuZKKeRniquvbOaQfrvcVWZWCmGtZ6HUpYVSPnDAFo9x8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-SUMB-Security-Token",
+						"value": "qZaMZErzv8Ey42kw6beEQZTWeRSofB1UUK5iqGdwHxgtmc5unykAysypZq3RuKaQwMB-user",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{sumb-cloud-dev-endpath}}/me",
+					"host": [
+						"{{sumb-cloud-dev-endpath}}"
+					],
+					"path": [
+						"me"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

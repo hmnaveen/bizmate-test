@@ -1,0 +1,163 @@
+﻿.multiselect-wrapper {
+	margin: 0px;
+	padding: 0px;
+	display: inline-block;
+	width: 100%;
+	white-space: nowrap;
+	font-size: 13px;
+	font-family: 'Montserrat', sans-serif;
+    height: auto;
+}
+
+.multiselect-wrapper .multiselect-input {
+	width: 100%;
+	padding-right: 30px;
+	border: 1px solid #666;
+}
+
+.multiselect-wrapper label {
+	display: block;
+	font-size: 12px;
+	font-weight : 600;
+}
+
+.multiselect-wrapper .multiselect-list {
+	z-index: 1;
+	position: absolute;
+	display: none;
+	background-color: white;
+	border: 1px solid grey;
+	border-bottom-left-radius: 2px;
+	border-bottom-right-radius: 2px;
+	margin-top: -2px;
+}
+
+	.multiselect-wrapper .multiselect-list.active {
+		display: block;
+	}
+
+	.multiselect-wrapper .multiselect-list > span {
+		font-weight: bold;
+	}
+
+	.multiselect-list span label {
+		position: relative;
+		margin-bottom: 0px;
+		padding: 0px 10px;
+		cursor: pointer;
+	 }
+
+	.multiselect-wrapper .multiselect-list .multiselect-checkbox {
+		margin-right: 2px;
+	}
+
+	.multiselect-wrapper .multiselect-list > span,
+	.multiselect-wrapper .multiselect-list li {
+		cursor: pointer;
+	}
+
+	.multiselect-list span label span.multiselect-text {
+		position: relative;
+		margin-left: 7px;
+		top: -2px;
+	}
+
+.multiselect-wrapper .multiselect-list {
+	border-radius: 5px ;
+	border-color: #aaa;
+	padding: 10px 0px;
+}
+
+.multiselect-wrapper ul {
+	list-style: none;
+	display: block;
+	position: relative;
+	padding: 0px;
+	margin: 0px;
+	max-height: 200px;
+	overflow-y: auto;
+	overflow-x: hidden;
+	white-space: nowrap;
+}
+
+	.multiselect-wrapper ul li {
+		display: block;
+		transition: all 0.3s ease;
+		padding: 5px 10px;
+	}
+
+		.multiselect-wrapper ul li.active {
+			background: #fbecc8;
+			color: #28282a;
+			transition: all 0.3s ease;
+		}
+
+		.multiselect-wrapper ul li:hover {
+			background: #fbecc8;
+			color: #28282a;
+			transition: all 0.3s ease;
+		}
+
+		.multiselect-list ul li label {
+			margin-bottom: 0px;
+			cursor: pointer;
+		}
+		
+		.multiselect-list ul li label input {
+			position: relative;
+			top: 2px
+		}
+
+.multiselect-input-div {
+	position: relative;
+	height: auto;
+	margin-bottom: 2px;
+}
+
+	.multiselect-input-div input{
+		border: 1px solid #666;
+		padding: 9px 12px 9px 12px;
+		vertical-align: middle;
+		border-radius: 5px;
+		cursor: pointer;
+	}
+
+
+.multiselect-count {
+	position: absolute;
+	text-align: center;
+	border-radius: 2px;
+	background-color: #fdb917;
+	padding: 2px 7px;
+	left: auto !important;
+	right: 32px;
+	color: #28282a;
+	top: 8px !important;
+}
+
+.multiselect-wrapper.disabled .multiselect-dropdown-arrow {
+	border-top: 5px solid lightgray;
+}
+
+.multiselect-wrapper.disabled .multiselect-count {
+	background-color: lightgray;
+}
+
+.multiselect-dropdown-arrow {
+	position: absolute;
+    width: 30px;
+    height: 100%;
+    top: 0px;
+    right: 0px;
+    margin: 0px;
+    cursor: pointer;
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23666666%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E');
+    background-repeat: no-repeat, repeat;
+    background-position: right 1.05em top 50%, 0 0;
+    background-size: 0.88em auto, 100%;
+}
+
+
+.multiselect-list hr {
+    margin: 5px 0px 8px;
+}
