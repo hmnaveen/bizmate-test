@@ -36,7 +36,7 @@
     <link href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css" rel="stylesheet">
 
     <!-- FullCalendar -->
-    <link href='vendor/fullcalendar-3.10.0/fullcalendar.css?v=1' rel='stylesheet' media="all" />
+    <link href="vendor/fullcalendar-3.10.0/fullcalendar.css?v={{ config('app.version') }}" rel='stylesheet' media="all" />
 
     <!-- Main CSS-->
     <link href="css/theme.css?v={{ config('app.version') }}" rel="stylesheet" media="all">

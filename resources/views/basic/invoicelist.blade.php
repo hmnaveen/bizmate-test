@@ -1,7 +1,7 @@
 @include('includes.head')
 @include('includes.user-header')
 
-<link href="/css/accordion-styles.css?v=1.1" rel="stylesheet" media="all">
+<link href="/css/accordion-styles.css?v={{ config('app.version') }}" rel="stylesheet" media="all">
 
 <div id="delete_invoice_modal" class="modal fade modal-reskin modal-deleteItem" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
@@ -26,7 +26,7 @@
 
 
 <!-------Invoice due amount and date alert pop-up--------------->
-<form action="/basic/status-change"  method="GET" enctype="multipart/form-data"> 
+<form action="/basic/status-change"  method="GET" enctype="multipart/form-data">
     @csrf
     <div id="invoice_payment_date_modal" class="modal fade modal-reskin modal-deleteItem" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
@@ -46,11 +46,11 @@
                                     <div class="col-12">
                                         <input type="float" id="invoice_amount_paid" name="amount_paid" placeholder=""  value="" required onfocusin="basicInvoiceRemoveComma('invoice_amount_paid')" onfocusout="basicInvoiceAddComma('invoice_amount_paid')">
                                     </div>
-                                   
+
                                     <input type="hidden" id="invoice_due_amount" value="">
                                 </div>
                                 <div class="" role="alert" id="invoice_amount_paid_error"></div>
-                                
+
                             </div>
                         </div>
 
@@ -142,10 +142,10 @@ if(!empty($line_chart_data)){
                                 <button class="accordion-button" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                     Summary Graph
                                 </button>
-                            </h2>    
+                            </h2>
                             <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-parent="#SummaryGraph">
                                 <div class="accordion-body">
-   
+
                                     <div class="sumb--graphs row">
                                         <div class="col-xl-5 col-lg-5 col-md-12">
                                             <div class="sumb--graphbox sumb--dashstatbox sumb--putShadowbox invoices-block">
@@ -164,37 +164,37 @@ if(!empty($line_chart_data)){
                                                             $invoice_status = array();
                                                             foreach ($total_invoice_counts as $isummary) {
                                                                 $invoice_status[$isummary['status']] = array('status'=>$isummary['status'],'total'=>$isummary['total'], 'status_count'=>$isummary['status_count']);
-                                                            } 
+                                                            }
 
                                                             if (!empty($invoice_status['Paid']['status_count'])) { ?>
                                                                 <li class="Paid">
                                                                     <span><?php echo $invoice_status['Paid']['status_count']?></span> Paid Invoice <u>$<?php echo number_format($invoice_status['Paid']['total'], 2) ?></u>
                                                                 </li>
-                                                            <?php } 
+                                                            <?php }
 
                                                             if (!empty($invoice_status['PartlyPaid']['status_count'])) { ?>
                                                                 <li class="PartlyPaid">
                                                                     <span><?php echo $invoice_status['PartlyPaid']['status_count']?></span> Partly Paid Invoice <u>$<?php echo number_format($invoice_status['PartlyPaid']['total'], 2) ?></u>
                                                                 </li>
-                                                            <?php } 
+                                                            <?php }
 
                                                             if (!empty($invoice_status['Unpaid']['status_count'])) { ?>
                                                                 <li class="Unpaid">
                                                                     <span><?php echo $invoice_status['Unpaid']['status_count']?></span> Unpaid Invoice <u>$<?php echo number_format($invoice_status['Unpaid']['total'], 2) ?></u>
                                                                 </li>
-                                                            <?php } 
+                                                            <?php }
 
                                                             if (!empty($invoice_status['Recalled']['status_count'])) { ?>
                                                                 <li class="Recalled">
                                                                     <span><?php echo $invoice_status['Recalled']['status_count']?></span> Recalled Invoice <u>$<?php echo number_format($invoice_status['Recalled']['total'], 2) ?></u>
                                                                 </li>
-                                                            <?php } 
+                                                            <?php }
 
                                                             if (!empty($invoice_status['Voided']['status_count'])) { ?>
                                                                 <li class="Voided">
                                                                     <span><?php echo $invoice_status['Voided']['status_count']?></span> Voided Invoice <u>$<?php echo number_format($invoice_status['Voided']['total'], 2) ?></u>
                                                                 </li>
-                                                            <?php } 
+                                                            <?php }
                                                         }
                                                     ?>
                                                     </ul>
@@ -212,14 +212,14 @@ if(!empty($line_chart_data)){
                                                     <canvas id="SummaryChart"></canvas>
                                                 </div>
                                                 <div class="ytdlegend for-invoice--expense">
-                                                        
-                                                    <span>Invoice Previous Year 
+
+                                                    <span>Invoice Previous Year
                                                         <u>
                                                             <?php echo '$'.number_format($previous_year_sum, 2); ?>
                                                         </u>
-                                                    </span> 
-                                                    <span>Invoice Current Year 
-                                                        <u>                                                        
+                                                    </span>
+                                                    <span>Invoice Current Year
+                                                        <u>
                                                             <?php echo '$'.number_format($current_year_sum, 2); ?>
                                                         </u>
                                                     </span>
@@ -257,7 +257,7 @@ if(!empty($line_chart_data)){
                                 </div>
                             </div>
                         </div>
-                        
+
 
                          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
                             <div class="sumb--dashstatbox sumb--putShadowbox statbox__item--rejected">
@@ -274,16 +274,16 @@ if(!empty($line_chart_data)){
                                     </div>
                                 </div>
                             </div>
-                        </div> 
+                        </div>
                     </div>
-                
+
                     -->
-                    
+
                 </section>
                 <section>
                     <div class="row">
                         <div class="col-xl-12">
-                            @isset($err) 
+                            @isset($err)
                             <div class="sumb-alert alert alert-{{ $errors[$err][1] }}" role="alert">
                                 {{ $errors[$err][0] }}
                             </div>
@@ -302,9 +302,9 @@ if(!empty($line_chart_data)){
                             @endif
 
                             @if (\Session::has('email-sent') && Session('email-sent'))
-                               
+
                             @endif
-                           
+
                             <form action="/basic/invoice"  method="GET" enctype="multipart/form-data" id="search_form">
                                 <div class="row" style="margin-top: 20px">
                                     <div class="col-xl-4 col-lg-4 order-xl-1">
@@ -363,9 +363,9 @@ if(!empty($line_chart_data)){
                                     <input id="filter_by" type="hidden" name="filterBy" value='{{!empty($filterBy) ? $filterBy : "" }}'>
 
                                     <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 order-xl-5 order-lg-1 order-md-1 order-sm-2 order-2">
-                                        
+
                                     </div>
-                                    
+
                                     <div class="invoice-list--btns col-xl-4 col-lg-6 col-md-6 col-sm-12 order-xl-6 order-lg-2 order-md-2 order-sm-1 order-1" style="text-align: right;">
                                         <button type="button" id="search_invoice" name="search_invoice" class="btn sumb--btn " value="Search" onclick="searchItems(null, null, '{{$filterBy}}')"><i class="fa-solid fa-magnifying-glass"></i>Search</button>
                                         <button type="button" class="btn sumb--btn sumb-clear-btn" onclick="clearSearchItems()"><i class="fa-solid fa-circle-xmark"></i>Clear Search</button>
@@ -419,12 +419,12 @@ if(!empty($line_chart_data)){
                                                                 <a class="fileSharebtn" href="#" role="button" id="mainlinkadd" data-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-square-caret-down"></i></a>
                                                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="mainlinkadd">
                                                                     @if($invoice['status'] == 'Paid')
-                                                                        <a class="dropdown-item" href="/basic/status-change/?invoice_id={{ $invoice['id'] }}&status=Unpaid">Flag as UNPAID</a> 
-                                                                        <a class="dropdown-item" href="/basic/status-change/?invoice_id={{ $invoice['id'] }}&status=Voided">Flag as VOID</a> 
+                                                                        <a class="dropdown-item" href="/basic/status-change/?invoice_id={{ $invoice['id'] }}&status=Unpaid">Flag as UNPAID</a>
+                                                                        <a class="dropdown-item" href="/basic/status-change/?invoice_id={{ $invoice['id'] }}&status=Voided">Flag as VOID</a>
                                                                     @elseif($invoice['status'] == 'Voided')
-                                                                        <a class="dropdown-item" href="/basic/clone-invoice/?invoice_id={{ $invoice['id'] }}">Clone</a> 
+                                                                        <a class="dropdown-item" href="/basic/clone-invoice/?invoice_id={{ $invoice['id'] }}">Clone</a>
                                                                     @elseif($invoice['status'] == 'Unpaid' || $invoice['status'] == 'Recalled' || $invoice['status'] == 'PartlyPaid')
-                                                                        <a class="dropdown-item" href="/basic/status-change/?invoice_id={{ $invoice['id'] }}&status=Voided">Flag as VOID</a> 
+                                                                        <a class="dropdown-item" href="/basic/status-change/?invoice_id={{ $invoice['id'] }}&status=Voided">Flag as VOID</a>
                                                                         <!-- <a class="dropdown-item" href="/basic/status-change/?invoice_id={{ $invoice['id'] }}&status=Paid">Flag as PAID</a> -->
                                                                         <a class="dropdown-item" onclick="confirmPaymentDatePop('Paid', {{$invoice['id']}}, {{$invoice['total_amount']}});">Add Payment</a>
                                                                         @if(!$invoice['invoice_sent'] && $invoice['status'] != 'PartlyPaid')
@@ -443,7 +443,7 @@ if(!empty($line_chart_data)){
                                         </tbody>
                                     </table>
                                 </div>
-                                
+
                                 <table>
                                     <tr class="sumb--recentlogdements__pagination">
                                         <td colspan="8">
@@ -494,7 +494,7 @@ if(!empty($line_chart_data)){
                 <section>
                     &nbsp;
                 </section>
-                
+
             </div>
         </div>
     </div>
@@ -540,7 +540,7 @@ if(!empty($line_chart_data)){
     });
 
 
-    function deleteInvoice(transaction_number, id){        
+    function deleteInvoice(transaction_number, id){
         $("#delete_invoice_number").text('');
         $("#delete_invoice_number").text('INV-000000'+transaction_number);
         $("#delete_invoice").val('');
@@ -548,25 +548,25 @@ if(!empty($line_chart_data)){
 
         $('#delete_invoice_modal').modal({
             backdrop: 'static',
-            keyboard: true, 
+            keyboard: true,
             show: true
         });
     }
 
-    function recallInvoice(id){        
+    function recallInvoice(id){
         $("#recall_invoice").val('');
         $("#recall_invoice").val(id);
-        
+
         $('#recall_invoice_modal').modal({
             backdrop: 'static',
-            keyboard: true, 
+            keyboard: true,
             show: true
         });
     }
 
     $(document).on('click', '#recall_invoice', function(event) {
         var invoice_id = $("#recall_invoice").val();
-        
+
         var url = "{{URL::to('/basic/invoice/{id}/recall')}}";
         url = url.replace('{id}', invoice_id);
         location.href = url;
@@ -574,19 +574,19 @@ if(!empty($line_chart_data)){
 
     $(document).on('click', '#delete_invoice', function(event) {
         var invoice_id = $("#delete_invoice").val();
-        
+
         var url = "{{URL::to('/basic/invoice/{id}/delete')}}";
         url = url.replace('{id}', invoice_id);
         location.href = url;
     });
-    
+
     function confirmPaymentDatePop(status, id, due_amount){
         $("#invoice_payment_date_error").removeClass('alert alert-danger');
         $("#invoice_payment_date_error").html('');
 
         $("#invoice_amount_paid_error").removeClass('alert alert-danger');
         $("#invoice_amount_paid_error").html('');
-        
+
         $("#invoice_payment_date").val('');
         $("#invoice_id").val('');
         $("#invoice_id").val(id);
@@ -601,7 +601,7 @@ if(!empty($line_chart_data)){
 
         $('#invoice_payment_date_modal').modal({
             backdrop: 'static',
-            keyboard: true, 
+            keyboard: true,
             show: true
         });
     }
@@ -646,15 +646,15 @@ if(!empty($line_chart_data)){
     $(function() {
         $( "#start_date" ).datepicker({ dateFormat: 'dd/mm/yy' });
         $( "#end_date" ).datepicker({ dateFormat: 'dd/mm/yy' });
-        $( "#invoice_payment_date" ).datepicker({ dateFormat: 'dd/mm/yy', beforeShow: function (input, inst) { setDatepickerPos(input, inst) } });     
+        $( "#invoice_payment_date" ).datepicker({ dateFormat: 'dd/mm/yy', beforeShow: function (input, inst) { setDatepickerPos(input, inst) } });
     });
 
     <?php if(!empty($orderBy)){?>
-        <?php if($direction == 'ASC'){?> 
-            $("#"+ '{{$orderBy}}').append('&nbsp;<i class="fas fa-sort-down"></i>');    
+        <?php if($direction == 'ASC'){?>
+            $("#"+ '{{$orderBy}}').append('&nbsp;<i class="fas fa-sort-down"></i>');
         <?php } if($direction == 'DESC'){?>
-            $("#"+ '{{$orderBy}}').append('&nbsp;<i class="fas fa-sort-up"></i>');    
-        <?php }?> 
+            $("#"+ '{{$orderBy}}').append('&nbsp;<i class="fas fa-sort-up"></i>');
+        <?php }?>
     <?php }?>
 
     function clearSearchItems(){
@@ -715,9 +715,9 @@ const dataInvoices = {
     label: "Amount",
     <?php if(!empty($bar_chart_data)){?>
     data: [
-        <?php 
-            array_map(function ($item) {   
-                $totals = array_column($item['weekly_transactions'], 'total');  
+        <?php
+            array_map(function ($item) {
+                $totals = array_column($item['weekly_transactions'], 'total');
                     echo $totals ? array_sum($totals) ."," : 0 .",";
             }, $bar_chart_data);
         ?>
@@ -817,7 +817,7 @@ const YTDBar = new Chart(SummaryChart, {
     }
 });
 
-    
+
 
 $(document).ready(function () {
 
@@ -828,7 +828,7 @@ $(document).ready(function () {
     $(".collapse").on("hidden.bs.collapse", function () {
         localStorage.removeItem("invoicesColl_" + this.id);
     });
-    
+
     $(".collapse").each(function () {
         if (localStorage.getItem("invoicesColl_" + this.id) === "true") {
             $(this).collapse("show");

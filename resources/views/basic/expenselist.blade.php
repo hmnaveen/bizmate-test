@@ -1,11 +1,11 @@
 @include('includes.head')
 @include('includes.user-header')
 
-<link href="/css/accordion-styles.css?v=1.1" rel="stylesheet" media="all">
+<link href="/css/accordion-styles.css?v={{ config('app.version') }}" rel="stylesheet" media="all">
 
 
 <!-------Invoice due amount and date alert pop-up--------------->
-<form action="/basic/expense-status-change"  method="GET" enctype="multipart/form-data"> 
+<form action="/basic/expense-status-change"  method="GET" enctype="multipart/form-data">
     @csrf
     <div id="expense_payment_date_modal" class="modal fade modal-reskin modal-deleteItem" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
@@ -25,11 +25,11 @@
                                     <div class="col-12">
                                         <input type="float" id="expense_amount_paid" name="amount_paid" placeholder=""  value="" required onfocusin="basicInvoiceRemoveComma('expense_amount_paid')" onfocusout="basicInvoiceAddComma('expense_amount_paid')">
                                     </div>
-                                   
+
                                     <input type="hidden" id="expense_due_amount" value="">
                                 </div>
                                 <div class="" role="alert" id="expense_amount_paid_error"></div>
-                                
+
                             </div>
                         </div>
 
@@ -112,44 +112,44 @@ if(!empty($line_chart_data)){
 
                                             <div class="block-deets">
                                                 <ul>
-                                                    
+
 
                                                     <?php
                                                         if(!empty($total_expense_counts)){
                                                             $expense_status = array();
                                                             foreach ($total_expense_counts as $isummary) {
                                                                 $expense_status[$isummary['status']] = array('status'=>$isummary['status'],'total'=>$isummary['total'], 'status_count'=>$isummary['status_count']);
-                                                            } 
+                                                            }
 
                                                             if (!empty($expense_status['Paid']['status_count'])) { ?>
                                                                 <li class="Paid">
                                                                     <span><?php echo $expense_status['Paid']['status_count']?></span> Paid Expense <u>$<?php echo number_format($expense_status['Paid']['total'], 2) ?></u>
                                                                 </li>
-                                                            <?php } 
+                                                            <?php }
 
                                                             if (!empty($expense_status['PartlyPaid']['status_count'])) { ?>
                                                                 <li class="PartlyPaid">
                                                                     <span><?php echo $expense_status['PartlyPaid']['status_count']?></span> Partly Paid Expense <u>$<?php echo number_format($expense_status['PartlyPaid']['total'], 2) ?></u>
                                                                 </li>
-                                                            <?php } 
+                                                            <?php }
 
                                                             if (!empty($expense_status['Unpaid']['status_count'])) { ?>
                                                                 <li class="Unpaid">
                                                                     <span><?php echo $expense_status['Unpaid']['status_count']?></span> Unpaid Expense <u>$<?php echo number_format($expense_status['Unpaid']['total'], 2) ?></u>
                                                                 </li>
-                                                            <?php } 
+                                                            <?php }
 
                                                             if (!empty($expense_status['Recalled']['status_count'])) { ?>
                                                                 <li class="Recalled">
                                                                     <span><?php echo $expense_status['Recalled']['status_count']?></span> Recalled Expense <u>$<?php echo number_format($expense_status['Recalled']['total'], 2) ?></u>
                                                                 </li>
-                                                            <?php } 
+                                                            <?php }
 
                                                             if (!empty($expense_status['Voided']['status_count'])) { ?>
                                                                 <li class="Voided">
                                                                     <span><?php echo $expense_status['Voided']['status_count']?></span> Voided Expense <u>$<?php echo number_format($expense_status['Voided']['total'], 2) ?></u>
                                                                 </li>
-                                                            <?php } 
+                                                            <?php }
                                                         }
                                                     ?>
 
@@ -180,7 +180,7 @@ if(!empty($line_chart_data)){
                             </div>
                         </div>
                     </div>
-                    
+
                     <!--
                     <div class="sumb--statistics row">
                         <div class="col-xl-7 col-lg-8 col-md-8 col-sm-12 col-12">
@@ -207,19 +207,19 @@ if(!empty($line_chart_data)){
                     -->
                 </section>
 
-                
+
 
                 <section>
                     <div class="row">
-                        
+
                         <div class="col-xl-12">
 
-                            @isset($err) 
+                            @isset($err)
                             <div class="sumb-alert alert alert-{{ $errors[$err][1] }}" role="alert">
                                 {{ $errors[$err][0] }}
                             </div>
                             @endisset
-                            
+
                             <form action="/basic/expense"  method="GET" enctype="multipart/form-data" id="search_form">
                                 <div class="row">
                                     <div class="col-xl-4 col-lg-4 order-xl-1">
@@ -281,7 +281,7 @@ if(!empty($line_chart_data)){
                                                 <th id="total_amount" onclick="searchItems('total_amount', '{{!empty($orderBy) && $orderBy == 'total_amount' ? $direction  : 'ASC'}}')">Due</th>
                                                 <th class="sumb--recentlogdements__actions" style="border-top-right-radius: 7px;">options</th>
                                             </tr>
-                                            
+
                                         </thead>
                                         <tbody>
                                             @if (empty($expensedata['total']))
@@ -294,7 +294,7 @@ if(!empty($line_chart_data)){
                                                 </tr>
                                             @else
                                                 @foreach ($expensedata['data'] as $idat)
-                                            
+
                                                     @if($idat['is_active'])
                                                         <tr>
                                                             <td onclick="window.location='/basic/expense/{{$idat['id']}}/{{($idat['status'] == 'Voided' || $idat['status'] == 'Paid') ? 'view' : 'edit'}}'">{{ $idat['issue_date'] }}</td>
@@ -302,22 +302,22 @@ if(!empty($line_chart_data)){
                                                             <td onclick="window.location='/basic/expense/{{$idat['id']}}/{{($idat['status'] == 'Voided' || $idat['status'] == 'Paid') ? 'view' : 'edit'}}'">{{ $idat['client_name'] }}</td>
                                                             <td onclick="window.location='/basic/expense/{{$idat['id']}}/{{($idat['status'] == 'Voided' || $idat['status'] == 'Paid') ? 'view' : 'edit'}}'">{{ $idat['payment_date'] }}</td>
                                                             <!-- <td>@if (!empty($idat['client_email'])) <a href="mailto:{{ $idat['client_email'] }}">{{ $idat['client_email'] }}</a> @else &nbsp; @endif</td> -->
-                                                            
+
                                                             <td onclick="window.location='/basic/expense/{{$idat['id']}}/{{($idat['status'] == 'Voided' || $idat['status'] == 'Paid') ? 'view' : 'edit'}}'"
                                                                 class="@if ($idat['status'] == 'Voided') sumb--recentlogdements__status_rej @elseif ($idat['status'] == 'PartlyPaid') sumb--recentlogdements__status_partly_paid @elseif ($idat['status'] == 'Paid') sumb--recentlogdements__status_acc @else sumb--recentlogdements__status_proc @endif">
                                                                 {{ !empty($idat['status']) &&  $idat['status'] == 'PartlyPaid' ? 'Partial Paid' :  ucwords($idat['status']) }}
                                                             </td>
                                                             <td onclick="window.location='/basic/expense/{{$idat['id']}}/{{($idat['status'] == 'Voided' || $idat['status'] == 'Paid') ? 'view' : 'edit'}}'" >${{ number_format((float)$idat['amount_paid'], 2, '.', ',') }}</td>
                                                             <td onclick="window.location='/basic/expense/{{$idat['id']}}/{{($idat['status'] == 'Voided' || $idat['status'] == 'Paid') ? 'view' : 'edit'}}'">${{ number_format((float)$idat['total_amount'], 2, '.', ',') }}</td>
-                                                            
+
                                                             <td class="sumb--recentlogdements__actions">
                                                                 @if($idat['status'] == 'Paid')
                                                                     <div class="sumb--fileSharebtn dropdown">
                                                                         <!-- <a href="{{ url('/basic/expense/'.$idat['id'].'/view') }}"><i class="fa-solid fa-eye"></i></a> -->
                                                                         <a class="fileSharebtn" href="#" role="button" id="mainlinkadd" data-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-square-caret-down"></i></a>
-                                                                        
+
                                                                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="mainlinkadd">
-                                                                        <a class="dropdown-item" href="/basic/expense-status-change/?expense_id={{ $idat['id'] }}&status=Unpaid">Flag as Unpaid</a>    
+                                                                        <a class="dropdown-item" href="/basic/expense-status-change/?expense_id={{ $idat['id'] }}&status=Unpaid">Flag as Unpaid</a>
                                                                         <a class="dropdown-item" href="/basic/expense-status-change/?expense_id={{ $idat['id'] }}&status=Voided">Flag as Void</a>
                                                                         </div>
                                                                     </div>
@@ -326,7 +326,7 @@ if(!empty($line_chart_data)){
 
                                                                         <!-- <a href="{{ url('/basic/expense/'.$idat['id'].'/view') }}"><i class="fa-solid fa-eye"></i></a> -->
                                                                         <a class="fileSharebtn" href="#" role="button" id="mainlinkadd" data-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-square-caret-down"></i></a>
-                                                                        
+
                                                                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="mainlinkadd">
                                                                             <a class="dropdown-item">Some options</a>
                                                                         </div>
@@ -335,7 +335,7 @@ if(!empty($line_chart_data)){
                                                                     <div class="sumb--fileSharebtn dropdown">
                                                                         <!-- <a href="{{ url('/basic/expense/'.$idat['id'].'/view') }}"><i class="fa-solid fa-eye"></i></a> -->
                                                                         <a class="fileSharebtn" href="#" role="button" id="mainlinkadd" data-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-square-caret-down"></i></a>
-                                                                        
+
                                                                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="mainlinkadd">
                                                                             <a class="dropdown-item" onclick="confirmPaymentDatePop('Paid', {{$idat['id']}}, {{$idat['total_amount']}});">Add Payment</a>
                                                                             <a class="dropdown-item" href="/basic/expense-status-change/?expense_id={{ $idat['id'] }}&status=Voided">Flag as Void</a>
@@ -343,7 +343,7 @@ if(!empty($line_chart_data)){
                                                                                 <a class="dropdown-item" href="#" id="deleteExpense" style="cursor: pointer;" value="{{ $idat['id'] }}" >Delete</a>
                                                                             @endif
                                                                         </div>
-                                                                    </div>    
+                                                                    </div>
                                                                 @endif
                                                             </td>
                                                         </tr>
@@ -462,12 +462,12 @@ if(!empty($line_chart_data)){
         expenseID = $(this).attr("value");
         $("#deleteExpenseModal").modal({
             backdrop: 'static',
-            keyboard: true, 
+            keyboard: true,
             show: true
         });
     });
 
-    
+
     $(document).on('click', '#deleteExpenseConfirm', function(event) {
         if(expenseID){
             var url = "{{ route('basic/delete-expense', ':id') }}";
@@ -477,11 +477,11 @@ if(!empty($line_chart_data)){
             alert("Select an expense to be deleted")
         }
     });
-    
+
     $(function() {
         $( "#start_date" ).datepicker({ dateFormat: 'dd/mm/yy' });
         $( "#end_date" ).datepicker({ dateFormat: 'dd/mm/yy' });
-        $( "#expense_payment_date" ).datepicker({ dateFormat: 'dd/mm/yy', beforeShow: function (input, inst) { setDatepickerPos(input, inst) } });     
+        $( "#expense_payment_date" ).datepicker({ dateFormat: 'dd/mm/yy', beforeShow: function (input, inst) { setDatepickerPos(input, inst) } });
 
     });
 
@@ -495,11 +495,11 @@ if(!empty($line_chart_data)){
     }
 
     <?php if(!empty($orderBy)){?>
-        <?php if($direction == 'ASC'){?> 
-            $("#"+ '{{$orderBy}}').append('&nbsp;<i class="fas fa-sort-down"></i>');    
+        <?php if($direction == 'ASC'){?>
+            $("#"+ '{{$orderBy}}').append('&nbsp;<i class="fas fa-sort-down"></i>');
         <?php } if($direction == 'DESC'){?>
-            $("#"+ '{{$orderBy}}').append('&nbsp;<i class="fas fa-sort-up"></i>');    
-        <?php }?> 
+            $("#"+ '{{$orderBy}}').append('&nbsp;<i class="fas fa-sort-up"></i>');
+        <?php }?>
     <?php }?>
 
     function clearSearchItems(){
@@ -508,7 +508,7 @@ if(!empty($line_chart_data)){
             var url = "{{URL::to('/basic/expense')}}";
             location.href = url;
         }
-        
+
         $("#search_number_name_amount").val('');
         $("#start_date").val('');
         $("#end_date").val('');
@@ -532,7 +532,7 @@ if(!empty($line_chart_data)){
 
         $("#expense_amount_paid_error").removeClass('alert alert-danger');
         $("#expense_amount_paid_error").html('');
-        
+
         $("#expense_payment_date").val('');
         $("#expense_id").val('');
         $("#expense_id").val(id);
@@ -547,7 +547,7 @@ if(!empty($line_chart_data)){
 
         $('#expense_payment_date_modal').modal({
             backdrop: 'static',
-            keyboard: true, 
+            keyboard: true,
             show: true
         });
     }
@@ -606,9 +606,9 @@ if(!empty($line_chart_data)){
         label: "Amount",
         <?php if(!empty($bar_chart_data)){?>
         data: [
-            <?php 
+            <?php
                 array_map(function ($item) {
-                    $expense_amount = array_column($item['weekly_transactions'], 'total');  
+                    $expense_amount = array_column($item['weekly_transactions'], 'total');
                         echo $expense_amount ? array_sum($expense_amount) ."," : 0 .",";
                 }, $bar_chart_data);
             ?>
