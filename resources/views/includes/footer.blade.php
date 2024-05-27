@@ -23,7 +23,7 @@
 <!-- full calendar requires moment along jquery which is included above -->
 <script src="/vendor/fullcalendar-3.10.0/lib/moment.min.js"></script>
 <script src="/vendor/fullcalendar-3.10.0/fullcalendar.js"></script>
-    
+
 <!-- Main JS-->
 <script src="/js/main.js?v1.0.11"></script>
 
@@ -31,12 +31,12 @@
 <script src="/js/multiselect.min.js"></script>
 <!-- forgot password script -->
 
-<script type="text/javascript" src="/js/reset_password.js?v=1.4"></script>
+<script type="text/javascript" src="/js/reset_password.js?v={{ config('app.version') }}"></script>
 
 <script src="https://accounts.google.com/gsi/client" async defer></script>
 
 
-<script type="text/javascript" src="/js/auth.js?v=1.4"></script>
+<script type="text/javascript" src="/js/auth.js?v={{ config('app.version') }}"></script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <!-- <link rel="stylesheet" href="sweetalert2.min.css"> -->
 <script type="text/javascript">
@@ -46,7 +46,7 @@
 //     FB.init({
 //       appId: '1304509377114263',
 //       cookie     : true,
-//       xfbml      : true,                     
+//       xfbml      : true,
 //       version: 'v16.0'
 //     });
 
@@ -93,10 +93,10 @@ $(function() {
     },
     events: events.concat(trivia_nights)
   });
-  
-  
-  
+
+
+
 });
-    
+
 </script>
 

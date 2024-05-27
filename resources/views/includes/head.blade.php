@@ -37,26 +37,26 @@
     <link href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css" rel="stylesheet">
 
     <!-- FullCalendar -->
-    <link href='/vendor/fullcalendar-3.10.0/fullcalendar.css?v=1' rel='stylesheet' media="all" />
+    <link href="/vendor/fullcalendar-3.10.0/fullcalendar.css?v={{ config('app.version') }}" rel='stylesheet' media="all" />
 
     <!-- Main CSS-->
     <link href="/css/theme.css?v={{ config('app.version') }}" rel="stylesheet" media="all">
-    <link href="/css/sumb.css?v=1.1" rel="stylesheet" media="all">
-    <link href="/css/system.css?v=1.11" rel="stylesheet" media="all">
+    <link href="/css/sumb.css?v={{ config('app.version') }}" rel="stylesheet" media="all">
+    <link href="/css/system.css?v={{ config('app.version') }}" rel="stylesheet" media="all">
 
 
     <!--- Invoice JS----->
     <script src="/vendor/jquery-3.2.1.min.js"></script>
-    <script type="text/javascript" src="/js/invoice.js?v=1.4"></script>
+    <script type="text/javascript" src="/js/invoice.js?v={{ config('app.version') }}"></script>
 
     <!--- Basic Invoice JS----->
-    <script type="text/javascript" src="/js/basic_invoice.js?v=1.4"></script>
+    <script type="text/javascript" src="/js/basic_invoice.js?v={{ config('app.version') }}"></script>
 
     <!--- Reconciliation JS----->
-    <script type="text/javascript" src="/js/reconciliation.js?v=1.4"></script>
+    <script type="text/javascript" src="/js/reconciliation.js?v={{ config('app.version') }}"></script>
 
     <!-- Docfiles CSS-->
-    <link href="/css/docfiles.css?v=1.11" rel="stylesheet" media="all">
+    <link href="/css/docfiles.css?v={{ config('app.version') }}" rel="stylesheet" media="all">
     <style>
     </style>
 </head>
