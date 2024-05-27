@@ -132,16 +132,13 @@ class CashReceiptController extends Controller
 
             $validator = Validator::make($request->all(),[
                 'client_name' => 'bail|required|max:255',
-                // 'client_email' =>'required_if:transaction_type,invoice|max:255',
                 'invoice_issue_date' => 'bail|required',
                 'transaction_type' => 'bail|required',
-                // 'invoice_id' => 'bail|required|exists:reconciled_transactions,transaction_collection_id,user_id,'.$userinfo[0].',is_active,1,is_active,1',
-                // 'user_total' => "bail|required|same:invoice_total_amount"
                 'user_total' => [
                     'required',
                     Rule::in($request->invoice_total_amount),
                 ],
-            ]);
+            ],['user_total' => "The totals do not match."],);
 
             $pagedata['invoice_id'] = $request->invoice_id;
             $request->type = 'edit';
@@ -169,6 +166,8 @@ class CashReceiptController extends Controller
                 "transaction_type" => $request->transaction_type,
                 "invoice_ref_number" => trim($request->invoice_ref_number) ? trim($request->invoice_ref_number) : 0,
                 "payment_option" => trim($request->payment_option) ? trim($request->payment_option) : '',
+                "user_total" => trim($request->user_total) ? trim($request->user_total) : '',
+                "reconcile_status" => trim($request->reconcile_status) ? trim($request->reconcile_status) : '',
             ];
 
 
@@ -205,7 +204,6 @@ class CashReceiptController extends Controller
             $invoice_details['invoice_part_total_count'] = trim($request->input('invoice_part_total_count'));
             $invoice_details['status'] = $request->invoice_status;
             $pagedata['invoice_details'] = $invoice_details;
-
 
             if ($validator->fails()) {
 
@@ -271,6 +269,8 @@ class CashReceiptController extends Controller
                 unset($invoice_details['invoice_ref_number']);
                 unset($invoice_details['amount_paid']);
                 unset($invoice_details['payment_date']);
+                unset($invoice_details['user_total']);
+                unset($invoice_details['reconcile_status']);
 
                 $data = $this->transactionCollectionRepository->createOrUpdateTransaction($invoice_details, $transactions, $userinfo, $request->invoice_id, $request->type);
             }

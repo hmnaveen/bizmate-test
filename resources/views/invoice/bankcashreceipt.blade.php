@@ -342,9 +342,9 @@
                             <div class="col-xl-4">
                                 <div class="form-input--wrap">
                                     <label class="form-input--question">Total</label>
-                                    <div class="form--inputbox {{ !empty($invoice_details['payment']) && $invoice_details['payment'][0]['reconcile_transaction']['is_reconciled'] ?  "readOnly" : "" }}" >
+                                    <div class="form--inputbox {{ (!empty($invoice_details['payment']) && $invoice_details['payment'][0]['reconcile_transaction']['is_reconciled']) || (isset($invoice_details['reconcile_status']) && $invoice_details['reconcile_status']) ?  "readOnly" : "" }}" >
                                         <div class="col-12">
-                                            <input {{ !empty($invoice_details['payment']) && $invoice_details['payment'][0]['reconcile_transaction']['is_reconciled'] ?  "readOnly" : "" }} type="text" id="" name="user_total" value="{{ number_format($invoice_details['total_amount'], 2) }}" >
+                                            <input {{ (!empty($invoice_details['payment']) && $invoice_details['payment'][0]['reconcile_transaction']['is_reconciled']) || (isset($invoice_details['reconcile_status']) && $invoice_details['reconcile_status']) ?  "readOnly" : "" }} type="float" id="" name="user_total" value="{{ isset($invoice_details['user_total']) ? number_format($invoice_details['user_total'], 2) : number_format($invoice_details['total_amount'], 2) }}" >
                                             @error('user_total')
                                                 <div class="alert alert-danger">{{ $message }}</div>
                                             @enderror
@@ -662,7 +662,7 @@
                                     <input type="hidden" name="invoice_status" value="{{!empty($invoice_details && $invoice_details['status']) ? $invoice_details['status'] : ''}}">
                                     <input type="hidden" name="transaction_type" value="{{!empty($invoice_details && $invoice_details['transaction_type']) ? $invoice_details['transaction_type'] : ''}}">
                                     <input type="hidden" name="payment_option" value="{{!empty($invoice_details && $invoice_details['payment_option']) ? $invoice_details['payment_option'] : ''}}">
-                                    <input type="hidden" name="reconcile_status" value="{{ !empty($invoice_details['reconcile_transaction']) && $invoice_details['reconcile_transaction'][0]['is_reconciled'] ? $invoice_details['reconcile_transaction'][0]['is_reconciled'] : '' }}">
+                                    <input type="hidden" name="reconcile_status" value="{{ (!empty($invoice_details['payment']) && $invoice_details['payment'][0]['reconcile_transaction']['is_reconciled']) ? $invoice_details['payment'][0]['reconcile_transaction']['is_reconciled'] : (isset($invoice_details['reconcile_status']) ? $invoice_details['reconcile_status'] : '') }}">
 
                                     <button type="reset" class="btn sumb--btn reset--btn"><i class="fa fa-ban"></i>Clear Invioce</button>
                                     <!-- <button type="button" class="btn sumb--btn preview--btn" onclick="previewInvoice()"><i class="fa-solid fa-eye" ></i>Preview</button> -->
